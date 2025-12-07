@@ -1,4 +1,4 @@
-# Índice de Cheat Sheets - Python, NumPy, Pandas y Matplotlib
+# Índice de Cheat Sheets - Python, NumPy, Pandas, Matplotlib y Scikit-learn
 
 Este repositorio contiene cheat sheets organizados por tecnología en formato Jupyter Notebook (.ipynb), ordenados numéricamente para seguir un orden lógico de aprendizaje.
 
@@ -170,6 +170,39 @@ Este repositorio contiene cheat sheets organizados por tecnología en formato Ju
 - Líneas de referencia y regiones
 - Configuración global (rcParams)
 
+## 🤖 05 - Scikit-learn
+
+### [01-scikit-learn-basics.ipynb](05-scikit-learn/01-scikit-learn-basics.ipynb)
+- Importar Scikit-learn
+- Datasets integrados
+- Estructura básica de trabajo con modelos
+- Versión de Scikit-learn
+
+### [02-scikit-learn-preprocessing.ipynb](05-scikit-learn/02-scikit-learn-preprocessing.ipynb)
+- Escalado de datos (StandardScaler, MinMaxScaler, RobustScaler, Normalizer)
+- Codificación de variables categóricas (LabelEncoder, OneHotEncoder, OrdinalEncoder)
+- Manejo de valores faltantes (SimpleImputer)
+- Transformaciones polinómicas (PolynomialFeatures)
+- Pipeline de preprocesamiento
+
+### [03-scikit-learn-supervised-learning.ipynb](05-scikit-learn/03-scikit-learn-supervised-learning.ipynb)
+- Clasificación (LogisticRegression, DecisionTree, RandomForest, SVM, KNN, Naive Bayes, Gradient Boosting)
+- Regresión (LinearRegression, Ridge, Lasso, DecisionTree, RandomForest, SVR, KNN)
+- Parámetros importantes de los modelos
+
+### [04-scikit-learn-unsupervised-learning.ipynb](05-scikit-learn/04-scikit-learn-unsupervised-learning.ipynb)
+- Clustering (K-Means, DBSCAN, Clustering Jerárquico)
+- Reducción de dimensionalidad (PCA, TruncatedSVD, NMF)
+- t-SNE para visualización
+- Selección del número de componentes
+
+### [05-scikit-learn-model-evaluation.ipynb](05-scikit-learn/05-scikit-learn-model-evaluation.ipynb)
+- Métricas de clasificación (accuracy, precision, recall, F1, matriz de confusión)
+- Métricas de regresión (MSE, RMSE, MAE, R²)
+- Validación cruzada (K-Fold, Stratified K-Fold)
+- Búsqueda de hiperparámetros (GridSearchCV, RandomizedSearchCV)
+- Curvas ROC y AUC
+
 ## 🚀 Uso
 
 Para usar estos notebooks, necesitas tener instalado:
@@ -178,6 +211,7 @@ Para usar estos notebooks, necesitas tener instalado:
 - NumPy
 - Pandas
 - Matplotlib
+- Scikit-learn
 
 ### Instalación rápida con uv
 
@@ -191,7 +225,7 @@ source .venv/bin/activate  # Linux/Mac
 .venv\Scripts\activate  # Windows
 
 # Instalar dependencias
-uv pip install jupyter numpy pandas matplotlib
+uv pip install jupyter numpy pandas matplotlib scikit-learn
 ```
 
 ### Ejecutar Jupyter
