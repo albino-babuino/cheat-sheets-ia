@@ -221,7 +221,11 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
 
 ### 🧠 07 - Algoritmos Clásicos de Machine Learning (8 notebooks)
 
-1. **[01-arboles-decision.ipynb](07-algoritmos-ml/01-arboles-decision.ipynb)** - Árboles de Decisión
+Los algoritmos están organizados por tipo de aprendizaje:
+
+#### 📚 01 - Supervisados (5 notebooks)
+
+1. **[01-arboles-decision.ipynb](07-algoritmos-ml/01-supervisados/01-arboles-decision.ipynb)** - Árboles de Decisión
    - Conceptos fundamentales (Entropía, Ganancia de Información, Índice Gini)
    - Implementación para clasificación y regresión
    - Visualización de árboles de decisión
@@ -229,15 +233,46 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Control de sobreajuste
    - Parámetros importantes
 
-2. **[02-minimax.ipynb](07-algoritmos-ml/02-minimax.ipynb)** - Algoritmo Minimax
-   - Fundamentos de teoría de juegos
-   - Implementación básica de Minimax
-   - Ejemplo práctico: Tres en Raya
-   - Optimización con poda alfa-beta
-   - Comparación de rendimiento
-   - Aplicaciones y limitaciones
+2. **[02-k-nearest-neighbors.ipynb](07-algoritmos-ml/01-supervisados/02-k-nearest-neighbors.ipynb)** - K-Nearest Neighbors (KNN)
+   - Algoritmo lazy learning
+   - Implementación para clasificación y regresión
+   - Efecto del valor de K
+   - Métricas de distancia (Euclidiana, Manhattan, Minkowski)
+   - Ventajas y desventajas
 
-3. **[03-q-learning.ipynb](07-algoritmos-ml/03-q-learning.ipynb)** - Q-Learning
+3. **[03-naive-bayes.ipynb](07-algoritmos-ml/01-supervisados/03-naive-bayes.ipynb)** - Naive Bayes
+   - Teorema de Bayes y supuesto de independencia
+   - Implementación básica
+   - Variantes: Gaussian, Multinomial, Bernoulli
+   - Ejemplo de clasificación de texto
+   - Aplicaciones en NLP
+
+4. **[04-regresion-lineal.ipynb](07-algoritmos-ml/01-supervisados/04-regresion-lineal.ipynb)** - Regresión Lineal desde Cero
+   - Ecuación de regresión lineal
+   - Método 1: Ecuación Normal (solución analítica)
+   - Método 2: Gradiente Descendente
+   - Regresión simple y múltiple
+   - Visualización de convergencia
+
+5. **[05-perceptron.ipynb](07-algoritmos-ml/01-supervisados/05-perceptron.ipynb)** - Perceptrón
+   - Unidad básica de redes neuronales
+   - Implementación básica
+   - Algoritmo de aprendizaje
+   - Limitaciones (problema XOR)
+   - Base para redes neuronales multicapa
+
+#### 🔍 02 - No Supervisados (1 notebook)
+
+1. **[01-k-means.ipynb](07-algoritmos-ml/02-no-supervisados/01-k-means.ipynb)** - K-Means desde Cero
+   - Algoritmo de clustering no supervisado
+   - Implementación básica
+   - Selección del número óptimo de clusters (Método del codo)
+   - Métrica Silhouette Score
+   - Convergencia del algoritmo
+
+#### 🎮 03 - Refuerzo (1 notebook)
+
+1. **[01-q-learning.ipynb](07-algoritmos-ml/03-refuerzo/01-q-learning.ipynb)** - Q-Learning
    - Fundamentos de Reinforcement Learning
    - Ecuación de actualización Q-Learning
    - Implementación de agente Q-Learning
@@ -246,40 +281,15 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
    - Aplicaciones en juegos y robótica
 
-4. **[04-k-nearest-neighbors.ipynb](07-algoritmos-ml/04-k-nearest-neighbors.ipynb)** - K-Nearest Neighbors (KNN)
-   - Algoritmo lazy learning
-   - Implementación para clasificación y regresión
-   - Efecto del valor de K
-   - Métricas de distancia (Euclidiana, Manhattan, Minkowski)
-   - Ventajas y desventajas
+#### 🎯 04 - Otros (1 notebook)
 
-5. **[05-naive-bayes.ipynb](07-algoritmos-ml/05-naive-bayes.ipynb)** - Naive Bayes
-   - Teorema de Bayes y supuesto de independencia
-   - Implementación básica
-   - Variantes: Gaussian, Multinomial, Bernoulli
-   - Ejemplo de clasificación de texto
-   - Aplicaciones en NLP
-
-6. **[06-regresion-lineal.ipynb](07-algoritmos-ml/06-regresion-lineal.ipynb)** - Regresión Lineal desde Cero
-   - Ecuación de regresión lineal
-   - Método 1: Ecuación Normal (solución analítica)
-   - Método 2: Gradiente Descendente
-   - Regresión simple y múltiple
-   - Visualización de convergencia
-
-7. **[07-k-means.ipynb](07-algoritmos-ml/07-k-means.ipynb)** - K-Means desde Cero
-   - Algoritmo de clustering no supervisado
-   - Implementación básica
-   - Selección del número óptimo de clusters (Método del codo)
-   - Métrica Silhouette Score
-   - Convergencia del algoritmo
-
-8. **[08-perceptron.ipynb](07-algoritmos-ml/08-perceptron.ipynb)** - Perceptrón
-   - Unidad básica de redes neuronales
-   - Implementación básica
-   - Algoritmo de aprendizaje
-   - Limitaciones (problema XOR)
-   - Base para redes neuronales multicapa
+1. **[01-minimax.ipynb](07-algoritmos-ml/04-otros/01-minimax.ipynb)** - Algoritmo Minimax
+   - Fundamentos de teoría de juegos
+   - Implementación básica de Minimax
+   - Ejemplo práctico: Tres en Raya
+   - Optimización con poda alfa-beta
+   - Comparación de rendimiento
+   - Aplicaciones y limitaciones
 
 ### 🤖 08 - IA Moderna (5 notebooks)
 
@@ -407,14 +417,18 @@ cheat-sheets-ia/
 │   ├── 04-scikit-learn-unsupervised-learning.ipynb
 │   └── 05-scikit-learn-model-evaluation.ipynb
 ├── 07-algoritmos-ml/                # Algoritmos Clásicos de ML
-│   ├── 01-arboles-decision.ipynb
-│   ├── 02-minimax.ipynb
-│   ├── 03-q-learning.ipynb
-│   ├── 04-k-nearest-neighbors.ipynb
-│   ├── 05-naive-bayes.ipynb
-│   ├── 06-regresion-lineal.ipynb
-│   ├── 07-k-means.ipynb
-│   └── 08-perceptron.ipynb
+│   ├── 01-supervisados/            # Aprendizaje Supervisado
+│   │   ├── 01-arboles-decision.ipynb
+│   │   ├── 02-k-nearest-neighbors.ipynb
+│   │   ├── 03-naive-bayes.ipynb
+│   │   ├── 04-regresion-lineal.ipynb
+│   │   └── 05-perceptron.ipynb
+│   ├── 02-no-supervisados/         # Aprendizaje No Supervisado
+│   │   └── 01-k-means.ipynb
+│   ├── 03-refuerzo/                # Aprendizaje por Refuerzo
+│   │   └── 01-q-learning.ipynb
+│   └── 04-otros/                    # Otros algoritmos
+│       └── 01-minimax.ipynb
 ├── 08-ia-moderna/                   # IA Moderna
 │   ├── 01-redes-neuronales-basicas.ipynb
 │   ├── 02-deep-learning-tensorflow.ipynb

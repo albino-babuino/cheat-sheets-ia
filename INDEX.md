@@ -236,7 +236,11 @@ Este repositorio contiene cheat sheets organizados por tecnología en formato Ju
 
 ## 🧠 07 - Algoritmos Clásicos de Machine Learning (8 notebooks)
 
-### [01-arboles-decision.ipynb](07-algoritmos-ml/01-arboles-decision.ipynb)
+Los algoritmos están organizados por tipo de aprendizaje:
+
+### 📚 01 - Supervisados
+
+#### [01-arboles-decision.ipynb](07-algoritmos-ml/01-supervisados/01-arboles-decision.ipynb)
 - ¿Qué es un Árbol de Decisión?
 - Conceptos fundamentales (Entropía, Ganancia de Información, Índice Gini)
 - Árbol de Decisión para Clasificación
@@ -246,26 +250,7 @@ Este repositorio contiene cheat sheets organizados por tecnología en formato Ju
 - Control de sobreajuste (Overfitting)
 - Parámetros importantes
 
-### [02-minimax.ipynb](07-algoritmos-ml/02-minimax.ipynb)
-- ¿Qué es Minimax?
-- Conceptos fundamentales (Jugador MAX/MIN, árbol de juego, función de evaluación)
-- Implementación básica de Minimax
-- Ejemplo: Tres en Raya (Tic-Tac-Toe)
-- Optimización: Poda Alfa-Beta
-- Comparación: Minimax vs Minimax con Poda Alfa-Beta
-- Aplicaciones y limitaciones
-
-### [03-q-learning.ipynb](07-algoritmos-ml/03-q-learning.ipynb)
-- ¿Qué es Q-Learning?
-- Conceptos fundamentales (Agente, Ambiente, Estado, Acción, Recompensa, Q-Value)
-- Ecuación de actualización Q-Learning
-- Implementación de agente Q-Learning
-- Ejemplo: Laberinto Simple
-- Visualización de la tabla Q
-- Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
-- Ventajas, desventajas y aplicaciones
-
-### [04-k-nearest-neighbors.ipynb](07-algoritmos-ml/04-k-nearest-neighbors.ipynb)
+#### [02-k-nearest-neighbors.ipynb](07-algoritmos-ml/01-supervisados/02-k-nearest-neighbors.ipynb)
 - ¿Qué es KNN?
 - Conceptos fundamentales (K, Distancia, Votación, Promedio)
 - Implementación básica de KNN para clasificación y regresión
@@ -275,7 +260,7 @@ Este repositorio contiene cheat sheets organizados por tecnología en formato Ju
 - Métricas de distancia (Euclidiana, Manhattan, Minkowski)
 - Ventajas, desventajas y aplicaciones
 
-### [05-naive-bayes.ipynb](07-algoritmos-ml/05-naive-bayes.ipynb)
+#### [03-naive-bayes.ipynb](07-algoritmos-ml/01-supervisados/03-naive-bayes.ipynb)
 - ¿Qué es Naive Bayes?
 - Teorema de Bayes y supuesto de independencia
 - Implementación básica de Naive Bayes
@@ -284,7 +269,7 @@ Este repositorio contiene cheat sheets organizados por tecnología en formato Ju
 - Comparación de variantes
 - Ventajas, desventajas y aplicaciones
 
-### [06-regresion-lineal.ipynb](07-algoritmos-ml/06-regresion-lineal.ipynb)
+#### [04-regresion-lineal.ipynb](07-algoritmos-ml/01-supervisados/04-regresion-lineal.ipynb)
 - ¿Qué es Regresión Lineal?
 - Ecuación de regresión lineal
 - Método 1: Ecuación Normal (solución analítica)
@@ -294,16 +279,7 @@ Este repositorio contiene cheat sheets organizados por tecnología en formato Ju
 - Visualización de convergencia
 - Ventajas, desventajas y aplicaciones
 
-### [07-k-means.ipynb](07-algoritmos-ml/07-k-means.ipynb)
-- ¿Qué es K-Means?
-- Conceptos fundamentales (K, Centroide, Inicialización, Asignación, Actualización)
-- Algoritmo K-Means y función de costo (Inercia)
-- Implementación básica de K-Means
-- Selección del número óptimo de clusters (Método del codo, Silhouette Score)
-- Convergencia del algoritmo
-- Ventajas, desventajas y aplicaciones
-
-### [08-perceptron.ipynb](07-algoritmos-ml/08-perceptron.ipynb)
+#### [05-perceptron.ipynb](07-algoritmos-ml/01-supervisados/05-perceptron.ipynb)
 - ¿Qué es el Perceptrón?
 - Conceptos fundamentales (Neurona artificial, Pesos, Bias, Función de activación)
 - Modelo del Perceptrón y algoritmo de aprendizaje
@@ -312,6 +288,40 @@ Este repositorio contiene cheat sheets organizados por tecnología en formato Ju
 - Limitaciones (problema XOR)
 - Extensión a Perceptrón Multicapa (MLP)
 - Ventajas, desventajas y aplicaciones
+
+### 🔍 02 - No Supervisados
+
+#### [01-k-means.ipynb](07-algoritmos-ml/02-no-supervisados/01-k-means.ipynb)
+- ¿Qué es K-Means?
+- Conceptos fundamentales (K, Centroide, Inicialización, Asignación, Actualización)
+- Algoritmo K-Means y función de costo (Inercia)
+- Implementación básica de K-Means
+- Selección del número óptimo de clusters (Método del codo, Silhouette Score)
+- Convergencia del algoritmo
+- Ventajas, desventajas y aplicaciones
+
+### 🎮 03 - Refuerzo
+
+#### [01-q-learning.ipynb](07-algoritmos-ml/03-refuerzo/01-q-learning.ipynb)
+- ¿Qué es Q-Learning?
+- Conceptos fundamentales (Agente, Ambiente, Estado, Acción, Recompensa, Q-Value)
+- Ecuación de actualización Q-Learning
+- Implementación de agente Q-Learning
+- Ejemplo: Laberinto Simple
+- Visualización de la tabla Q
+- Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
+- Ventajas, desventajas y aplicaciones
+
+### 🎯 04 - Otros
+
+#### [01-minimax.ipynb](07-algoritmos-ml/04-otros/01-minimax.ipynb)
+- ¿Qué es Minimax?
+- Conceptos fundamentales (Jugador MAX/MIN, árbol de juego, función de evaluación)
+- Implementación básica de Minimax
+- Ejemplo: Tres en Raya (Tic-Tac-Toe)
+- Optimización: Poda Alfa-Beta
+- Comparación: Minimax vs Minimax con Poda Alfa-Beta
+- Aplicaciones y limitaciones
 
 ## 🤖 08 - IA Moderna
 
