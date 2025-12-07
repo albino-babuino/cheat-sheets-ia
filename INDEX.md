@@ -290,6 +290,61 @@ Este repositorio contiene cheat sheets organizados por tecnología en formato Ju
 - Extensión a Perceptrón Multicapa (MLP)
 - Ventajas, desventajas y aplicaciones
 
+## 📊 07 - Estadística
+
+### [01-estadistica-basica.ipynb](07-estadistica/01-estadistica-basica.ipynb)
+- Población vs Muestra
+- Tipos de datos (cualitativos, cuantitativos)
+- Medidas de tendencia central
+- Medidas de dispersión
+- Distribuciones de probabilidad
+- Teorema del Límite Central
+- Intervalos de confianza
+- Pruebas de hipótesis
+- Correlación y regresión
+
+### [02-estadistica-aplicada-ia.ipynb](07-estadistica/02-estadistica-aplicada-ia.ipynb)
+- Estadística descriptiva con visualizaciones
+- Distribuciones de probabilidad para ML
+- Correlación y covarianza
+- Detección de outliers
+- Intervalos de confianza
+- Pruebas de hipótesis
+- Normalización y estandarización
+- Aplicaciones en ML/IA
+
+## 🤖 08 - IA Moderna
+
+### [01-redes-neuronales-basicas.ipynb](08-ia-moderna/01-redes-neuronales-basicas.ipynb)
+- Perceptrón Multicapa (MLP) desde cero
+- Forward propagation y backpropagation
+- Funciones de activación
+- Ejemplo práctico: Clasificación binaria
+
+### [02-deep-learning-tensorflow.ipynb](08-ia-moderna/02-deep-learning-tensorflow.ipynb)
+- Construcción de modelos con Keras
+- Capas y optimizadores
+- Callbacks y early stopping
+- Transfer learning
+
+### [03-transformers-nlp.ipynb](08-ia-moderna/03-transformers-nlp.ipynb)
+- Arquitectura Transformer
+- Attention mechanism
+- Modelos pre-entrenados
+- Hugging Face Transformers
+
+### [04-cnn-convolucional.ipynb](08-ia-moderna/04-cnn-convolucional.ipynb)
+- Operación de convolución
+- Pooling (Max y Average)
+- CNN con TensorFlow/Keras
+- Clasificación de imágenes
+
+### [05-rnn-lstm.ipynb](08-ia-moderna/05-rnn-lstm.ipynb)
+- RNN básica desde cero
+- LSTM y GRU
+- Predicción de series temporales
+- Comparación de arquitecturas
+
 ## 🚀 Uso
 
 Para usar estos notebooks, necesitas tener instalado:
@@ -300,6 +355,8 @@ Para usar estos notebooks, necesitas tener instalado:
 - Matplotlib
 - Scikit-learn
 - Seaborn (para algunas visualizaciones)
+- TensorFlow (opcional, para notebooks de IA moderna)
+- Transformers (opcional, para notebooks de NLP)
 
 ### Instalación rápida con uv
 

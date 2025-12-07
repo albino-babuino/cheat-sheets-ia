@@ -1,12 +1,13 @@
-# 📚 Cheat Sheets - Python, NumPy, Pandas, Matplotlib, Scikit-learn y Algoritmos ML
+# 📚 Cheat Sheets - Python, Data Science, Machine Learning e IA Moderna
 
-Repositorio completo de **cheat sheets** (hojas de referencia rápida) en formato Jupyter Notebook para **Python**, **NumPy**, **Pandas**, **Matplotlib**, **Scikit-learn** y **Algoritmos Clásicos de Machine Learning**. Todos los notebooks están en español y organizados numéricamente para facilitar el aprendizaje progresivo.
+Repositorio completo de **cheat sheets** (hojas de referencia rápida) en formato Jupyter Notebook para **Python**, **NumPy**, **Pandas**, **Matplotlib**, **Scikit-learn**, **Algoritmos Clásicos de ML**, **Estadística** e **IA Moderna** (Deep Learning, Transformers, CNN, RNN/LSTM). Todos los notebooks están en español y organizados numéricamente para facilitar el aprendizaje progresivo.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![NumPy](https://img.shields.io/badge/NumPy-1.24+-green.svg)
 ![Pandas](https://img.shields.io/badge/Pandas-2.0+-orange.svg)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.7+-blue.svg)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.3+-orange.svg)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0+-orange.svg)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)
 
 ## 📖 Contenido
@@ -257,6 +258,70 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Limitaciones (problema XOR)
    - Base para redes neuronales multicapa
 
+### 📊 07 - Estadística (2 notebooks)
+
+1. **[01-estadistica-basica.ipynb](07-estadistica/01-estadistica-basica.ipynb)** - Teoría Estadística Básica
+   - Población vs Muestra
+   - Tipos de datos (cualitativos, cuantitativos)
+   - Medidas de tendencia central (media, mediana, moda)
+   - Medidas de dispersión (varianza, desviación estándar, IQR)
+   - Distribuciones de probabilidad (normal, uniforme, exponencial, etc.)
+   - Teorema del Límite Central
+   - Intervalos de confianza
+   - Pruebas de hipótesis
+   - Correlación y regresión
+
+2. **[02-estadistica-aplicada-ia.ipynb](07-estadistica/02-estadistica-aplicada-ia.ipynb)** - Estadística Aplicada a IA
+   - Estadística descriptiva con visualizaciones
+   - Distribuciones de probabilidad para ML
+   - Correlación y covarianza (matrices de correlación)
+   - Detección de valores atípicos (outliers)
+   - Intervalos de confianza
+   - Pruebas de hipótesis (t-test, normalidad)
+   - Normalización y estandarización para ML
+   - Teorema del Límite Central aplicado
+
+### 🤖 08 - IA Moderna (5 notebooks)
+
+1. **[01-redes-neuronales-basicas.ipynb](08-ia-moderna/01-redes-neuronales-basicas.ipynb)** - Redes Neuronales Básicas
+   - Perceptrón Multicapa (MLP) desde cero
+   - Forward propagation y backpropagation
+   - Funciones de activación (sigmoid, ReLU, tanh, Leaky ReLU)
+   - Ejemplo práctico: Clasificación binaria
+   - Visualización de fronteras de decisión
+
+2. **[02-deep-learning-tensorflow.ipynb](08-ia-moderna/02-deep-learning-tensorflow.ipynb)** - Deep Learning con TensorFlow/Keras
+   - Construcción de modelos con Keras
+   - Capas densas, dropout, batch normalization
+   - Optimizadores (Adam, SGD, RMSprop)
+   - Callbacks y early stopping
+   - Guardar y cargar modelos
+   - Transfer learning
+
+3. **[03-transformers-nlp.ipynb](08-ia-moderna/03-transformers-nlp.ipynb)** - Transformers y NLP Moderno
+   - Arquitectura Transformer
+   - Attention mechanism y self-attention
+   - Modelos pre-entrenados (BERT, GPT, etc.)
+   - Fine-tuning de modelos
+   - Hugging Face Transformers
+   - Aplicaciones en NLP
+
+4. **[04-cnn-convolucional.ipynb](08-ia-moderna/04-cnn-convolucional.ipynb)** - Redes Neuronales Convolucionales (CNN)
+   - Operación de convolución desde cero
+   - Pooling (Max Pooling y Average Pooling)
+   - Construcción de CNN con TensorFlow/Keras
+   - Clasificación de imágenes (MNIST)
+   - Visualización de feature maps
+   - Aplicaciones en visión por computadora
+
+5. **[05-rnn-lstm.ipynb](08-ia-moderna/05-rnn-lstm.ipynb)** - Redes Neuronales Recurrentes (RNN) y LSTM
+   - RNN básica desde cero
+   - LSTM con TensorFlow/Keras
+   - GRU (Gated Recurrent Unit)
+   - Predicción de series temporales
+   - Comparación RNN vs LSTM vs GRU
+   - Aplicaciones en secuencias y NLP
+
 ## 🚀 Inicio Rápido
 
 ### Requisitos Previos
@@ -347,6 +412,15 @@ cheat-sheets-ia/
 │   ├── 06-regresion-lineal.ipynb
 │   ├── 07-k-means.ipynb
 │   └── 08-perceptron.ipynb
+├── 07-estadistica/                  # Estadística
+│   ├── 01-estadistica-basica.ipynb
+│   └── 02-estadistica-aplicada-ia.ipynb
+├── 08-ia-moderna/                   # IA Moderna
+│   ├── 01-redes-neuronales-basicas.ipynb
+│   ├── 02-deep-learning-tensorflow.ipynb
+│   ├── 03-transformers-nlp.ipynb
+│   ├── 04-cnn-convolucional.ipynb
+│   └── 05-rnn-lstm.ipynb
 ├── .venv/                           # Entorno virtual
 ├── INDEX.md                         # Índice detallado
 ├── README.md                        # Este archivo
@@ -363,12 +437,13 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 
 ## 📝 Características
 
-- ✅ **35 notebooks completos** con ejemplos prácticos
+- ✅ **42 notebooks completos** con ejemplos prácticos
 - ✅ **Todos los notebooks probados** y funcionando correctamente
 - ✅ **Orden lógico de aprendizaje** con numeración
 - ✅ **Documentación en español**
 - ✅ **Ejemplos ejecutables** sin errores
 - ✅ **Kernel configurado automáticamente**
+- ✅ **Contenido de IA moderna**: Transformers, CNN, RNN/LSTM, Deep Learning
 
 ## 🎯 Orden Recomendado de Aprendizaje
 
@@ -378,8 +453,13 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 3. Sigue con **02 - NumPy** (01-04)
 4. Continúa con **03 - Pandas** (01-04)
 5. Sigue con **04 - Matplotlib** (01-04) - Visualización de datos
-6. Continúa con **05 - Scikit-learn** (01-05) - Machine Learning
-7. Explora **06 - Algoritmos Clásicos de ML** (01-08) - Algoritmos fundamentales implementados desde cero
+6. Continúa con **07 - Estadística** (01-02) - Fundamentos estadísticos
+7. Sigue con **05 - Scikit-learn** (01-05) - Machine Learning
+8. Explora **06 - Algoritmos Clásicos de ML** (01-08) - Algoritmos fundamentales implementados desde cero
+9. Avanza a **08 - IA Moderna** (01-05) - Deep Learning y arquitecturas modernas
+
+### Para Usuarios Avanzados
+- **08 - IA Moderna**: Transformers, CNN, RNN/LSTM, Deep Learning con TensorFlow
 
 ### Para Usuarios Intermedios
 - Puedes saltar directamente a la sección que necesites
@@ -392,6 +472,8 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 - [Documentación oficial de Pandas](https://pandas.pydata.org/docs/)
 - [Documentación oficial de Matplotlib](https://matplotlib.org/stable/)
 - [Documentación oficial de Scikit-learn](https://scikit-learn.org/stable/)
+- [TensorFlow Documentation](https://www.tensorflow.org/api_docs)
+- [Hugging Face Transformers](https://huggingface.co/docs/transformers/)
 - [Reinforcement Learning - OpenAI Spinning Up](https://spinningup.openai.com/)
 - [Teoría de Juegos - Stanford](https://web.stanford.edu/~jdlevin/Econ%20202/Game%20Theory.pdf)
 
