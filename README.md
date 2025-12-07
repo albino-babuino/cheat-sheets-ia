@@ -154,28 +154,34 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
 
 1. **[01-scikit-learn-basics.ipynb](05-scikit-learn/01-scikit-learn-basics.ipynb)** - Fundamentos básicos
    - Importar Scikit-learn
-   - Estructura de datos
-   - Conceptos básicos de Machine Learning
+   - Datasets integrados (iris, wine, digits, diabetes, etc.)
+   - Estructura básica de trabajo con modelos
+   - Flujo completo: carga → división → entrenamiento → predicción → evaluación
 
 2. **[02-scikit-learn-preprocessing.ipynb](05-scikit-learn/02-scikit-learn-preprocessing.ipynb)** - Preprocesamiento
-   - Normalización y estandarización
-   - Codificación de variables categóricas
-   - Manejo de valores faltantes
+   - Escalado de datos (StandardScaler, MinMaxScaler, RobustScaler, Normalizer)
+   - Codificación de variables categóricas (LabelEncoder, OneHotEncoder, OrdinalEncoder)
+   - Manejo de valores faltantes (SimpleImputer)
+   - Transformaciones polinómicas (PolynomialFeatures)
+   - Pipelines de preprocesamiento
 
 3. **[03-scikit-learn-supervised-learning.ipynb](05-scikit-learn/03-scikit-learn-supervised-learning.ipynb)** - Aprendizaje supervisado
-   - Clasificación
-   - Regresión
-   - Modelos principales
+   - **Clasificación**: LogisticRegression, DecisionTree, RandomForest, SVM, KNN, Naive Bayes, Gradient Boosting
+   - **Regresión**: LinearRegression, Ridge, Lasso, DecisionTree, RandomForest, SVR, KNN
+   - Parámetros importantes y personalización de modelos
 
 4. **[04-scikit-learn-unsupervised-learning.ipynb](05-scikit-learn/04-scikit-learn-unsupervised-learning.ipynb)** - Aprendizaje no supervisado
-   - Clustering
-   - Reducción de dimensionalidad
-   - Técnicas principales
+   - **Clustering**: K-Means, DBSCAN, Clustering Jerárquico Aglomerativo
+   - **Reducción de dimensionalidad**: PCA, TruncatedSVD, NMF
+   - t-SNE para visualización
+   - Selección del número óptimo de componentes
 
 5. **[05-scikit-learn-model-evaluation.ipynb](05-scikit-learn/05-scikit-learn-model-evaluation.ipynb)** - Evaluación de modelos
-   - Métricas de clasificación
-   - Métricas de regresión
-   - Validación cruzada
+   - Métricas de clasificación (accuracy, precision, recall, F1, matriz de confusión)
+   - Métricas de regresión (MSE, RMSE, MAE, R²)
+   - Validación cruzada (K-Fold, Stratified K-Fold)
+   - Búsqueda de hiperparámetros (GridSearchCV, RandomizedSearchCV)
+   - Curvas ROC y AUC
 
 ## 🚀 Inicio Rápido
 
@@ -273,7 +279,7 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 
 ## 📝 Características
 
-- ✅ **27 notebooks completos** con ejemplos prácticos
+- ✅ **31 notebooks completos** con ejemplos prácticos
 - ✅ **Todos los notebooks probados** y funcionando correctamente
 - ✅ **Orden lógico de aprendizaje** con numeración
 - ✅ **Documentación en español**
