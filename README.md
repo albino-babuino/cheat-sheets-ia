@@ -1,6 +1,6 @@
-# 📚 Cheat Sheets - Python, NumPy, Pandas, Matplotlib y Scikit-learn
+# 📚 Cheat Sheets - Python, NumPy, Pandas, Matplotlib, Scikit-learn y Algoritmos ML
 
-Repositorio completo de **cheat sheets** (hojas de referencia rápida) en formato Jupyter Notebook para **Python**, **NumPy**, **Pandas**, **Matplotlib** y **Scikit-learn**. Todos los notebooks están en español y organizados numéricamente para facilitar el aprendizaje progresivo.
+Repositorio completo de **cheat sheets** (hojas de referencia rápida) en formato Jupyter Notebook para **Python**, **NumPy**, **Pandas**, **Matplotlib**, **Scikit-learn** y **Algoritmos Clásicos de Machine Learning**. Todos los notebooks están en español y organizados numéricamente para facilitar el aprendizaje progresivo.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![NumPy](https://img.shields.io/badge/NumPy-1.24+-green.svg)
@@ -313,7 +313,7 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 
 ## 📝 Características
 
-- ✅ **34 notebooks completos** con ejemplos prácticos
+- ✅ **29 notebooks completos** con ejemplos prácticos
 - ✅ **Todos los notebooks probados** y funcionando correctamente
 - ✅ **Orden lógico de aprendizaje** con numeración
 - ✅ **Documentación en español**
@@ -342,6 +342,8 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 - [Documentación oficial de Pandas](https://pandas.pydata.org/docs/)
 - [Documentación oficial de Matplotlib](https://matplotlib.org/stable/)
 - [Documentación oficial de Scikit-learn](https://scikit-learn.org/stable/)
+- [Reinforcement Learning - OpenAI Spinning Up](https://spinningup.openai.com/)
+- [Teoría de Juegos - Stanford](https://web.stanford.edu/~jdlevin/Econ%20202/Game%20Theory.pdf)
 
 ## 🤝 Contribuciones
 
