@@ -1,13 +1,41 @@
-# 📚 Cheat Sheets - Python, NumPy y Pandas
+# 📚 Cheat Sheets - Python, NumPy, Pandas y Matplotlib
 
-Repositorio completo de **cheat sheets** (hojas de referencia rápida) en formato Jupyter Notebook para **Python**, **NumPy** y **Pandas**. Todos los notebooks están en español y organizados numéricamente para facilitar el aprendizaje progresivo.
+Repositorio completo de **cheat sheets** (hojas de referencia rápida) en formato Jupyter Notebook para **Python**, **NumPy**, **Pandas** y **Matplotlib**. Todos los notebooks están en español y organizados numéricamente para facilitar el aprendizaje progresivo.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![NumPy](https://img.shields.io/badge/NumPy-1.24+-green.svg)
 ![Pandas](https://img.shields.io/badge/Pandas-2.0+-orange.svg)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3.7+-blue.svg)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)
 
 ## 📖 Contenido
+
+### 🔧 00 - Básicos (5 notebooks)
+
+1. **[01-entornos-virtuales-uv.ipynb](00-basicos/01-entornos-virtuales-uv.ipynb)** - Entornos virtuales con uv
+   - Instalación y configuración
+   - Crear y gestionar entornos virtuales
+   - Instalar paquetes con uv
+
+2. **[02-gestion-paquetes-pip.ipynb](00-basicos/02-gestion-paquetes-pip.ipynb)** - Gestión de paquetes con pip
+   - Instalar, actualizar y desinstalar paquetes
+   - Gestionar requirements.txt
+   - Cache y configuración
+
+3. **[03-comandos-terminal-bash.ipynb](00-basicos/03-comandos-terminal-bash.ipynb)** - Comandos de terminal/bash
+   - Navegación y gestión de archivos
+   - Permisos y variables de entorno
+   - Redirección y pipes
+
+4. **[04-git-basico.ipynb](00-basicos/04-git-basico.ipynb)** - Git básico
+   - Control de versiones
+   - Ramas, merge y remotos
+   - Flujo de trabajo básico
+
+5. **[05-markdown.ipynb](00-basicos/05-markdown.ipynb)** - Sintaxis Markdown
+   - Formateo de texto
+   - Listas, tablas y código
+   - Enlaces e imágenes
 
 ### 🐍 01 - Python (4 notebooks)
 
@@ -83,6 +111,44 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Análisis descriptivo
    - Manejo de valores faltantes
 
+### 📊 04 - Matplotlib (4 notebooks)
+
+1. **[01-matplotlib-basics.ipynb](04-matplotlib/01-matplotlib-basics.ipynb)** - Fundamentos básicos
+   - Importar Matplotlib
+   - Primer gráfico básico
+   - Agregar títulos y etiquetas
+   - Múltiples líneas en un gráfico
+   - Interface orientada a objetos (OO)
+   - Guardar gráficos
+
+2. **[02-matplotlib-customization.ipynb](04-matplotlib/02-matplotlib-customization.ipynb)** - Personalización
+   - Colores (nombre, hexadecimal, RGB/RGBA)
+   - Estilos de línea
+   - Marcadores
+   - Combinando estilos
+   - Ancho de línea y transparencia
+   - Personalizar ejes
+   - Estilos predefinidos
+
+3. **[03-matplotlib-plot-types.ipynb](04-matplotlib/03-matplotlib-plot-types.ipynb)** - Tipos de gráficos
+   - Gráfico de barras (verticales y horizontales)
+   - Gráfico de dispersión (Scatter)
+   - Histogramas
+   - Gráfico de área (Area Plot)
+   - Gráfico de caja (Box Plot)
+   - Gráfico de violín
+   - Gráfico de pastel (Pie Chart)
+   - Gráfico de barras agrupadas
+
+4. **[04-matplotlib-advanced.ipynb](04-matplotlib/04-matplotlib-advanced.ipynb)** - Gráficos avanzados
+   - Subplots
+   - Subplots con diferentes tamaños (GridSpec)
+   - Múltiples ejes (Twin Axes)
+   - Gráficos 3D (superficie, línea, dispersión)
+   - Anotaciones y texto
+   - Líneas de referencia y regiones
+   - Configuración global (rcParams)
+
 ## 🚀 Inicio Rápido
 
 ### Requisitos Previos
@@ -114,7 +180,7 @@ source .venv/bin/activate  # Linux/Mac
 3. **Instalar dependencias:**
 ```bash
 # Con uv
-uv pip install jupyter numpy pandas
+uv pip install jupyter numpy pandas matplotlib
 
 # O con pip
 pip install -r requirements.txt
@@ -131,6 +197,12 @@ jupyter lab
 
 ```
 cheat-sheets-ia/
+├── 00-basicos/                      # Conocimientos básicos
+│   ├── 01-entornos-virtuales-uv.ipynb
+│   ├── 02-gestion-paquetes-pip.ipynb
+│   ├── 03-comandos-terminal-bash.ipynb
+│   ├── 04-git-basico.ipynb
+│   └── 05-markdown.ipynb
 ├── 01-python/                       # Notebooks de Python
 │   ├── 01-python-basics.ipynb
 │   ├── 02-python-control-flow.ipynb
@@ -146,6 +218,11 @@ cheat-sheets-ia/
 │   ├── 02-pandas-indexing-selection.ipynb
 │   ├── 03-pandas-data-manipulation.ipynb
 │   └── 04-pandas-io-analysis.ipynb
+├── 04-matplotlib/                   # Notebooks de Matplotlib
+│   ├── 01-matplotlib-basics.ipynb
+│   ├── 02-matplotlib-customization.ipynb
+│   ├── 03-matplotlib-plot-types.ipynb
+│   └── 04-matplotlib-advanced.ipynb
 ├── .venv/                           # Entorno virtual
 ├── INDEX.md                         # Índice detallado
 ├── README.md                        # Este archivo
@@ -162,7 +239,7 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 
 ## 📝 Características
 
-- ✅ **12 notebooks completos** con ejemplos prácticos
+- ✅ **16 notebooks completos** con ejemplos prácticos
 - ✅ **Todos los notebooks probados** y funcionando correctamente
 - ✅ **Orden lógico de aprendizaje** con numeración
 - ✅ **Documentación en español**
@@ -172,9 +249,11 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 ## 🎯 Orden Recomendado de Aprendizaje
 
 ### Para Principiantes
-1. Empieza con **01 - Python** (01-04)
-2. Continúa con **02 - NumPy** (01-04)
-3. Finaliza con **03 - Pandas** (01-04)
+1. Empieza con **00 - Básicos** (01-05) - Configuración y herramientas esenciales
+2. Continúa con **01 - Python** (01-04)
+3. Sigue con **02 - NumPy** (01-04)
+4. Continúa con **03 - Pandas** (01-04)
+5. Finaliza con **04 - Matplotlib** (01-04) - Visualización de datos
 
 ### Para Usuarios Intermedios
 - Puedes saltar directamente a la sección que necesites
@@ -185,6 +264,7 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 - [Documentación oficial de Python](https://docs.python.org/es/3/)
 - [Documentación oficial de NumPy](https://numpy.org/doc/stable/)
 - [Documentación oficial de Pandas](https://pandas.pydata.org/docs/)
+- [Documentación oficial de Matplotlib](https://matplotlib.org/stable/)
 
 ## 🤝 Contribuciones
 
