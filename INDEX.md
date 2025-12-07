@@ -1,6 +1,6 @@
-# Índice de Cheat Sheets - Python, NumPy, Pandas, Matplotlib y Scikit-learn
+# Índice de Cheat Sheets - Python, Data Science, Machine Learning e IA Moderna
 
-Este repositorio contiene cheat sheets organizados por tecnología en formato Jupyter Notebook (.ipynb), ordenados numéricamente para seguir un orden lógico de aprendizaje.
+Este repositorio contiene **42 cheat sheets** organizados por tecnología en formato Jupyter Notebook (.ipynb), ordenados numéricamente para seguir un orden lógico de aprendizaje. Incluye Python, NumPy, Pandas, Matplotlib, Scikit-learn, Algoritmos Clásicos de ML, Estadística e IA Moderna (Deep Learning, Transformers, CNN, RNN/LSTM).
 
 ## 🔧 01 - Básicos
 
@@ -323,37 +323,52 @@ Los algoritmos están organizados por tipo de aprendizaje:
 - Comparación: Minimax vs Minimax con Poda Alfa-Beta
 - Aplicaciones y limitaciones
 
-## 🤖 09 - IA Moderna
+## 🤖 09 - IA Moderna (5 notebooks)
 
 ### [09.01-redes-neuronales-basicas.ipynb](09-ia-moderna/09.01-redes-neuronales-basicas.ipynb)
 - Perceptrón Multicapa (MLP) desde cero
 - Forward propagation y backpropagation
-- Funciones de activación
+- Funciones de activación (sigmoid, ReLU, tanh, Leaky ReLU)
 - Ejemplo práctico: Clasificación binaria
+- Visualización de fronteras de decisión
+- Entrenamiento y optimización
 
 ### [09.02-deep-learning-tensorflow.ipynb](09-ia-moderna/09.02-deep-learning-tensorflow.ipynb)
 - Construcción de modelos con Keras
-- Capas y optimizadores
+- Capas densas, dropout, batch normalization
+- Optimizadores (Adam, SGD, RMSprop)
 - Callbacks y early stopping
+- Guardar y cargar modelos
 - Transfer learning
+- Clasificación de imágenes (MNIST)
 
 ### [09.03-transformers-nlp.ipynb](09-ia-moderna/09.03-transformers-nlp.ipynb)
 - Arquitectura Transformer
-- Attention mechanism
-- Modelos pre-entrenados
+- Attention mechanism y self-attention
+- Modelos pre-entrenados (BERT, GPT, etc.)
+- Fine-tuning de modelos
 - Hugging Face Transformers
+- Análisis de sentimiento
+- Generación de texto
+- Traducción automática
 
 ### [09.04-cnn-convolucional.ipynb](09-ia-moderna/09.04-cnn-convolucional.ipynb)
-- Operación de convolución
-- Pooling (Max y Average)
-- CNN con TensorFlow/Keras
-- Clasificación de imágenes
+- Operación de convolución desde cero
+- Pooling (Max Pooling y Average Pooling)
+- Construcción de CNN con TensorFlow/Keras
+- Clasificación de imágenes (MNIST)
+- Visualización de feature maps
+- Arquitecturas CNN típicas
+- Aplicaciones en visión por computadora
 
 ### [09.05-rnn-lstm.ipynb](09-ia-moderna/09.05-rnn-lstm.ipynb)
 - RNN básica desde cero
-- LSTM y GRU
+- LSTM con TensorFlow/Keras
+- GRU (Gated Recurrent Unit)
 - Predicción de series temporales
-- Comparación de arquitecturas
+- Comparación RNN vs LSTM vs GRU
+- Aplicaciones en secuencias y NLP
+- Normalización de datos para series temporales
 
 ## 🚀 Uso
 
@@ -365,8 +380,8 @@ Para usar estos notebooks, necesitas tener instalado:
 - Matplotlib
 - Scikit-learn
 - Seaborn (para algunas visualizaciones)
-- TensorFlow (opcional, para notebooks de IA moderna)
-- Transformers (opcional, para notebooks de NLP)
+- TensorFlow (opcional, para notebooks de IA moderna - 09.02, 09.04, 09.05)
+- Transformers y PyTorch (opcional, para notebooks de NLP - 09.03)
 
 ### Instalación rápida con uv
 
