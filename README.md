@@ -28,10 +28,13 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Permisos y variables de entorno
    - Redirección y pipes
 
-4. **[04-git-basico.ipynb](00-basicos/04-git-basico.ipynb)** - Git básico
-   - Control de versiones
-   - Ramas, merge y remotos
-   - Flujo de trabajo básico
+4. **[04-git-basico.ipynb](00-basicos/04-git-basico.ipynb)** - Git y GitHub
+   - Control de versiones básico y avanzado
+   - Ramas, merge, rebase y remotos
+   - Stash, tags y resolución de conflictos
+   - GitHub: Pull Requests, Issues, autenticación
+   - Colaboración con forks y ramas compartidas
+   - Mejores prácticas y resolución de problemas
 
 5. **[05-markdown.ipynb](00-basicos/05-markdown.ipynb)** - Sintaxis Markdown
    - Formateo de texto
