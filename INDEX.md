@@ -203,7 +203,7 @@ Este repositorio contiene cheat sheets organizados por tecnología en formato Ju
 - Búsqueda de hiperparámetros (GridSearchCV, RandomizedSearchCV)
 - Curvas ROC y AUC
 
-## 🧠 06 - Algoritmos Clásicos de Machine Learning
+## 🧠 06 - Algoritmos Clásicos de Machine Learning (8 notebooks)
 
 ### [01-arboles-decision.ipynb](06-algoritmos-ml/01-arboles-decision.ipynb)
 - ¿Qué es un Árbol de Decisión?
@@ -232,6 +232,54 @@ Este repositorio contiene cheat sheets organizados por tecnología en formato Ju
 - Ejemplo: Laberinto Simple
 - Visualización de la tabla Q
 - Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
+- Ventajas, desventajas y aplicaciones
+
+### [04-k-nearest-neighbors.ipynb](06-algoritmos-ml/04-k-nearest-neighbors.ipynb)
+- ¿Qué es KNN?
+- Conceptos fundamentales (K, Distancia, Votación, Promedio)
+- Implementación básica de KNN para clasificación y regresión
+- KNN para Clasificación
+- KNN para Regresión
+- Efecto del valor de K
+- Métricas de distancia (Euclidiana, Manhattan, Minkowski)
+- Ventajas, desventajas y aplicaciones
+
+### [05-naive-bayes.ipynb](06-algoritmos-ml/05-naive-bayes.ipynb)
+- ¿Qué es Naive Bayes?
+- Teorema de Bayes y supuesto de independencia
+- Implementación básica de Naive Bayes
+- Tipos de Naive Bayes (Gaussian, Multinomial, Bernoulli)
+- Ejemplo de clasificación de texto
+- Comparación de variantes
+- Ventajas, desventajas y aplicaciones
+
+### [06-regresion-lineal.ipynb](06-algoritmos-ml/06-regresion-lineal.ipynb)
+- ¿Qué es Regresión Lineal?
+- Ecuación de regresión lineal
+- Método 1: Ecuación Normal (solución analítica)
+- Método 2: Gradiente Descendente
+- Regresión Lineal Simple
+- Regresión Lineal Múltiple
+- Visualización de convergencia
+- Ventajas, desventajas y aplicaciones
+
+### [07-k-means.ipynb](06-algoritmos-ml/07-k-means.ipynb)
+- ¿Qué es K-Means?
+- Conceptos fundamentales (K, Centroide, Inicialización, Asignación, Actualización)
+- Algoritmo K-Means y función de costo (Inercia)
+- Implementación básica de K-Means
+- Selección del número óptimo de clusters (Método del codo, Silhouette Score)
+- Convergencia del algoritmo
+- Ventajas, desventajas y aplicaciones
+
+### [08-perceptron.ipynb](06-algoritmos-ml/08-perceptron.ipynb)
+- ¿Qué es el Perceptrón?
+- Conceptos fundamentales (Neurona artificial, Pesos, Bias, Función de activación)
+- Modelo del Perceptrón y algoritmo de aprendizaje
+- Implementación básica del Perceptrón
+- Ejemplo de clasificación binaria
+- Limitaciones (problema XOR)
+- Extensión a Perceptrón Multicapa (MLP)
 - Ventajas, desventajas y aplicaciones
 
 ## 🚀 Uso

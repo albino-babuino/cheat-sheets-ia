@@ -186,7 +186,7 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Búsqueda de hiperparámetros (GridSearchCV, RandomizedSearchCV)
    - Curvas ROC y AUC
 
-### 🧠 06 - Algoritmos Clásicos de Machine Learning (3 notebooks)
+### 🧠 06 - Algoritmos Clásicos de Machine Learning (8 notebooks)
 
 1. **[01-arboles-decision.ipynb](06-algoritmos-ml/01-arboles-decision.ipynb)** - Árboles de Decisión
    - Conceptos fundamentales (Entropía, Ganancia de Información, Índice Gini)
@@ -212,6 +212,41 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Visualización de tabla Q y política aprendida
    - Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
    - Aplicaciones en juegos y robótica
+
+4. **[04-k-nearest-neighbors.ipynb](06-algoritmos-ml/04-k-nearest-neighbors.ipynb)** - K-Nearest Neighbors (KNN)
+   - Algoritmo lazy learning
+   - Implementación para clasificación y regresión
+   - Efecto del valor de K
+   - Métricas de distancia (Euclidiana, Manhattan, Minkowski)
+   - Ventajas y desventajas
+
+5. **[05-naive-bayes.ipynb](06-algoritmos-ml/05-naive-bayes.ipynb)** - Naive Bayes
+   - Teorema de Bayes y supuesto de independencia
+   - Implementación básica
+   - Variantes: Gaussian, Multinomial, Bernoulli
+   - Ejemplo de clasificación de texto
+   - Aplicaciones en NLP
+
+6. **[06-regresion-lineal.ipynb](06-algoritmos-ml/06-regresion-lineal.ipynb)** - Regresión Lineal desde Cero
+   - Ecuación de regresión lineal
+   - Método 1: Ecuación Normal (solución analítica)
+   - Método 2: Gradiente Descendente
+   - Regresión simple y múltiple
+   - Visualización de convergencia
+
+7. **[07-k-means.ipynb](06-algoritmos-ml/07-k-means.ipynb)** - K-Means desde Cero
+   - Algoritmo de clustering no supervisado
+   - Implementación básica
+   - Selección del número óptimo de clusters (Método del codo)
+   - Métrica Silhouette Score
+   - Convergencia del algoritmo
+
+8. **[08-perceptron.ipynb](06-algoritmos-ml/08-perceptron.ipynb)** - Perceptrón
+   - Unidad básica de redes neuronales
+   - Implementación básica
+   - Algoritmo de aprendizaje
+   - Limitaciones (problema XOR)
+   - Base para redes neuronales multicapa
 
 ## 🚀 Inicio Rápido
 
@@ -296,7 +331,12 @@ cheat-sheets-ia/
 ├── 06-algoritmos-ml/                # Algoritmos Clásicos de ML
 │   ├── 01-arboles-decision.ipynb
 │   ├── 02-minimax.ipynb
-│   └── 03-q-learning.ipynb
+│   ├── 03-q-learning.ipynb
+│   ├── 04-k-nearest-neighbors.ipynb
+│   ├── 05-naive-bayes.ipynb
+│   ├── 06-regresion-lineal.ipynb
+│   ├── 07-k-means.ipynb
+│   └── 08-perceptron.ipynb
 ├── .venv/                           # Entorno virtual
 ├── INDEX.md                         # Índice detallado
 ├── README.md                        # Este archivo
@@ -313,7 +353,7 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 
 ## 📝 Características
 
-- ✅ **29 notebooks completos** con ejemplos prácticos
+- ✅ **34 notebooks completos** con ejemplos prácticos
 - ✅ **Todos los notebooks probados** y funcionando correctamente
 - ✅ **Orden lógico de aprendizaje** con numeración
 - ✅ **Documentación en español**
@@ -329,7 +369,7 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 4. Continúa con **03 - Pandas** (01-04)
 5. Sigue con **04 - Matplotlib** (01-04) - Visualización de datos
 6. Continúa con **05 - Scikit-learn** (01-05) - Machine Learning
-7. Explora **06 - Algoritmos Clásicos de ML** (01-03) - Algoritmos fundamentales
+7. Explora **06 - Algoritmos Clásicos de ML** (01-08) - Algoritmos fundamentales implementados desde cero
 
 ### Para Usuarios Intermedios
 - Puedes saltar directamente a la sección que necesites
