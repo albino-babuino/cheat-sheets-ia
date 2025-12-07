@@ -214,7 +214,7 @@ source .venv/bin/activate  # Linux/Mac
 3. **Instalar dependencias:**
 ```bash
 # Con uv
-uv pip install jupyter numpy pandas matplotlib scikit-learn
+uv pip install -r requirements.txt
 
 # O con pip
 pip install -r requirements.txt
