@@ -186,6 +186,33 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Búsqueda de hiperparámetros (GridSearchCV, RandomizedSearchCV)
    - Curvas ROC y AUC
 
+### 🧠 06 - Algoritmos Clásicos de Machine Learning (3 notebooks)
+
+1. **[01-arboles-decision.ipynb](06-algoritmos-ml/01-arboles-decision.ipynb)** - Árboles de Decisión
+   - Conceptos fundamentales (Entropía, Ganancia de Información, Índice Gini)
+   - Implementación para clasificación y regresión
+   - Visualización de árboles de decisión
+   - Importancia de características
+   - Control de sobreajuste
+   - Parámetros importantes
+
+2. **[02-minimax.ipynb](06-algoritmos-ml/02-minimax.ipynb)** - Algoritmo Minimax
+   - Fundamentos de teoría de juegos
+   - Implementación básica de Minimax
+   - Ejemplo práctico: Tres en Raya
+   - Optimización con poda alfa-beta
+   - Comparación de rendimiento
+   - Aplicaciones y limitaciones
+
+3. **[03-q-learning.ipynb](06-algoritmos-ml/03-q-learning.ipynb)** - Q-Learning
+   - Fundamentos de Reinforcement Learning
+   - Ecuación de actualización Q-Learning
+   - Implementación de agente Q-Learning
+   - Ejemplo práctico: Laberinto
+   - Visualización de tabla Q y política aprendida
+   - Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
+   - Aplicaciones en juegos y robótica
+
 ## 🚀 Inicio Rápido
 
 ### Requisitos Previos
@@ -266,6 +293,10 @@ cheat-sheets-ia/
 │   ├── 03-scikit-learn-supervised-learning.ipynb
 │   ├── 04-scikit-learn-unsupervised-learning.ipynb
 │   └── 05-scikit-learn-model-evaluation.ipynb
+├── 06-algoritmos-ml/                # Algoritmos Clásicos de ML
+│   ├── 01-arboles-decision.ipynb
+│   ├── 02-minimax.ipynb
+│   └── 03-q-learning.ipynb
 ├── .venv/                           # Entorno virtual
 ├── INDEX.md                         # Índice detallado
 ├── README.md                        # Este archivo
@@ -282,7 +313,7 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 
 ## 📝 Características
 
-- ✅ **31 notebooks completos** con ejemplos prácticos
+- ✅ **34 notebooks completos** con ejemplos prácticos
 - ✅ **Todos los notebooks probados** y funcionando correctamente
 - ✅ **Orden lógico de aprendizaje** con numeración
 - ✅ **Documentación en español**
@@ -297,7 +328,8 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 3. Sigue con **02 - NumPy** (01-04)
 4. Continúa con **03 - Pandas** (01-04)
 5. Sigue con **04 - Matplotlib** (01-04) - Visualización de datos
-6. Finaliza con **05 - Scikit-learn** (01-05) - Machine Learning
+6. Continúa con **05 - Scikit-learn** (01-05) - Machine Learning
+7. Explora **06 - Algoritmos Clásicos de ML** (01-03) - Algoritmos fundamentales
 
 ### Para Usuarios Intermedios
 - Puedes saltar directamente a la sección que necesites

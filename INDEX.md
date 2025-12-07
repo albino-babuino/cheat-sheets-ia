@@ -203,6 +203,37 @@ Este repositorio contiene cheat sheets organizados por tecnología en formato Ju
 - Búsqueda de hiperparámetros (GridSearchCV, RandomizedSearchCV)
 - Curvas ROC y AUC
 
+## 🧠 06 - Algoritmos Clásicos de Machine Learning
+
+### [01-arboles-decision.ipynb](06-algoritmos-ml/01-arboles-decision.ipynb)
+- ¿Qué es un Árbol de Decisión?
+- Conceptos fundamentales (Entropía, Ganancia de Información, Índice Gini)
+- Árbol de Decisión para Clasificación
+- Árbol de Decisión para Regresión
+- Visualización de árboles
+- Importancia de características
+- Control de sobreajuste (Overfitting)
+- Parámetros importantes
+
+### [02-minimax.ipynb](06-algoritmos-ml/02-minimax.ipynb)
+- ¿Qué es Minimax?
+- Conceptos fundamentales (Jugador MAX/MIN, árbol de juego, función de evaluación)
+- Implementación básica de Minimax
+- Ejemplo: Tres en Raya (Tic-Tac-Toe)
+- Optimización: Poda Alfa-Beta
+- Comparación: Minimax vs Minimax con Poda Alfa-Beta
+- Aplicaciones y limitaciones
+
+### [03-q-learning.ipynb](06-algoritmos-ml/03-q-learning.ipynb)
+- ¿Qué es Q-Learning?
+- Conceptos fundamentales (Agente, Ambiente, Estado, Acción, Recompensa, Q-Value)
+- Ecuación de actualización Q-Learning
+- Implementación de agente Q-Learning
+- Ejemplo: Laberinto Simple
+- Visualización de la tabla Q
+- Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
+- Ventajas, desventajas y aplicaciones
+
 ## 🚀 Uso
 
 Para usar estos notebooks, necesitas tener instalado:
@@ -212,6 +243,7 @@ Para usar estos notebooks, necesitas tener instalado:
 - Pandas
 - Matplotlib
 - Scikit-learn
+- Seaborn (para algunas visualizaciones)
 
 ### Instalación rápida con uv
 
