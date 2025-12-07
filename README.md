@@ -150,7 +150,7 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Líneas de referencia y regiones
    - Configuración global (rcParams)
 
-### 🤖 05 - Scikit-learn (3 notebooks)
+### 🤖 05 - Scikit-learn (5 notebooks)
 
 1. **[01-scikit-learn-basics.ipynb](05-scikit-learn/01-scikit-learn-basics.ipynb)** - Fundamentos básicos
    - Importar Scikit-learn
@@ -166,6 +166,16 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Clasificación
    - Regresión
    - Modelos principales
+
+4. **[04-scikit-learn-unsupervised-learning.ipynb](05-scikit-learn/04-scikit-learn-unsupervised-learning.ipynb)** - Aprendizaje no supervisado
+   - Clustering
+   - Reducción de dimensionalidad
+   - Técnicas principales
+
+5. **[05-scikit-learn-model-evaluation.ipynb](05-scikit-learn/05-scikit-learn-model-evaluation.ipynb)** - Evaluación de modelos
+   - Métricas de clasificación
+   - Métricas de regresión
+   - Validación cruzada
 
 ## 🚀 Inicio Rápido
 
@@ -244,7 +254,9 @@ cheat-sheets-ia/
 ├── 05-scikit-learn/                 # Notebooks de Scikit-learn
 │   ├── 01-scikit-learn-basics.ipynb
 │   ├── 02-scikit-learn-preprocessing.ipynb
-│   └── 03-scikit-learn-supervised-learning.ipynb
+│   ├── 03-scikit-learn-supervised-learning.ipynb
+│   ├── 04-scikit-learn-unsupervised-learning.ipynb
+│   └── 05-scikit-learn-model-evaluation.ipynb
 ├── .venv/                           # Entorno virtual
 ├── INDEX.md                         # Índice detallado
 ├── README.md                        # Este archivo
@@ -261,7 +273,7 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 
 ## 📝 Características
 
-- ✅ **24 notebooks completos** con ejemplos prácticos
+- ✅ **26 notebooks completos** con ejemplos prácticos
 - ✅ **Todos los notebooks probados** y funcionando correctamente
 - ✅ **Orden lógico de aprendizaje** con numeración
 - ✅ **Documentación en español**
@@ -276,7 +288,7 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 3. Sigue con **02 - NumPy** (01-04)
 4. Continúa con **03 - Pandas** (01-04)
 5. Sigue con **04 - Matplotlib** (01-04) - Visualización de datos
-6. Finaliza con **05 - Scikit-learn** (01-03) - Machine Learning
+6. Finaliza con **05 - Scikit-learn** (01-05) - Machine Learning
 
 ### Para Usuarios Intermedios
 - Puedes saltar directamente a la sección que necesites
