@@ -1,0 +1,1 @@
+*.png\n*.jpg\n*.jpeg\n*.pdf\n*.svg\n*.gif\n# Archivos generados por notebooks\n**/grafico.*
