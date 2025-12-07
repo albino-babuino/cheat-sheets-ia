@@ -1,0 +1,50 @@
+Encontrados 43 notebooks
+
+[1/43] Ejecutando: 00-basicos/01-entornos-virtuales-uv.ipynb... ✓ OK
+[2/43] Ejecutando: 00-basicos/02-gestion-paquetes-pip.ipynb... ✓ OK
+[3/43] Ejecutando: 00-basicos/03-comandos-terminal-bash.ipynb... ✓ OK
+[4/43] Ejecutando: 00-basicos/04-git-basico.ipynb... ✓ OK
+[5/43] Ejecutando: 00-basicos/05-markdown.ipynb... ✓ OK
+[6/43] Ejecutando: 01-python/01-python-basics.ipynb... ✓ OK
+[7/43] Ejecutando: 01-python/02-python-control-flow.ipynb... ✓ OK
+[8/43] Ejecutando: 01-python/03-python-functions.ipynb... ✓ OK
+[9/43] Ejecutando: 01-python/04-python-classes-oop.ipynb... ✓ OK
+[10/43] Ejecutando: 01-python/05-python-modules-io.ipynb... ✓ OK
+[11/43] Ejecutando: 02-numpy/01-numpy-basics.ipynb... ✓ OK
+[12/43] Ejecutando: 02-numpy/02-numpy-operations.ipynb... ✓ OK
+[13/43] Ejecutando: 02-numpy/03-numpy-indexing-slicing.ipynb... ✓ OK
+[14/43] Ejecutando: 02-numpy/04-numpy-linear-algebra.ipynb... ✓ OK
+[15/43] Ejecutando: 03-pandas/01-pandas-dataframes-series.ipynb... ✓ OK
+[16/43] Ejecutando: 03-pandas/02-pandas-indexing-selection.ipynb... ✓ OK
+[17/43] Ejecutando: 03-pandas/03-pandas-data-manipulation.ipynb... ✓ OK
+[18/43] Ejecutando: 03-pandas/04-pandas-io-analysis.ipynb... ✓ OK
+[19/43] Ejecutando: 04-matplotlib/01-matplotlib-basics.ipynb... ✓ OK
+[20/43] Ejecutando: 04-matplotlib/02-matplotlib-customization.ipynb... ✓ OK
+[21/43] Ejecutando: 04-matplotlib/03-matplotlib-plot-types.ipynb... ✓ OK
+[22/43] Ejecutando: 04-matplotlib/04-matplotlib-advanced.ipynb... ✓ OK
+[23/43] Ejecutando: 05-estadistica/01-estadistica-basica.ipynb... ✓ OK
+[24/43] Ejecutando: 05-estadistica/02-estadistica-aplicada-ia.ipynb... ✓ OK
+[25/43] Ejecutando: 06-algoritmos-ml/07-k-means.ipynb... ✓ OK
+[26/43] Ejecutando: 06-scikit-learn/01-scikit-learn-basics.ipynb... ✓ OK
+[27/43] Ejecutando: 06-scikit-learn/02-scikit-learn-preprocessing.ipynb... ✓ OK
+[28/43] Ejecutando: 06-scikit-learn/03-scikit-learn-supervised-learning.ipynb... ✓ OK
+[29/43] Ejecutando: 06-scikit-learn/04-scikit-learn-unsupervised-learning.ipynb... ✓ OK
+[30/43] Ejecutando: 06-scikit-learn/05-scikit-learn-model-evaluation.ipynb... ✓ OK
+[31/43] Ejecutando: 07-algoritmos-ml/01-supervisados/01-arboles-decision.ipynb... ✓ OK
+[32/43] Ejecutando: 07-algoritmos-ml/01-supervisados/02-k-nearest-neighbors.ipynb... ✓ OK
+[33/43] Ejecutando: 07-algoritmos-ml/01-supervisados/03-naive-bayes.ipynb... ✓ OK
+[34/43] Ejecutando: 07-algoritmos-ml/01-supervisados/04-regresion-lineal.ipynb... ✓ OK
+[35/43] Ejecutando: 07-algoritmos-ml/01-supervisados/05-perceptron.ipynb... ✓ OK
+[36/43] Ejecutando: 07-algoritmos-ml/02-no-supervisados/01-k-means.ipynb... ✓ OK
+[37/43] Ejecutando: 07-algoritmos-ml/03-refuerzo/01-q-learning.ipynb... ✓ OK
+[38/43] Ejecutando: 07-algoritmos-ml/04-otros/01-minimax.ipynb... ✓ OK
+[39/43] Ejecutando: 08-ia-moderna/01-redes-neuronales-basicas.ipynb... ✓ OK
+[40/43] Ejecutando: 08-ia-moderna/02-deep-learning-tensorflow.ipynb... ✓ OK
+[41/43] Ejecutando: 08-ia-moderna/03-transformers-nlp.ipynb... ✓ OK
+[42/43] Ejecutando: 08-ia-moderna/04-cnn-convolucional.ipynb... ✓ OK
+[43/43] Ejecutando: 08-ia-moderna/05-rnn-lstm.ipynb... ✓ OK
+
+============================================================
+Resumen:
+  Exitosos: 43
+  Con errores: 0

@@ -12,24 +12,24 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
 
 ## 📖 Contenido
 
-### 🔧 00 - Básicos (5 notebooks)
+### 🔧 01 - Básicos (5 notebooks)
 
-1. **[01-entornos-virtuales-uv.ipynb](00-basicos/01-entornos-virtuales-uv.ipynb)** - Entornos virtuales con uv
+1. **[01.01-entornos-virtuales-uv.ipynb](01-basicos/01.01-entornos-virtuales-uv.ipynb)** - Entornos virtuales con uv
    - Instalación y configuración
    - Crear y gestionar entornos virtuales
    - Instalar paquetes con uv
 
-2. **[02-gestion-paquetes-pip.ipynb](00-basicos/02-gestion-paquetes-pip.ipynb)** - Gestión de paquetes con pip
+2. **[01.02-gestion-paquetes-pip.ipynb](01-basicos/01.02-gestion-paquetes-pip.ipynb)** - Gestión de paquetes con pip
    - Instalar, actualizar y desinstalar paquetes
    - Gestionar requirements.txt
    - Cache y configuración
 
-3. **[03-comandos-terminal-bash.ipynb](00-basicos/03-comandos-terminal-bash.ipynb)** - Comandos de terminal/bash
+3. **[01.03-comandos-terminal-bash.ipynb](01-basicos/01.03-comandos-terminal-bash.ipynb)** - Comandos de terminal/bash
    - Navegación y gestión de archivos
    - Permisos y variables de entorno
    - Redirección y pipes
 
-4. **[04-git-basico.ipynb](00-basicos/04-git-basico.ipynb)** - Git y GitHub
+4. **[01.04-git-basico.ipynb](01-basicos/01.04-git-basico.ipynb)** - Git y GitHub
    - Control de versiones básico y avanzado
    - Ramas, merge, rebase y remotos
    - Stash, tags y resolución de conflictos
@@ -37,31 +37,31 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Colaboración con forks y ramas compartidas
    - Mejores prácticas y resolución de problemas
 
-5. **[05-markdown.ipynb](00-basicos/05-markdown.ipynb)** - Sintaxis Markdown
+5. **[01.05-markdown.ipynb](01-basicos/01.05-markdown.ipynb)** - Sintaxis Markdown
    - Formateo de texto
    - Listas, tablas y código
    - Enlaces e imágenes
 
-### 🐍 01 - Python (5 notebooks)
+### 🐍 02 - Python (5 notebooks)
 
-1. **[01-python-basics.ipynb](01-python/01-python-basics.ipynb)** - Fundamentos básicos
+1. **[02.01-python-basics.ipynb](02-python/02.01-python-basics.ipynb)** - Fundamentos básicos
    - Tipos de datos (números, strings, listas, tuplas, diccionarios, sets)
    - Operadores (aritméticos, comparación, lógicos, asignación, identidad, pertenencia)
 
-2. **[02-python-control-flow.ipynb](01-python/02-python-control-flow.ipynb)** - Control de flujo
+2. **[02.02-python-control-flow.ipynb](02-python/02.02-python-control-flow.ipynb)** - Control de flujo
    - Condicionales (if/elif/else)
    - Bucles (for, while)
    - List, Dict y Set Comprehensions
    - zip() y enumerate()
 
-3. **[03-python-functions.ipynb](01-python/03-python-functions.ipynb)** - Funciones
+3. **[02.03-python-functions.ipynb](02-python/02.03-python-functions.ipynb)** - Funciones
    - Definición básica de funciones
    - Argumentos variables (*args, **kwargs)
    - Funciones lambda (anónimas)
    - Decoradores
    - Funciones como objetos de primera clase
 
-4. **[04-python-classes-oop.ipynb](01-python/04-python-classes-oop.ipynb)** - Programación Orientada a Objetos (POO)
+4. **[02.04-python-classes-oop.ipynb](02-python/02.04-python-classes-oop.ipynb)** - Programación Orientada a Objetos (POO)
    - Clases y objetos
    - Atributos de clase vs instancia
    - Métodos de clase y estáticos
@@ -70,64 +70,64 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Propiedades (getters y setters)
    - Encapsulación
 
-5. **[05-python-modules-io.ipynb](01-python/05-python-modules-io.ipynb)** - Módulos e I/O
+5. **[02.05-python-modules-io.ipynb](02-python/02.05-python-modules-io.ipynb)** - Módulos e I/O
    - Módulos y paquetes
    - Manejo de archivos (I/O)
    - JSON
    - Manejo de excepciones
 
-### 🔢 02 - NumPy (4 notebooks)
+### 🔢 03 - NumPy (4 notebooks)
 
-1. **[01-numpy-basics.ipynb](02-numpy/01-numpy-basics.ipynb)** - Fundamentos básicos
+1. **[03.01-numpy-basics.ipynb](03-numpy/03.01-numpy-basics.ipynb)** - Fundamentos básicos
    - Importar NumPy
    - Creación de arrays
    - Propiedades de arrays
    - Tipos de datos (dtype)
 
-2. **[02-numpy-operations.ipynb](02-numpy/02-numpy-operations.ipynb)** - Operaciones
+2. **[03.02-numpy-operations.ipynb](03-numpy/03.02-numpy-operations.ipynb)** - Operaciones
    - Operaciones aritméticas
    - Producto matricial
    - Broadcasting
    - Funciones de agregación
 
-3. **[03-numpy-indexing-slicing.ipynb](02-numpy/03-numpy-indexing-slicing.ipynb)** - Indexación y slicing
+3. **[03.03-numpy-indexing-slicing.ipynb](03-numpy/03.03-numpy-indexing-slicing.ipynb)** - Indexación y slicing
    - Indexación básica
    - Fancy indexing (indexación avanzada)
    - Modificación de arrays
    - Concatenación y división
 
-4. **[04-numpy-linear-algebra.ipynb](02-numpy/04-numpy-linear-algebra.ipynb)** - Álgebra lineal y estadísticas
+4. **[03.04-numpy-linear-algebra.ipynb](03-numpy/03.04-numpy-linear-algebra.ipynb)** - Álgebra lineal y estadísticas
    - Álgebra lineal (determinante, inversa, autovalores, SVD, QR)
    - Estadísticas avanzadas
    - Generación de números aleatorios
 
-### 🐼 03 - Pandas (4 notebooks)
+### 🐼 04 - Pandas (4 notebooks)
 
-1. **[01-pandas-dataframes-series.ipynb](03-pandas/01-pandas-dataframes-series.ipynb)** - Series y DataFrames
+1. **[04.01-pandas-dataframes-series.ipynb](04-pandas/04.01-pandas-dataframes-series.ipynb)** - Series y DataFrames
    - Crear Series
    - Crear DataFrames
    - Propiedades básicas
 
-2. **[02-pandas-indexing-selection.ipynb](03-pandas/02-pandas-indexing-selection.ipynb)** - Indexación y selección
+2. **[04.02-pandas-indexing-selection.ipynb](04-pandas/04.02-pandas-indexing-selection.ipynb)** - Indexación y selección
    - Selección de columnas
    - Selección de filas
    - Selección de filas y columnas (iloc, loc, at, iat)
 
-3. **[03-pandas-data-manipulation.ipynb](03-pandas/03-pandas-data-manipulation.ipynb)** - Manipulación de datos
+3. **[04.03-pandas-data-manipulation.ipynb](04-pandas/04.03-pandas-data-manipulation.ipynb)** - Manipulación de datos
    - Agregar y eliminar columnas
    - Merge y Join
    - GroupBy
    - Pivot y Reshape
 
-4. **[04-pandas-io-analysis.ipynb](03-pandas/04-pandas-io-analysis.ipynb)** - I/O y análisis
+4. **[04.04-pandas-io-analysis.ipynb](04-pandas/04.04-pandas-io-analysis.ipynb)** - I/O y análisis
    - Lectura de archivos (CSV, Excel, JSON, Parquet, HTML)
    - Escritura de archivos
    - Análisis descriptivo
    - Manejo de valores faltantes
 
-### 📊 04 - Matplotlib (4 notebooks)
+### 📊 05 - Matplotlib (4 notebooks)
 
-1. **[01-matplotlib-basics.ipynb](04-matplotlib/01-matplotlib-basics.ipynb)** - Fundamentos básicos
+1. **[05.01-matplotlib-basics.ipynb](05-matplotlib/05.01-matplotlib-basics.ipynb)** - Fundamentos básicos
    - Importar Matplotlib
    - Primer gráfico básico
    - Agregar títulos y etiquetas
@@ -135,7 +135,7 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Interface orientada a objetos (OO)
    - Guardar gráficos
 
-2. **[02-matplotlib-customization.ipynb](04-matplotlib/02-matplotlib-customization.ipynb)** - Personalización
+2. **[05.02-matplotlib-customization.ipynb](05-matplotlib/05.02-matplotlib-customization.ipynb)** - Personalización
    - Colores (nombre, hexadecimal, RGB/RGBA)
    - Estilos de línea
    - Marcadores
@@ -144,7 +144,7 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Personalizar ejes
    - Estilos predefinidos
 
-3. **[03-matplotlib-plot-types.ipynb](04-matplotlib/03-matplotlib-plot-types.ipynb)** - Tipos de gráficos
+3. **[05.03-matplotlib-plot-types.ipynb](05-matplotlib/05.03-matplotlib-plot-types.ipynb)** - Tipos de gráficos
    - Gráfico de barras (verticales y horizontales)
    - Gráfico de dispersión (Scatter)
    - Histogramas
@@ -154,7 +154,7 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Gráfico de pastel (Pie Chart)
    - Gráfico de barras agrupadas
 
-4. **[04-matplotlib-advanced.ipynb](04-matplotlib/04-matplotlib-advanced.ipynb)** - Gráficos avanzados
+4. **[05.04-matplotlib-advanced.ipynb](05-matplotlib/05.04-matplotlib-advanced.ipynb)** - Gráficos avanzados
    - Subplots
    - Subplots con diferentes tamaños (GridSpec)
    - Múltiples ejes (Twin Axes)
@@ -163,9 +163,9 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Líneas de referencia y regiones
    - Configuración global (rcParams)
 
-### 📊 05 - Estadística (2 notebooks)
+### 📊 06 - Estadística (2 notebooks)
 
-1. **[01-estadistica-basica.ipynb](05-estadistica/01-estadistica-basica.ipynb)** - Teoría Estadística Básica
+1. **[06.01-estadistica-basica.ipynb](06-estadistica/06.01-estadistica-basica.ipynb)** - Teoría Estadística Básica
    - Población vs Muestra
    - Tipos de datos (cualitativos, cuantitativos)
    - Medidas de tendencia central (media, mediana, moda)
@@ -176,7 +176,7 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Pruebas de hipótesis
    - Correlación y regresión
 
-2. **[02-estadistica-aplicada-ia.ipynb](05-estadistica/02-estadistica-aplicada-ia.ipynb)** - Estadística Aplicada a IA
+2. **[06.02-estadistica-aplicada-ia.ipynb](06-estadistica/06.02-estadistica-aplicada-ia.ipynb)** - Estadística Aplicada a IA
    - Estadística descriptiva con visualizaciones
    - Distribuciones de probabilidad para ML
    - Correlación y covarianza (matrices de correlación)
@@ -186,33 +186,33 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Normalización y estandarización para ML
    - Teorema del Límite Central aplicado
 
-### 🤖 06 - Scikit-learn (5 notebooks)
+### 🤖 07 - Scikit-learn (5 notebooks)
 
-1. **[01-scikit-learn-basics.ipynb](06-scikit-learn/01-scikit-learn-basics.ipynb)** - Fundamentos básicos
+1. **[07.01-scikit-learn-basics.ipynb](07-scikit-learn/07.01-scikit-learn-basics.ipynb)** - Fundamentos básicos
    - Importar Scikit-learn
    - Datasets integrados (iris, wine, digits, diabetes, etc.)
    - Estructura básica de trabajo con modelos
    - Flujo completo: carga → división → entrenamiento → predicción → evaluación
 
-2. **[02-scikit-learn-preprocessing.ipynb](06-scikit-learn/02-scikit-learn-preprocessing.ipynb)** - Preprocesamiento
+2. **[07.02-scikit-learn-preprocessing.ipynb](07-scikit-learn/07.02-scikit-learn-preprocessing.ipynb)** - Preprocesamiento
    - Escalado de datos (StandardScaler, MinMaxScaler, RobustScaler, Normalizer)
    - Codificación de variables categóricas (LabelEncoder, OneHotEncoder, OrdinalEncoder)
    - Manejo de valores faltantes (SimpleImputer)
    - Transformaciones polinómicas (PolynomialFeatures)
    - Pipelines de preprocesamiento
 
-3. **[03-scikit-learn-supervised-learning.ipynb](06-scikit-learn/03-scikit-learn-supervised-learning.ipynb)** - Aprendizaje supervisado
+3. **[07.03-scikit-learn-supervised-learning.ipynb](07-scikit-learn/07.03-scikit-learn-supervised-learning.ipynb)** - Aprendizaje supervisado
    - **Clasificación**: LogisticRegression, DecisionTree, RandomForest, SVM, KNN, Naive Bayes, Gradient Boosting
    - **Regresión**: LinearRegression, Ridge, Lasso, DecisionTree, RandomForest, SVR, KNN
    - Parámetros importantes y personalización de modelos
 
-4. **[04-scikit-learn-unsupervised-learning.ipynb](06-scikit-learn/04-scikit-learn-unsupervised-learning.ipynb)** - Aprendizaje no supervisado
+4. **[07.04-scikit-learn-unsupervised-learning.ipynb](07-scikit-learn/07.04-scikit-learn-unsupervised-learning.ipynb)** - Aprendizaje no supervisado
    - **Clustering**: K-Means, DBSCAN, Clustering Jerárquico Aglomerativo
    - **Reducción de dimensionalidad**: PCA, TruncatedSVD, NMF
    - t-SNE para visualización
    - Selección del número óptimo de componentes
 
-5. **[05-scikit-learn-model-evaluation.ipynb](06-scikit-learn/05-scikit-learn-model-evaluation.ipynb)** - Evaluación de modelos
+5. **[07.05-scikit-learn-model-evaluation.ipynb](07-scikit-learn/07.05-scikit-learn-model-evaluation.ipynb)** - Evaluación de modelos
    - Métricas de clasificación (accuracy, precision, recall, F1, matriz de confusión)
    - Métricas de regresión (MSE, RMSE, MAE, R²)
    - Validación cruzada (K-Fold, Stratified K-Fold)
@@ -223,9 +223,9 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
 
 Los algoritmos están organizados por tipo de aprendizaje:
 
-#### 📚 01 - Supervisados (5 notebooks)
+#### 📚 08.01 - Supervisados (5 notebooks)
 
-1. **[01-arboles-decision.ipynb](07-algoritmos-ml/01-supervisados/01-arboles-decision.ipynb)** - Árboles de Decisión
+1. **[08.01.01-arboles-decision.ipynb](08-algoritmos-ml/08.01-supervisados/08.01.01-arboles-decision.ipynb)** - Árboles de Decisión
    - Conceptos fundamentales (Entropía, Ganancia de Información, Índice Gini)
    - Implementación para clasificación y regresión
    - Visualización de árboles de decisión
@@ -233,46 +233,46 @@ Los algoritmos están organizados por tipo de aprendizaje:
    - Control de sobreajuste
    - Parámetros importantes
 
-2. **[02-k-nearest-neighbors.ipynb](07-algoritmos-ml/01-supervisados/02-k-nearest-neighbors.ipynb)** - K-Nearest Neighbors (KNN)
+2. **[08.01.02-k-nearest-neighbors.ipynb](08-algoritmos-ml/08.01-supervisados/08.01.02-k-nearest-neighbors.ipynb)** - K-Nearest Neighbors (KNN)
    - Algoritmo lazy learning
    - Implementación para clasificación y regresión
    - Efecto del valor de K
    - Métricas de distancia (Euclidiana, Manhattan, Minkowski)
    - Ventajas y desventajas
 
-3. **[03-naive-bayes.ipynb](07-algoritmos-ml/01-supervisados/03-naive-bayes.ipynb)** - Naive Bayes
+3. **[08.01.03-naive-bayes.ipynb](08-algoritmos-ml/08.01-supervisados/08.01.03-naive-bayes.ipynb)** - Naive Bayes
    - Teorema de Bayes y supuesto de independencia
    - Implementación básica
    - Variantes: Gaussian, Multinomial, Bernoulli
    - Ejemplo de clasificación de texto
    - Aplicaciones en NLP
 
-4. **[04-regresion-lineal.ipynb](07-algoritmos-ml/01-supervisados/04-regresion-lineal.ipynb)** - Regresión Lineal desde Cero
+4. **[08.01.04-regresion-lineal.ipynb](08-algoritmos-ml/08.01-supervisados/08.01.04-regresion-lineal.ipynb)** - Regresión Lineal desde Cero
    - Ecuación de regresión lineal
    - Método 1: Ecuación Normal (solución analítica)
    - Método 2: Gradiente Descendente
    - Regresión simple y múltiple
    - Visualización de convergencia
 
-5. **[05-perceptron.ipynb](07-algoritmos-ml/01-supervisados/05-perceptron.ipynb)** - Perceptrón
+5. **[08.01.05-perceptron.ipynb](08-algoritmos-ml/08.01-supervisados/08.01.05-perceptron.ipynb)** - Perceptrón
    - Unidad básica de redes neuronales
    - Implementación básica
    - Algoritmo de aprendizaje
    - Limitaciones (problema XOR)
    - Base para redes neuronales multicapa
 
-#### 🔍 02 - No Supervisados (1 notebook)
+#### 🔍 08.02 - No Supervisados (1 notebook)
 
-1. **[01-k-means.ipynb](07-algoritmos-ml/02-no-supervisados/01-k-means.ipynb)** - K-Means desde Cero
+1. **[08.02.01-k-means.ipynb](08-algoritmos-ml/08.02-no-supervisados/08.02.01-k-means.ipynb)** - K-Means desde Cero
    - Algoritmo de clustering no supervisado
    - Implementación básica
    - Selección del número óptimo de clusters (Método del codo)
    - Métrica Silhouette Score
    - Convergencia del algoritmo
 
-#### 🎮 03 - Refuerzo (1 notebook)
+#### 🎮 08.03 - Refuerzo (1 notebook)
 
-1. **[01-q-learning.ipynb](07-algoritmos-ml/03-refuerzo/01-q-learning.ipynb)** - Q-Learning
+1. **[08.03.01-q-learning.ipynb](08-algoritmos-ml/08.03-refuerzo/08.03.01-q-learning.ipynb)** - Q-Learning
    - Fundamentos de Reinforcement Learning
    - Ecuación de actualización Q-Learning
    - Implementación de agente Q-Learning
@@ -281,9 +281,9 @@ Los algoritmos están organizados por tipo de aprendizaje:
    - Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
    - Aplicaciones en juegos y robótica
 
-#### 🎯 04 - Otros (1 notebook)
+#### 🎯 08.04 - Otros (1 notebook)
 
-1. **[01-minimax.ipynb](07-algoritmos-ml/04-otros/01-minimax.ipynb)** - Algoritmo Minimax
+1. **[08.04.01-minimax.ipynb](08-algoritmos-ml/08.04-otros/08.04.01-minimax.ipynb)** - Algoritmo Minimax
    - Fundamentos de teoría de juegos
    - Implementación básica de Minimax
    - Ejemplo práctico: Tres en Raya
@@ -291,16 +291,16 @@ Los algoritmos están organizados por tipo de aprendizaje:
    - Comparación de rendimiento
    - Aplicaciones y limitaciones
 
-### 🤖 08 - IA Moderna (5 notebooks)
+### 🤖 09 - IA Moderna (5 notebooks)
 
-1. **[01-redes-neuronales-basicas.ipynb](08-ia-moderna/01-redes-neuronales-basicas.ipynb)** - Redes Neuronales Básicas
+1. **[09.01-redes-neuronales-basicas.ipynb](09-ia-moderna/09.01-redes-neuronales-basicas.ipynb)** - Redes Neuronales Básicas
    - Perceptrón Multicapa (MLP) desde cero
    - Forward propagation y backpropagation
    - Funciones de activación (sigmoid, ReLU, tanh, Leaky ReLU)
    - Ejemplo práctico: Clasificación binaria
    - Visualización de fronteras de decisión
 
-2. **[02-deep-learning-tensorflow.ipynb](08-ia-moderna/02-deep-learning-tensorflow.ipynb)** - Deep Learning con TensorFlow/Keras
+2. **[09.02-deep-learning-tensorflow.ipynb](09-ia-moderna/09.02-deep-learning-tensorflow.ipynb)** - Deep Learning con TensorFlow/Keras
    - Construcción de modelos con Keras
    - Capas densas, dropout, batch normalization
    - Optimizadores (Adam, SGD, RMSprop)
@@ -308,7 +308,7 @@ Los algoritmos están organizados por tipo de aprendizaje:
    - Guardar y cargar modelos
    - Transfer learning
 
-3. **[03-transformers-nlp.ipynb](08-ia-moderna/03-transformers-nlp.ipynb)** - Transformers y NLP Moderno
+3. **[09.03-transformers-nlp.ipynb](09-ia-moderna/09.03-transformers-nlp.ipynb)** - Transformers y NLP Moderno
    - Arquitectura Transformer
    - Attention mechanism y self-attention
    - Modelos pre-entrenados (BERT, GPT, etc.)
@@ -316,7 +316,7 @@ Los algoritmos están organizados por tipo de aprendizaje:
    - Hugging Face Transformers
    - Aplicaciones en NLP
 
-4. **[04-cnn-convolucional.ipynb](08-ia-moderna/04-cnn-convolucional.ipynb)** - Redes Neuronales Convolucionales (CNN)
+4. **[09.04-cnn-convolucional.ipynb](09-ia-moderna/09.04-cnn-convolucional.ipynb)** - Redes Neuronales Convolucionales (CNN)
    - Operación de convolución desde cero
    - Pooling (Max Pooling y Average Pooling)
    - Construcción de CNN con TensorFlow/Keras
@@ -324,7 +324,7 @@ Los algoritmos están organizados por tipo de aprendizaje:
    - Visualización de feature maps
    - Aplicaciones en visión por computadora
 
-5. **[05-rnn-lstm.ipynb](08-ia-moderna/05-rnn-lstm.ipynb)** - Redes Neuronales Recurrentes (RNN) y LSTM
+5. **[09.05-rnn-lstm.ipynb](09-ia-moderna/09.05-rnn-lstm.ipynb)** - Redes Neuronales Recurrentes (RNN) y LSTM
    - RNN básica desde cero
    - LSTM con TensorFlow/Keras
    - GRU (Gated Recurrent Unit)
@@ -380,61 +380,61 @@ jupyter lab
 
 ```
 cheat-sheets-ia/
-├── 00-basicos/                      # Conocimientos básicos
-│   ├── 01-entornos-virtuales-uv.ipynb
-│   ├── 02-gestion-paquetes-pip.ipynb
-│   ├── 03-comandos-terminal-bash.ipynb
-│   ├── 04-git-basico.ipynb
-│   └── 05-markdown.ipynb
-├── 01-python/                       # Notebooks de Python
-│   ├── 01-python-basics.ipynb
-│   ├── 02-python-control-flow.ipynb
-│   ├── 03-python-functions.ipynb
-│   ├── 04-python-classes-oop.ipynb
-│   └── 05-python-modules-io.ipynb
-├── 02-numpy/                        # Notebooks de NumPy
-│   ├── 01-numpy-basics.ipynb
-│   ├── 02-numpy-operations.ipynb
-│   ├── 03-numpy-indexing-slicing.ipynb
-│   └── 04-numpy-linear-algebra.ipynb
-├── 03-pandas/                       # Notebooks de Pandas
-│   ├── 01-pandas-dataframes-series.ipynb
-│   ├── 02-pandas-indexing-selection.ipynb
-│   ├── 03-pandas-data-manipulation.ipynb
-│   └── 04-pandas-io-analysis.ipynb
-├── 04-matplotlib/                   # Notebooks de Matplotlib
-│   ├── 01-matplotlib-basics.ipynb
-│   ├── 02-matplotlib-customization.ipynb
-│   ├── 03-matplotlib-plot-types.ipynb
-│   └── 04-matplotlib-advanced.ipynb
-├── 05-estadistica/                  # Estadística
-│   ├── 01-estadistica-basica.ipynb
-│   └── 02-estadistica-aplicada-ia.ipynb
-├── 06-scikit-learn/                 # Notebooks de Scikit-learn
-│   ├── 01-scikit-learn-basics.ipynb
-│   ├── 02-scikit-learn-preprocessing.ipynb
-│   ├── 03-scikit-learn-supervised-learning.ipynb
-│   ├── 04-scikit-learn-unsupervised-learning.ipynb
-│   └── 05-scikit-learn-model-evaluation.ipynb
-├── 07-algoritmos-ml/                # Algoritmos Clásicos de ML
-│   ├── 01-supervisados/            # Aprendizaje Supervisado
-│   │   ├── 01-arboles-decision.ipynb
-│   │   ├── 02-k-nearest-neighbors.ipynb
-│   │   ├── 03-naive-bayes.ipynb
-│   │   ├── 04-regresion-lineal.ipynb
-│   │   └── 05-perceptron.ipynb
-│   ├── 02-no-supervisados/         # Aprendizaje No Supervisado
-│   │   └── 01-k-means.ipynb
-│   ├── 03-refuerzo/                # Aprendizaje por Refuerzo
-│   │   └── 01-q-learning.ipynb
-│   └── 04-otros/                    # Otros algoritmos
-│       └── 01-minimax.ipynb
-├── 08-ia-moderna/                   # IA Moderna
-│   ├── 01-redes-neuronales-basicas.ipynb
-│   ├── 02-deep-learning-tensorflow.ipynb
-│   ├── 03-transformers-nlp.ipynb
-│   ├── 04-cnn-convolucional.ipynb
-│   └── 05-rnn-lstm.ipynb
+├── 01-basicos/                      # Conocimientos básicos
+│   ├── 01.01-entornos-virtuales-uv.ipynb
+│   ├── 01.02-gestion-paquetes-pip.ipynb
+│   ├── 01.03-comandos-terminal-bash.ipynb
+│   ├── 01.04-git-basico.ipynb
+│   └── 01.05-markdown.ipynb
+├── 02-python/                       # Notebooks de Python
+│   ├── 02.01-python-basics.ipynb
+│   ├── 02.02-python-control-flow.ipynb
+│   ├── 02.03-python-functions.ipynb
+│   ├── 02.04-python-classes-oop.ipynb
+│   └── 02.05-python-modules-io.ipynb
+├── 03-numpy/                        # Notebooks de NumPy
+│   ├── 03.01-numpy-basics.ipynb
+│   ├── 03.02-numpy-operations.ipynb
+│   ├── 03.03-numpy-indexing-slicing.ipynb
+│   └── 03.04-numpy-linear-algebra.ipynb
+├── 04-pandas/                       # Notebooks de Pandas
+│   ├── 04.01-pandas-dataframes-series.ipynb
+│   ├── 04.02-pandas-indexing-selection.ipynb
+│   ├── 04.03-pandas-data-manipulation.ipynb
+│   └── 04.04-pandas-io-analysis.ipynb
+├── 05-matplotlib/                   # Notebooks de Matplotlib
+│   ├── 05.01-matplotlib-basics.ipynb
+│   ├── 05.02-matplotlib-customization.ipynb
+│   ├── 05.03-matplotlib-plot-types.ipynb
+│   └── 05.04-matplotlib-advanced.ipynb
+├── 06-estadistica/                  # Estadística
+│   ├── 06.01-estadistica-basica.ipynb
+│   └── 06.02-estadistica-aplicada-ia.ipynb
+├── 07-scikit-learn/                 # Notebooks de Scikit-learn
+│   ├── 07.01-scikit-learn-basics.ipynb
+│   ├── 07.02-scikit-learn-preprocessing.ipynb
+│   ├── 07.03-scikit-learn-supervised-learning.ipynb
+│   ├── 07.04-scikit-learn-unsupervised-learning.ipynb
+│   └── 07.05-scikit-learn-model-evaluation.ipynb
+├── 08-algoritmos-ml/                # Algoritmos Clásicos de ML
+│   ├── 08.01-supervisados/          # Aprendizaje Supervisado
+│   │   ├── 08.01.01-arboles-decision.ipynb
+│   │   ├── 08.01.02-k-nearest-neighbors.ipynb
+│   │   ├── 08.01.03-naive-bayes.ipynb
+│   │   ├── 08.01.04-regresion-lineal.ipynb
+│   │   └── 08.01.05-perceptron.ipynb
+│   ├── 08.02-no-supervisados/       # Aprendizaje No Supervisado
+│   │   └── 08.02.01-k-means.ipynb
+│   ├── 08.03-refuerzo/              # Aprendizaje por Refuerzo
+│   │   └── 08.03.01-q-learning.ipynb
+│   └── 08.04-otros/                 # Otros algoritmos
+│       └── 08.04.01-minimax.ipynb
+├── 09-ia-moderna/                   # IA Moderna
+│   ├── 09.01-redes-neuronales-basicas.ipynb
+│   ├── 09.02-deep-learning-tensorflow.ipynb
+│   ├── 09.03-transformers-nlp.ipynb
+│   ├── 09.04-cnn-convolucional.ipynb
+│   └── 09.05-rnn-lstm.ipynb
 ├── .venv/                           # Entorno virtual
 ├── INDEX.md                         # Índice detallado
 ├── README.md                        # Este archivo
@@ -462,15 +462,15 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 ## 🎯 Orden Recomendado de Aprendizaje
 
 ### Para Principiantes
-1. Empieza con **00 - Básicos** (01-05) - Configuración y herramientas esenciales
-2. Continúa con **01 - Python** (01-05)
-3. Sigue con **02 - NumPy** (01-04)
-4. Continúa con **03 - Pandas** (01-04)
-5. Sigue con **04 - Matplotlib** (01-04) - Visualización de datos
-6. Continúa con **05 - Estadística** (01-02) - Fundamentos estadísticos (IMPORTANTE antes de ML)
-7. Sigue con **06 - Scikit-learn** (01-05) - Machine Learning
-8. Explora **07 - Algoritmos Clásicos de ML** (01-08) - Algoritmos fundamentales implementados desde cero
-9. Avanza a **08 - IA Moderna** (01-05) - Deep Learning y arquitecturas modernas
+1. Empieza con **01 - Básicos** (01.01-01.05) - Configuración y herramientas esenciales
+2. Continúa con **02 - Python** (02.01-02.05)
+3. Sigue con **03 - NumPy** (03.01-03.04)
+4. Continúa con **04 - Pandas** (04.01-04.04)
+5. Sigue con **05 - Matplotlib** (05.01-05.04) - Visualización de datos
+6. Continúa con **06 - Estadística** (06.01-06.02) - Fundamentos estadísticos (IMPORTANTE antes de ML)
+7. Sigue con **07 - Scikit-learn** (07.01-07.05) - Machine Learning
+8. Explora **08 - Algoritmos Clásicos de ML** - Algoritmos fundamentales implementados desde cero
+9. Avanza a **09 - IA Moderna** (09.01-09.05) - Deep Learning y arquitecturas modernas
 
 ### Para Usuarios Avanzados
 - **08 - IA Moderna**: Transformers, CNN, RNN/LSTM, Deep Learning con TensorFlow
