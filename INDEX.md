@@ -178,121 +178,9 @@ Este repositorio contiene cheat sheets organizados por tecnología en formato Ju
 - Líneas de referencia y regiones
 - Configuración global (rcParams)
 
-## 🤖 05 - Scikit-learn
+## 📊 05 - Estadística
 
-### [01-scikit-learn-basics.ipynb](05-scikit-learn/01-scikit-learn-basics.ipynb)
-- Importar Scikit-learn
-- Datasets integrados
-- Estructura básica de trabajo con modelos
-- Versión de Scikit-learn
-
-### [02-scikit-learn-preprocessing.ipynb](05-scikit-learn/02-scikit-learn-preprocessing.ipynb)
-- Escalado de datos (StandardScaler, MinMaxScaler, RobustScaler, Normalizer)
-- Codificación de variables categóricas (LabelEncoder, OneHotEncoder, OrdinalEncoder)
-- Manejo de valores faltantes (SimpleImputer)
-- Transformaciones polinómicas (PolynomialFeatures)
-- Pipeline de preprocesamiento
-
-### [03-scikit-learn-supervised-learning.ipynb](05-scikit-learn/03-scikit-learn-supervised-learning.ipynb)
-- Clasificación (LogisticRegression, DecisionTree, RandomForest, SVM, KNN, Naive Bayes, Gradient Boosting)
-- Regresión (LinearRegression, Ridge, Lasso, DecisionTree, RandomForest, SVR, KNN)
-- Parámetros importantes de los modelos
-
-### [04-scikit-learn-unsupervised-learning.ipynb](05-scikit-learn/04-scikit-learn-unsupervised-learning.ipynb)
-- Clustering (K-Means, DBSCAN, Clustering Jerárquico)
-- Reducción de dimensionalidad (PCA, TruncatedSVD, NMF)
-- t-SNE para visualización
-- Selección del número de componentes
-
-### [05-scikit-learn-model-evaluation.ipynb](05-scikit-learn/05-scikit-learn-model-evaluation.ipynb)
-- Métricas de clasificación (accuracy, precision, recall, F1, matriz de confusión)
-- Métricas de regresión (MSE, RMSE, MAE, R²)
-- Validación cruzada (K-Fold, Stratified K-Fold)
-- Búsqueda de hiperparámetros (GridSearchCV, RandomizedSearchCV)
-- Curvas ROC y AUC
-
-## 🧠 06 - Algoritmos Clásicos de Machine Learning (8 notebooks)
-
-### [01-arboles-decision.ipynb](06-algoritmos-ml/01-arboles-decision.ipynb)
-- ¿Qué es un Árbol de Decisión?
-- Conceptos fundamentales (Entropía, Ganancia de Información, Índice Gini)
-- Árbol de Decisión para Clasificación
-- Árbol de Decisión para Regresión
-- Visualización de árboles
-- Importancia de características
-- Control de sobreajuste (Overfitting)
-- Parámetros importantes
-
-### [02-minimax.ipynb](06-algoritmos-ml/02-minimax.ipynb)
-- ¿Qué es Minimax?
-- Conceptos fundamentales (Jugador MAX/MIN, árbol de juego, función de evaluación)
-- Implementación básica de Minimax
-- Ejemplo: Tres en Raya (Tic-Tac-Toe)
-- Optimización: Poda Alfa-Beta
-- Comparación: Minimax vs Minimax con Poda Alfa-Beta
-- Aplicaciones y limitaciones
-
-### [03-q-learning.ipynb](06-algoritmos-ml/03-q-learning.ipynb)
-- ¿Qué es Q-Learning?
-- Conceptos fundamentales (Agente, Ambiente, Estado, Acción, Recompensa, Q-Value)
-- Ecuación de actualización Q-Learning
-- Implementación de agente Q-Learning
-- Ejemplo: Laberinto Simple
-- Visualización de la tabla Q
-- Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
-- Ventajas, desventajas y aplicaciones
-
-### [04-k-nearest-neighbors.ipynb](06-algoritmos-ml/04-k-nearest-neighbors.ipynb)
-- ¿Qué es KNN?
-- Conceptos fundamentales (K, Distancia, Votación, Promedio)
-- Implementación básica de KNN para clasificación y regresión
-- KNN para Clasificación
-- KNN para Regresión
-- Efecto del valor de K
-- Métricas de distancia (Euclidiana, Manhattan, Minkowski)
-- Ventajas, desventajas y aplicaciones
-
-### [05-naive-bayes.ipynb](06-algoritmos-ml/05-naive-bayes.ipynb)
-- ¿Qué es Naive Bayes?
-- Teorema de Bayes y supuesto de independencia
-- Implementación básica de Naive Bayes
-- Tipos de Naive Bayes (Gaussian, Multinomial, Bernoulli)
-- Ejemplo de clasificación de texto
-- Comparación de variantes
-- Ventajas, desventajas y aplicaciones
-
-### [06-regresion-lineal.ipynb](06-algoritmos-ml/06-regresion-lineal.ipynb)
-- ¿Qué es Regresión Lineal?
-- Ecuación de regresión lineal
-- Método 1: Ecuación Normal (solución analítica)
-- Método 2: Gradiente Descendente
-- Regresión Lineal Simple
-- Regresión Lineal Múltiple
-- Visualización de convergencia
-- Ventajas, desventajas y aplicaciones
-
-### [07-k-means.ipynb](06-algoritmos-ml/07-k-means.ipynb)
-- ¿Qué es K-Means?
-- Conceptos fundamentales (K, Centroide, Inicialización, Asignación, Actualización)
-- Algoritmo K-Means y función de costo (Inercia)
-- Implementación básica de K-Means
-- Selección del número óptimo de clusters (Método del codo, Silhouette Score)
-- Convergencia del algoritmo
-- Ventajas, desventajas y aplicaciones
-
-### [08-perceptron.ipynb](06-algoritmos-ml/08-perceptron.ipynb)
-- ¿Qué es el Perceptrón?
-- Conceptos fundamentales (Neurona artificial, Pesos, Bias, Función de activación)
-- Modelo del Perceptrón y algoritmo de aprendizaje
-- Implementación básica del Perceptrón
-- Ejemplo de clasificación binaria
-- Limitaciones (problema XOR)
-- Extensión a Perceptrón Multicapa (MLP)
-- Ventajas, desventajas y aplicaciones
-
-## 📊 07 - Estadística
-
-### [01-estadistica-basica.ipynb](07-estadistica/01-estadistica-basica.ipynb)
+### [01-estadistica-basica.ipynb](05-estadistica/01-estadistica-basica.ipynb)
 - Población vs Muestra
 - Tipos de datos (cualitativos, cuantitativos)
 - Medidas de tendencia central
@@ -303,7 +191,7 @@ Este repositorio contiene cheat sheets organizados por tecnología en formato Ju
 - Pruebas de hipótesis
 - Correlación y regresión
 
-### [02-estadistica-aplicada-ia.ipynb](07-estadistica/02-estadistica-aplicada-ia.ipynb)
+### [02-estadistica-aplicada-ia.ipynb](05-estadistica/02-estadistica-aplicada-ia.ipynb)
 - Estadística descriptiva con visualizaciones
 - Distribuciones de probabilidad para ML
 - Correlación y covarianza
@@ -312,6 +200,118 @@ Este repositorio contiene cheat sheets organizados por tecnología en formato Ju
 - Pruebas de hipótesis
 - Normalización y estandarización
 - Aplicaciones en ML/IA
+
+## 🤖 06 - Scikit-learn
+
+### [01-scikit-learn-basics.ipynb](06-scikit-learn/01-scikit-learn-basics.ipynb)
+- Importar Scikit-learn
+- Datasets integrados
+- Estructura básica de trabajo con modelos
+- Versión de Scikit-learn
+
+### [02-scikit-learn-preprocessing.ipynb](06-scikit-learn/02-scikit-learn-preprocessing.ipynb)
+- Escalado de datos (StandardScaler, MinMaxScaler, RobustScaler, Normalizer)
+- Codificación de variables categóricas (LabelEncoder, OneHotEncoder, OrdinalEncoder)
+- Manejo de valores faltantes (SimpleImputer)
+- Transformaciones polinómicas (PolynomialFeatures)
+- Pipeline de preprocesamiento
+
+### [03-scikit-learn-supervised-learning.ipynb](06-scikit-learn/03-scikit-learn-supervised-learning.ipynb)
+- Clasificación (LogisticRegression, DecisionTree, RandomForest, SVM, KNN, Naive Bayes, Gradient Boosting)
+- Regresión (LinearRegression, Ridge, Lasso, DecisionTree, RandomForest, SVR, KNN)
+- Parámetros importantes de los modelos
+
+### [04-scikit-learn-unsupervised-learning.ipynb](06-scikit-learn/04-scikit-learn-unsupervised-learning.ipynb)
+- Clustering (K-Means, DBSCAN, Clustering Jerárquico)
+- Reducción de dimensionalidad (PCA, TruncatedSVD, NMF)
+- t-SNE para visualización
+- Selección del número de componentes
+
+### [05-scikit-learn-model-evaluation.ipynb](06-scikit-learn/05-scikit-learn-model-evaluation.ipynb)
+- Métricas de clasificación (accuracy, precision, recall, F1, matriz de confusión)
+- Métricas de regresión (MSE, RMSE, MAE, R²)
+- Validación cruzada (K-Fold, Stratified K-Fold)
+- Búsqueda de hiperparámetros (GridSearchCV, RandomizedSearchCV)
+- Curvas ROC y AUC
+
+## 🧠 07 - Algoritmos Clásicos de Machine Learning (8 notebooks)
+
+### [01-arboles-decision.ipynb](07-algoritmos-ml/01-arboles-decision.ipynb)
+- ¿Qué es un Árbol de Decisión?
+- Conceptos fundamentales (Entropía, Ganancia de Información, Índice Gini)
+- Árbol de Decisión para Clasificación
+- Árbol de Decisión para Regresión
+- Visualización de árboles
+- Importancia de características
+- Control de sobreajuste (Overfitting)
+- Parámetros importantes
+
+### [02-minimax.ipynb](07-algoritmos-ml/02-minimax.ipynb)
+- ¿Qué es Minimax?
+- Conceptos fundamentales (Jugador MAX/MIN, árbol de juego, función de evaluación)
+- Implementación básica de Minimax
+- Ejemplo: Tres en Raya (Tic-Tac-Toe)
+- Optimización: Poda Alfa-Beta
+- Comparación: Minimax vs Minimax con Poda Alfa-Beta
+- Aplicaciones y limitaciones
+
+### [03-q-learning.ipynb](07-algoritmos-ml/03-q-learning.ipynb)
+- ¿Qué es Q-Learning?
+- Conceptos fundamentales (Agente, Ambiente, Estado, Acción, Recompensa, Q-Value)
+- Ecuación de actualización Q-Learning
+- Implementación de agente Q-Learning
+- Ejemplo: Laberinto Simple
+- Visualización de la tabla Q
+- Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
+- Ventajas, desventajas y aplicaciones
+
+### [04-k-nearest-neighbors.ipynb](07-algoritmos-ml/04-k-nearest-neighbors.ipynb)
+- ¿Qué es KNN?
+- Conceptos fundamentales (K, Distancia, Votación, Promedio)
+- Implementación básica de KNN para clasificación y regresión
+- KNN para Clasificación
+- KNN para Regresión
+- Efecto del valor de K
+- Métricas de distancia (Euclidiana, Manhattan, Minkowski)
+- Ventajas, desventajas y aplicaciones
+
+### [05-naive-bayes.ipynb](07-algoritmos-ml/05-naive-bayes.ipynb)
+- ¿Qué es Naive Bayes?
+- Teorema de Bayes y supuesto de independencia
+- Implementación básica de Naive Bayes
+- Tipos de Naive Bayes (Gaussian, Multinomial, Bernoulli)
+- Ejemplo de clasificación de texto
+- Comparación de variantes
+- Ventajas, desventajas y aplicaciones
+
+### [06-regresion-lineal.ipynb](07-algoritmos-ml/06-regresion-lineal.ipynb)
+- ¿Qué es Regresión Lineal?
+- Ecuación de regresión lineal
+- Método 1: Ecuación Normal (solución analítica)
+- Método 2: Gradiente Descendente
+- Regresión Lineal Simple
+- Regresión Lineal Múltiple
+- Visualización de convergencia
+- Ventajas, desventajas y aplicaciones
+
+### [07-k-means.ipynb](07-algoritmos-ml/07-k-means.ipynb)
+- ¿Qué es K-Means?
+- Conceptos fundamentales (K, Centroide, Inicialización, Asignación, Actualización)
+- Algoritmo K-Means y función de costo (Inercia)
+- Implementación básica de K-Means
+- Selección del número óptimo de clusters (Método del codo, Silhouette Score)
+- Convergencia del algoritmo
+- Ventajas, desventajas y aplicaciones
+
+### [08-perceptron.ipynb](07-algoritmos-ml/08-perceptron.ipynb)
+- ¿Qué es el Perceptrón?
+- Conceptos fundamentales (Neurona artificial, Pesos, Bias, Función de activación)
+- Modelo del Perceptrón y algoritmo de aprendizaje
+- Implementación básica del Perceptrón
+- Ejemplo de clasificación binaria
+- Limitaciones (problema XOR)
+- Extensión a Perceptrón Multicapa (MLP)
+- Ventajas, desventajas y aplicaciones
 
 ## 🤖 08 - IA Moderna
 

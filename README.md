@@ -163,104 +163,9 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Líneas de referencia y regiones
    - Configuración global (rcParams)
 
-### 🤖 05 - Scikit-learn (5 notebooks)
+### 📊 05 - Estadística (2 notebooks)
 
-1. **[01-scikit-learn-basics.ipynb](05-scikit-learn/01-scikit-learn-basics.ipynb)** - Fundamentos básicos
-   - Importar Scikit-learn
-   - Datasets integrados (iris, wine, digits, diabetes, etc.)
-   - Estructura básica de trabajo con modelos
-   - Flujo completo: carga → división → entrenamiento → predicción → evaluación
-
-2. **[02-scikit-learn-preprocessing.ipynb](05-scikit-learn/02-scikit-learn-preprocessing.ipynb)** - Preprocesamiento
-   - Escalado de datos (StandardScaler, MinMaxScaler, RobustScaler, Normalizer)
-   - Codificación de variables categóricas (LabelEncoder, OneHotEncoder, OrdinalEncoder)
-   - Manejo de valores faltantes (SimpleImputer)
-   - Transformaciones polinómicas (PolynomialFeatures)
-   - Pipelines de preprocesamiento
-
-3. **[03-scikit-learn-supervised-learning.ipynb](05-scikit-learn/03-scikit-learn-supervised-learning.ipynb)** - Aprendizaje supervisado
-   - **Clasificación**: LogisticRegression, DecisionTree, RandomForest, SVM, KNN, Naive Bayes, Gradient Boosting
-   - **Regresión**: LinearRegression, Ridge, Lasso, DecisionTree, RandomForest, SVR, KNN
-   - Parámetros importantes y personalización de modelos
-
-4. **[04-scikit-learn-unsupervised-learning.ipynb](05-scikit-learn/04-scikit-learn-unsupervised-learning.ipynb)** - Aprendizaje no supervisado
-   - **Clustering**: K-Means, DBSCAN, Clustering Jerárquico Aglomerativo
-   - **Reducción de dimensionalidad**: PCA, TruncatedSVD, NMF
-   - t-SNE para visualización
-   - Selección del número óptimo de componentes
-
-5. **[05-scikit-learn-model-evaluation.ipynb](05-scikit-learn/05-scikit-learn-model-evaluation.ipynb)** - Evaluación de modelos
-   - Métricas de clasificación (accuracy, precision, recall, F1, matriz de confusión)
-   - Métricas de regresión (MSE, RMSE, MAE, R²)
-   - Validación cruzada (K-Fold, Stratified K-Fold)
-   - Búsqueda de hiperparámetros (GridSearchCV, RandomizedSearchCV)
-   - Curvas ROC y AUC
-
-### 🧠 06 - Algoritmos Clásicos de Machine Learning (8 notebooks)
-
-1. **[01-arboles-decision.ipynb](06-algoritmos-ml/01-arboles-decision.ipynb)** - Árboles de Decisión
-   - Conceptos fundamentales (Entropía, Ganancia de Información, Índice Gini)
-   - Implementación para clasificación y regresión
-   - Visualización de árboles de decisión
-   - Importancia de características
-   - Control de sobreajuste
-   - Parámetros importantes
-
-2. **[02-minimax.ipynb](06-algoritmos-ml/02-minimax.ipynb)** - Algoritmo Minimax
-   - Fundamentos de teoría de juegos
-   - Implementación básica de Minimax
-   - Ejemplo práctico: Tres en Raya
-   - Optimización con poda alfa-beta
-   - Comparación de rendimiento
-   - Aplicaciones y limitaciones
-
-3. **[03-q-learning.ipynb](06-algoritmos-ml/03-q-learning.ipynb)** - Q-Learning
-   - Fundamentos de Reinforcement Learning
-   - Ecuación de actualización Q-Learning
-   - Implementación de agente Q-Learning
-   - Ejemplo práctico: Laberinto
-   - Visualización de tabla Q y política aprendida
-   - Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
-   - Aplicaciones en juegos y robótica
-
-4. **[04-k-nearest-neighbors.ipynb](06-algoritmos-ml/04-k-nearest-neighbors.ipynb)** - K-Nearest Neighbors (KNN)
-   - Algoritmo lazy learning
-   - Implementación para clasificación y regresión
-   - Efecto del valor de K
-   - Métricas de distancia (Euclidiana, Manhattan, Minkowski)
-   - Ventajas y desventajas
-
-5. **[05-naive-bayes.ipynb](06-algoritmos-ml/05-naive-bayes.ipynb)** - Naive Bayes
-   - Teorema de Bayes y supuesto de independencia
-   - Implementación básica
-   - Variantes: Gaussian, Multinomial, Bernoulli
-   - Ejemplo de clasificación de texto
-   - Aplicaciones en NLP
-
-6. **[06-regresion-lineal.ipynb](06-algoritmos-ml/06-regresion-lineal.ipynb)** - Regresión Lineal desde Cero
-   - Ecuación de regresión lineal
-   - Método 1: Ecuación Normal (solución analítica)
-   - Método 2: Gradiente Descendente
-   - Regresión simple y múltiple
-   - Visualización de convergencia
-
-7. **[07-k-means.ipynb](06-algoritmos-ml/07-k-means.ipynb)** - K-Means desde Cero
-   - Algoritmo de clustering no supervisado
-   - Implementación básica
-   - Selección del número óptimo de clusters (Método del codo)
-   - Métrica Silhouette Score
-   - Convergencia del algoritmo
-
-8. **[08-perceptron.ipynb](06-algoritmos-ml/08-perceptron.ipynb)** - Perceptrón
-   - Unidad básica de redes neuronales
-   - Implementación básica
-   - Algoritmo de aprendizaje
-   - Limitaciones (problema XOR)
-   - Base para redes neuronales multicapa
-
-### 📊 07 - Estadística (2 notebooks)
-
-1. **[01-estadistica-basica.ipynb](07-estadistica/01-estadistica-basica.ipynb)** - Teoría Estadística Básica
+1. **[01-estadistica-basica.ipynb](05-estadistica/01-estadistica-basica.ipynb)** - Teoría Estadística Básica
    - Población vs Muestra
    - Tipos de datos (cualitativos, cuantitativos)
    - Medidas de tendencia central (media, mediana, moda)
@@ -271,7 +176,7 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Pruebas de hipótesis
    - Correlación y regresión
 
-2. **[02-estadistica-aplicada-ia.ipynb](07-estadistica/02-estadistica-aplicada-ia.ipynb)** - Estadística Aplicada a IA
+2. **[02-estadistica-aplicada-ia.ipynb](05-estadistica/02-estadistica-aplicada-ia.ipynb)** - Estadística Aplicada a IA
    - Estadística descriptiva con visualizaciones
    - Distribuciones de probabilidad para ML
    - Correlación y covarianza (matrices de correlación)
@@ -280,6 +185,101 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Pruebas de hipótesis (t-test, normalidad)
    - Normalización y estandarización para ML
    - Teorema del Límite Central aplicado
+
+### 🤖 06 - Scikit-learn (5 notebooks)
+
+1. **[01-scikit-learn-basics.ipynb](06-scikit-learn/01-scikit-learn-basics.ipynb)** - Fundamentos básicos
+   - Importar Scikit-learn
+   - Datasets integrados (iris, wine, digits, diabetes, etc.)
+   - Estructura básica de trabajo con modelos
+   - Flujo completo: carga → división → entrenamiento → predicción → evaluación
+
+2. **[02-scikit-learn-preprocessing.ipynb](06-scikit-learn/02-scikit-learn-preprocessing.ipynb)** - Preprocesamiento
+   - Escalado de datos (StandardScaler, MinMaxScaler, RobustScaler, Normalizer)
+   - Codificación de variables categóricas (LabelEncoder, OneHotEncoder, OrdinalEncoder)
+   - Manejo de valores faltantes (SimpleImputer)
+   - Transformaciones polinómicas (PolynomialFeatures)
+   - Pipelines de preprocesamiento
+
+3. **[03-scikit-learn-supervised-learning.ipynb](06-scikit-learn/03-scikit-learn-supervised-learning.ipynb)** - Aprendizaje supervisado
+   - **Clasificación**: LogisticRegression, DecisionTree, RandomForest, SVM, KNN, Naive Bayes, Gradient Boosting
+   - **Regresión**: LinearRegression, Ridge, Lasso, DecisionTree, RandomForest, SVR, KNN
+   - Parámetros importantes y personalización de modelos
+
+4. **[04-scikit-learn-unsupervised-learning.ipynb](06-scikit-learn/04-scikit-learn-unsupervised-learning.ipynb)** - Aprendizaje no supervisado
+   - **Clustering**: K-Means, DBSCAN, Clustering Jerárquico Aglomerativo
+   - **Reducción de dimensionalidad**: PCA, TruncatedSVD, NMF
+   - t-SNE para visualización
+   - Selección del número óptimo de componentes
+
+5. **[05-scikit-learn-model-evaluation.ipynb](06-scikit-learn/05-scikit-learn-model-evaluation.ipynb)** - Evaluación de modelos
+   - Métricas de clasificación (accuracy, precision, recall, F1, matriz de confusión)
+   - Métricas de regresión (MSE, RMSE, MAE, R²)
+   - Validación cruzada (K-Fold, Stratified K-Fold)
+   - Búsqueda de hiperparámetros (GridSearchCV, RandomizedSearchCV)
+   - Curvas ROC y AUC
+
+### 🧠 07 - Algoritmos Clásicos de Machine Learning (8 notebooks)
+
+1. **[01-arboles-decision.ipynb](07-algoritmos-ml/01-arboles-decision.ipynb)** - Árboles de Decisión
+   - Conceptos fundamentales (Entropía, Ganancia de Información, Índice Gini)
+   - Implementación para clasificación y regresión
+   - Visualización de árboles de decisión
+   - Importancia de características
+   - Control de sobreajuste
+   - Parámetros importantes
+
+2. **[02-minimax.ipynb](07-algoritmos-ml/02-minimax.ipynb)** - Algoritmo Minimax
+   - Fundamentos de teoría de juegos
+   - Implementación básica de Minimax
+   - Ejemplo práctico: Tres en Raya
+   - Optimización con poda alfa-beta
+   - Comparación de rendimiento
+   - Aplicaciones y limitaciones
+
+3. **[03-q-learning.ipynb](07-algoritmos-ml/03-q-learning.ipynb)** - Q-Learning
+   - Fundamentos de Reinforcement Learning
+   - Ecuación de actualización Q-Learning
+   - Implementación de agente Q-Learning
+   - Ejemplo práctico: Laberinto
+   - Visualización de tabla Q y política aprendida
+   - Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
+   - Aplicaciones en juegos y robótica
+
+4. **[04-k-nearest-neighbors.ipynb](07-algoritmos-ml/04-k-nearest-neighbors.ipynb)** - K-Nearest Neighbors (KNN)
+   - Algoritmo lazy learning
+   - Implementación para clasificación y regresión
+   - Efecto del valor de K
+   - Métricas de distancia (Euclidiana, Manhattan, Minkowski)
+   - Ventajas y desventajas
+
+5. **[05-naive-bayes.ipynb](07-algoritmos-ml/05-naive-bayes.ipynb)** - Naive Bayes
+   - Teorema de Bayes y supuesto de independencia
+   - Implementación básica
+   - Variantes: Gaussian, Multinomial, Bernoulli
+   - Ejemplo de clasificación de texto
+   - Aplicaciones en NLP
+
+6. **[06-regresion-lineal.ipynb](07-algoritmos-ml/06-regresion-lineal.ipynb)** - Regresión Lineal desde Cero
+   - Ecuación de regresión lineal
+   - Método 1: Ecuación Normal (solución analítica)
+   - Método 2: Gradiente Descendente
+   - Regresión simple y múltiple
+   - Visualización de convergencia
+
+7. **[07-k-means.ipynb](07-algoritmos-ml/07-k-means.ipynb)** - K-Means desde Cero
+   - Algoritmo de clustering no supervisado
+   - Implementación básica
+   - Selección del número óptimo de clusters (Método del codo)
+   - Métrica Silhouette Score
+   - Convergencia del algoritmo
+
+8. **[08-perceptron.ipynb](07-algoritmos-ml/08-perceptron.ipynb)** - Perceptrón
+   - Unidad básica de redes neuronales
+   - Implementación básica
+   - Algoritmo de aprendizaje
+   - Limitaciones (problema XOR)
+   - Base para redes neuronales multicapa
 
 ### 🤖 08 - IA Moderna (5 notebooks)
 
@@ -397,13 +397,16 @@ cheat-sheets-ia/
 │   ├── 02-matplotlib-customization.ipynb
 │   ├── 03-matplotlib-plot-types.ipynb
 │   └── 04-matplotlib-advanced.ipynb
-├── 05-scikit-learn/                 # Notebooks de Scikit-learn
+├── 05-estadistica/                  # Estadística
+│   ├── 01-estadistica-basica.ipynb
+│   └── 02-estadistica-aplicada-ia.ipynb
+├── 06-scikit-learn/                 # Notebooks de Scikit-learn
 │   ├── 01-scikit-learn-basics.ipynb
 │   ├── 02-scikit-learn-preprocessing.ipynb
 │   ├── 03-scikit-learn-supervised-learning.ipynb
 │   ├── 04-scikit-learn-unsupervised-learning.ipynb
 │   └── 05-scikit-learn-model-evaluation.ipynb
-├── 06-algoritmos-ml/                # Algoritmos Clásicos de ML
+├── 07-algoritmos-ml/                # Algoritmos Clásicos de ML
 │   ├── 01-arboles-decision.ipynb
 │   ├── 02-minimax.ipynb
 │   ├── 03-q-learning.ipynb
@@ -412,9 +415,6 @@ cheat-sheets-ia/
 │   ├── 06-regresion-lineal.ipynb
 │   ├── 07-k-means.ipynb
 │   └── 08-perceptron.ipynb
-├── 07-estadistica/                  # Estadística
-│   ├── 01-estadistica-basica.ipynb
-│   └── 02-estadistica-aplicada-ia.ipynb
 ├── 08-ia-moderna/                   # IA Moderna
 │   ├── 01-redes-neuronales-basicas.ipynb
 │   ├── 02-deep-learning-tensorflow.ipynb
@@ -453,9 +453,9 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 3. Sigue con **02 - NumPy** (01-04)
 4. Continúa con **03 - Pandas** (01-04)
 5. Sigue con **04 - Matplotlib** (01-04) - Visualización de datos
-6. Continúa con **07 - Estadística** (01-02) - Fundamentos estadísticos
-7. Sigue con **05 - Scikit-learn** (01-05) - Machine Learning
-8. Explora **06 - Algoritmos Clásicos de ML** (01-08) - Algoritmos fundamentales implementados desde cero
+6. Continúa con **05 - Estadística** (01-02) - Fundamentos estadísticos (IMPORTANTE antes de ML)
+7. Sigue con **06 - Scikit-learn** (01-05) - Machine Learning
+8. Explora **07 - Algoritmos Clásicos de ML** (01-08) - Algoritmos fundamentales implementados desde cero
 9. Avanza a **08 - IA Moderna** (01-05) - Deep Learning y arquitecturas modernas
 
 ### Para Usuarios Avanzados
