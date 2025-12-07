@@ -41,7 +41,7 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Listas, tablas y código
    - Enlaces e imágenes
 
-### 🐍 01 - Python (4 notebooks)
+### 🐍 01 - Python (5 notebooks)
 
 1. **[01-python-basics.ipynb](01-python/01-python-basics.ipynb)** - Fundamentos básicos
    - Tipos de datos (números, strings, listas, tuplas, diccionarios, sets)
@@ -53,14 +53,23 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - List, Dict y Set Comprehensions
    - zip() y enumerate()
 
-3. **[03-python-functions-classes.ipynb](01-python/03-python-functions-classes.ipynb)** - Funciones y clases
-   - Funciones (definición, argumentos variables, lambda)
-   - Clases y objetos
-   - Herencia
-   - Métodos especiales (dunder methods)
+3. **[03-python-functions.ipynb](01-python/03-python-functions.ipynb)** - Funciones
+   - Definición básica de funciones
+   - Argumentos variables (*args, **kwargs)
+   - Funciones lambda (anónimas)
    - Decoradores
+   - Funciones como objetos de primera clase
 
-4. **[04-python-modules-io.ipynb](01-python/04-python-modules-io.ipynb)** - Módulos e I/O
+4. **[04-python-classes-oop.ipynb](01-python/04-python-classes-oop.ipynb)** - Programación Orientada a Objetos (POO)
+   - Clases y objetos
+   - Atributos de clase vs instancia
+   - Métodos de clase y estáticos
+   - Herencia (simple y múltiple)
+   - Métodos especiales (dunder methods)
+   - Propiedades (getters y setters)
+   - Encapsulación
+
+5. **[05-python-modules-io.ipynb](01-python/05-python-modules-io.ipynb)** - Módulos e I/O
    - Módulos y paquetes
    - Manejo de archivos (I/O)
    - JSON
@@ -305,8 +314,9 @@ cheat-sheets-ia/
 ├── 01-python/                       # Notebooks de Python
 │   ├── 01-python-basics.ipynb
 │   ├── 02-python-control-flow.ipynb
-│   ├── 03-python-functions-classes.ipynb
-│   └── 04-python-modules-io.ipynb
+│   ├── 03-python-functions.ipynb
+│   ├── 04-python-classes-oop.ipynb
+│   └── 05-python-modules-io.ipynb
 ├── 02-numpy/                        # Notebooks de NumPy
 │   ├── 01-numpy-basics.ipynb
 │   ├── 02-numpy-operations.ipynb
@@ -353,7 +363,7 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 
 ## 📝 Características
 
-- ✅ **34 notebooks completos** con ejemplos prácticos
+- ✅ **35 notebooks completos** con ejemplos prácticos
 - ✅ **Todos los notebooks probados** y funcionando correctamente
 - ✅ **Orden lógico de aprendizaje** con numeración
 - ✅ **Documentación en español**
@@ -364,7 +374,7 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 
 ### Para Principiantes
 1. Empieza con **00 - Básicos** (01-05) - Configuración y herramientas esenciales
-2. Continúa con **01 - Python** (01-04)
+2. Continúa con **01 - Python** (01-05)
 3. Sigue con **02 - NumPy** (01-04)
 4. Continúa con **03 - Pandas** (01-04)
 5. Sigue con **04 - Matplotlib** (01-04) - Visualización de datos

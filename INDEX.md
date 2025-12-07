@@ -70,14 +70,22 @@ Este repositorio contiene cheat sheets organizados por tecnología en formato Ju
 - Dict y Set Comprehensions
 - zip() y enumerate()
 
-### [03-python-functions-classes.ipynb](01-python/03-python-functions-classes.ipynb)
-- Funciones (definición, argumentos variables, lambda)
-- Clases y objetos
-- Herencia
-- Métodos especiales (dunder methods)
+### [03-python-functions.ipynb](01-python/03-python-functions.ipynb)
+- Funciones (definición básica, argumentos variables)
+- Funciones lambda (anónimas)
 - Decoradores
+- Funciones como objetos de primera clase
 
-### [04-python-modules-io.ipynb](01-python/04-python-modules-io.ipynb)
+### [04-python-classes-oop.ipynb](01-python/04-python-classes-oop.ipynb)
+- Clases y objetos
+- Atributos de clase vs instancia
+- Métodos de clase y estáticos
+- Herencia (simple y múltiple)
+- Métodos especiales (dunder methods)
+- Propiedades (getters y setters)
+- Encapsulación
+
+### [05-python-modules-io.ipynb](01-python/05-python-modules-io.ipynb)
 - Módulos y paquetes
 - Manejo de archivos (I/O)
 - JSON
