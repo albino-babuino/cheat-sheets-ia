@@ -239,7 +239,7 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 
 ## 📝 Características
 
-- ✅ **16 notebooks completos** con ejemplos prácticos
+- ✅ **21 notebooks completos** con ejemplos prácticos
 - ✅ **Todos los notebooks probados** y funcionando correctamente
 - ✅ **Orden lógico de aprendizaje** con numeración
 - ✅ **Documentación en español**
