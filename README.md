@@ -1,11 +1,12 @@
-# 📚 Cheat Sheets - Python, NumPy, Pandas y Matplotlib
+# 📚 Cheat Sheets - Python, NumPy, Pandas, Matplotlib y Scikit-learn
 
-Repositorio completo de **cheat sheets** (hojas de referencia rápida) en formato Jupyter Notebook para **Python**, **NumPy**, **Pandas** y **Matplotlib**. Todos los notebooks están en español y organizados numéricamente para facilitar el aprendizaje progresivo.
+Repositorio completo de **cheat sheets** (hojas de referencia rápida) en formato Jupyter Notebook para **Python**, **NumPy**, **Pandas**, **Matplotlib** y **Scikit-learn**. Todos los notebooks están en español y organizados numéricamente para facilitar el aprendizaje progresivo.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![NumPy](https://img.shields.io/badge/NumPy-1.24+-green.svg)
 ![Pandas](https://img.shields.io/badge/Pandas-2.0+-orange.svg)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.7+-blue.svg)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.3+-orange.svg)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)
 
 ## 📖 Contenido
@@ -149,6 +150,23 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Líneas de referencia y regiones
    - Configuración global (rcParams)
 
+### 🤖 05 - Scikit-learn (3 notebooks)
+
+1. **[01-scikit-learn-basics.ipynb](05-scikit-learn/01-scikit-learn-basics.ipynb)** - Fundamentos básicos
+   - Importar Scikit-learn
+   - Estructura de datos
+   - Conceptos básicos de Machine Learning
+
+2. **[02-scikit-learn-preprocessing.ipynb](05-scikit-learn/02-scikit-learn-preprocessing.ipynb)** - Preprocesamiento
+   - Normalización y estandarización
+   - Codificación de variables categóricas
+   - Manejo de valores faltantes
+
+3. **[03-scikit-learn-supervised-learning.ipynb](05-scikit-learn/03-scikit-learn-supervised-learning.ipynb)** - Aprendizaje supervisado
+   - Clasificación
+   - Regresión
+   - Modelos principales
+
 ## 🚀 Inicio Rápido
 
 ### Requisitos Previos
@@ -180,7 +198,7 @@ source .venv/bin/activate  # Linux/Mac
 3. **Instalar dependencias:**
 ```bash
 # Con uv
-uv pip install jupyter numpy pandas matplotlib
+uv pip install jupyter numpy pandas matplotlib scikit-learn
 
 # O con pip
 pip install -r requirements.txt
@@ -223,6 +241,10 @@ cheat-sheets-ia/
 │   ├── 02-matplotlib-customization.ipynb
 │   ├── 03-matplotlib-plot-types.ipynb
 │   └── 04-matplotlib-advanced.ipynb
+├── 05-scikit-learn/                 # Notebooks de Scikit-learn
+│   ├── 01-scikit-learn-basics.ipynb
+│   ├── 02-scikit-learn-preprocessing.ipynb
+│   └── 03-scikit-learn-supervised-learning.ipynb
 ├── .venv/                           # Entorno virtual
 ├── INDEX.md                         # Índice detallado
 ├── README.md                        # Este archivo
@@ -239,7 +261,7 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 
 ## 📝 Características
 
-- ✅ **21 notebooks completos** con ejemplos prácticos
+- ✅ **24 notebooks completos** con ejemplos prácticos
 - ✅ **Todos los notebooks probados** y funcionando correctamente
 - ✅ **Orden lógico de aprendizaje** con numeración
 - ✅ **Documentación en español**
@@ -253,7 +275,8 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 2. Continúa con **01 - Python** (01-04)
 3. Sigue con **02 - NumPy** (01-04)
 4. Continúa con **03 - Pandas** (01-04)
-5. Finaliza con **04 - Matplotlib** (01-04) - Visualización de datos
+5. Sigue con **04 - Matplotlib** (01-04) - Visualización de datos
+6. Finaliza con **05 - Scikit-learn** (01-03) - Machine Learning
 
 ### Para Usuarios Intermedios
 - Puedes saltar directamente a la sección que necesites
@@ -265,6 +288,7 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 - [Documentación oficial de NumPy](https://numpy.org/doc/stable/)
 - [Documentación oficial de Pandas](https://pandas.pydata.org/docs/)
 - [Documentación oficial de Matplotlib](https://matplotlib.org/stable/)
+- [Documentación oficial de Scikit-learn](https://scikit-learn.org/stable/)
 
 ## 🤝 Contribuciones
 
