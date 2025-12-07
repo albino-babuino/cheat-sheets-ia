@@ -1,3 +1,4 @@
+# Dependencias principales
 jupyter==1.1.1
 jupyter-client==8.6.3
 jupyter-console==6.6.3
@@ -16,8 +17,14 @@ numpy==2.3.5
 pandas==2.3.3
 scikit-learn==1.7.2
 seaborn==0.13.2
-scipy==1.14.1
+scipy==1.16.3
+
 # Opcionales para IA moderna (descomentar si los necesitas)
+# Para notebooks 09.02, 09.04, 09.05 (Deep Learning, CNN, RNN/LSTM)
 # tensorflow>=2.15.0
+# tf-keras>=2.15.0  # Requerido para compatibilidad con transformers
+
+# Para notebooks 09.03 (Transformers y NLP)
 # transformers>=4.30.0
 # torch>=2.0.0
+# sentencepiece>=0.1.99  # Requerido por algunos tokenizers de transformers
