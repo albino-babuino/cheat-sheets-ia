@@ -219,7 +219,9 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Búsqueda de hiperparámetros (GridSearchCV, RandomizedSearchCV)
    - Curvas ROC y AUC
 
-### 🧠 07 - Algoritmos Clásicos de Machine Learning (8 notebooks)
+### 🧠 08 - Algoritmos Clásicos de Machine Learning (8 notebooks)
+
+**Nota**: Esta sección contiene principalmente algoritmos de **Machine Learning** (que aprenden de datos), organizados por tipo de aprendizaje. También incluye una subsección de **IA Clásica (Simbólica)** (08.04), que contiene algoritmos previos al ML donde las reglas están prefijadas y no hay aprendizaje.
 
 Los algoritmos están organizados por tipo de aprendizaje:
 
@@ -281,15 +283,18 @@ Los algoritmos están organizados por tipo de aprendizaje:
    - Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
    - Aplicaciones en juegos y robótica
 
-#### 🎯 08.04 - Otros (1 notebook)
+#### 🧩 08.04 - IA Clásica (Simbólica) (1 notebook)
 
-1. **[08.04.01-minimax.ipynb](08-algoritmos-ml/08.04-otros/08.04.01-minimax.ipynb)** - Algoritmo Minimax
+**Nota**: Esta sección contiene algoritmos de **IA clásica/simbólica**, que son **previos al Machine Learning**. Estos algoritmos no aprenden de datos; sus reglas están prefijadas. Se incluyen aquí para completitud, pero son conceptualmente diferentes de los algoritmos de ML.
+
+1. **[08.04.01-minimax.ipynb](08-algoritmos-ml/08.04-ia-clasica/08.04.01-minimax.ipynb)** - Algoritmo Minimax
    - Fundamentos de teoría de juegos
    - Implementación básica de Minimax
    - Ejemplo práctico: Tres en Raya
    - Optimización con poda alfa-beta
    - Comparación de rendimiento
    - Aplicaciones y limitaciones
+   - **Nota**: Este es un algoritmo de IA simbólica, no de Machine Learning
 
 ### 🤖 09 - IA Moderna (5 notebooks)
 
@@ -427,7 +432,7 @@ cheat-sheets-ia/
 │   │   └── 08.02.01-k-means.ipynb
 │   ├── 08.03-refuerzo/              # Aprendizaje por Refuerzo
 │   │   └── 08.03.01-q-learning.ipynb
-│   └── 08.04-otros/                 # Otros algoritmos
+│   └── 08.04-ia-clasica/            # IA Clásica (Simbólica) - No es ML
 │       └── 08.04.01-minimax.ipynb
 ├── 09-ia-moderna/                   # IA Moderna
 │   ├── 09.01-redes-neuronales-basicas.ipynb
