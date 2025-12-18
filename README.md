@@ -219,75 +219,11 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Búsqueda de hiperparámetros (GridSearchCV, RandomizedSearchCV)
    - Curvas ROC y AUC
 
-### 🧠 08 - Algoritmos Clásicos de Machine Learning (8 notebooks)
+### 🧩 08 - IA Clásica (Simbólica) (1 notebook)
 
-**Nota**: Esta sección contiene principalmente algoritmos de **Machine Learning** (que aprenden de datos), organizados por tipo de aprendizaje. También incluye una subsección de **IA Clásica (Simbólica)** (08.04), que contiene algoritmos previos al ML donde las reglas están prefijadas y no hay aprendizaje.
+**Nota**: Esta sección contiene algoritmos de **IA clásica/simbólica**, que son **previos al Machine Learning**. Estos algoritmos no aprenden de datos; sus reglas están prefijadas. Son conceptualmente diferentes de los algoritmos de ML, que sí aprenden de datos.
 
-Los algoritmos están organizados por tipo de aprendizaje:
-
-#### 📚 08.01 - Supervisados (5 notebooks)
-
-1. **[08.01.01-arboles-decision.ipynb](08-algoritmos-ml/08.01-supervisados/08.01.01-arboles-decision.ipynb)** - Árboles de Decisión
-   - Conceptos fundamentales (Entropía, Ganancia de Información, Índice Gini)
-   - Implementación para clasificación y regresión
-   - Visualización de árboles de decisión
-   - Importancia de características
-   - Control de sobreajuste
-   - Parámetros importantes
-
-2. **[08.01.02-k-nearest-neighbors.ipynb](08-algoritmos-ml/08.01-supervisados/08.01.02-k-nearest-neighbors.ipynb)** - K-Nearest Neighbors (KNN)
-   - Algoritmo lazy learning
-   - Implementación para clasificación y regresión
-   - Efecto del valor de K
-   - Métricas de distancia (Euclidiana, Manhattan, Minkowski)
-   - Ventajas y desventajas
-
-3. **[08.01.03-naive-bayes.ipynb](08-algoritmos-ml/08.01-supervisados/08.01.03-naive-bayes.ipynb)** - Naive Bayes
-   - Teorema de Bayes y supuesto de independencia
-   - Implementación básica
-   - Variantes: Gaussian, Multinomial, Bernoulli
-   - Ejemplo de clasificación de texto
-   - Aplicaciones en NLP
-
-4. **[08.01.04-regresion-lineal.ipynb](08-algoritmos-ml/08.01-supervisados/08.01.04-regresion-lineal.ipynb)** - Regresión Lineal desde Cero
-   - Ecuación de regresión lineal
-   - Método 1: Ecuación Normal (solución analítica)
-   - Método 2: Gradiente Descendente
-   - Regresión simple y múltiple
-   - Visualización de convergencia
-
-5. **[08.01.05-perceptron.ipynb](08-algoritmos-ml/08.01-supervisados/08.01.05-perceptron.ipynb)** - Perceptrón
-   - Unidad básica de redes neuronales
-   - Implementación básica
-   - Algoritmo de aprendizaje
-   - Limitaciones (problema XOR)
-   - Base para redes neuronales multicapa
-
-#### 🔍 08.02 - No Supervisados (1 notebook)
-
-1. **[08.02.01-k-means.ipynb](08-algoritmos-ml/08.02-no-supervisados/08.02.01-k-means.ipynb)** - K-Means desde Cero
-   - Algoritmo de clustering no supervisado
-   - Implementación básica
-   - Selección del número óptimo de clusters (Método del codo)
-   - Métrica Silhouette Score
-   - Convergencia del algoritmo
-
-#### 🎮 08.03 - Refuerzo (1 notebook)
-
-1. **[08.03.01-q-learning.ipynb](08-algoritmos-ml/08.03-refuerzo/08.03.01-q-learning.ipynb)** - Q-Learning
-   - Fundamentos de Reinforcement Learning
-   - Ecuación de actualización Q-Learning
-   - Implementación de agente Q-Learning
-   - Ejemplo práctico: Laberinto
-   - Visualización de tabla Q y política aprendida
-   - Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
-   - Aplicaciones en juegos y robótica
-
-#### 🧩 08.04 - IA Clásica (Simbólica) (1 notebook)
-
-**Nota**: Esta sección contiene algoritmos de **IA clásica/simbólica**, que son **previos al Machine Learning**. Estos algoritmos no aprenden de datos; sus reglas están prefijadas. Se incluyen aquí para completitud, pero son conceptualmente diferentes de los algoritmos de ML.
-
-1. **[08.04.01-minimax.ipynb](08-algoritmos-ml/08.04-ia-clasica/08.04.01-minimax.ipynb)** - Algoritmo Minimax
+1. **[08.01-minimax.ipynb](08-ia-clasica/08.01-minimax.ipynb)** - Algoritmo Minimax
    - Fundamentos de teoría de juegos
    - Implementación básica de Minimax
    - Ejemplo práctico: Tres en Raya
@@ -296,16 +232,80 @@ Los algoritmos están organizados por tipo de aprendizaje:
    - Aplicaciones y limitaciones
    - **Nota**: Este es un algoritmo de IA simbólica, no de Machine Learning
 
-### 🤖 09 - IA Moderna (5 notebooks)
+### 🧠 09 - Machine Learning (7 notebooks)
 
-1. **[09.01-redes-neuronales-basicas.ipynb](09-ia-moderna/09.01-redes-neuronales-basicas.ipynb)** - Redes Neuronales Básicas
+**Nota**: Esta sección contiene algoritmos de **Machine Learning** (que aprenden de datos), organizados por tipo de aprendizaje.
+
+Los algoritmos están organizados por tipo de aprendizaje:
+
+#### 📚 09.01 - Supervisados (5 notebooks)
+
+1. **[09.01.01-arboles-decision.ipynb](09-machine-learning/09.01-supervisados/09.01.01-arboles-decision.ipynb)** - Árboles de Decisión
+   - Conceptos fundamentales (Entropía, Ganancia de Información, Índice Gini)
+   - Implementación para clasificación y regresión
+   - Visualización de árboles de decisión
+   - Importancia de características
+   - Control de sobreajuste
+   - Parámetros importantes
+
+2. **[09.01.02-k-nearest-neighbors.ipynb](09-machine-learning/09.01-supervisados/09.01.02-k-nearest-neighbors.ipynb)** - K-Nearest Neighbors (KNN)
+   - Algoritmo lazy learning
+   - Implementación para clasificación y regresión
+   - Efecto del valor de K
+   - Métricas de distancia (Euclidiana, Manhattan, Minkowski)
+   - Ventajas y desventajas
+
+3. **[09.01.03-naive-bayes.ipynb](09-machine-learning/09.01-supervisados/09.01.03-naive-bayes.ipynb)** - Naive Bayes
+   - Teorema de Bayes y supuesto de independencia
+   - Implementación básica
+   - Variantes: Gaussian, Multinomial, Bernoulli
+   - Ejemplo de clasificación de texto
+   - Aplicaciones en NLP
+
+4. **[09.01.04-regresion-lineal.ipynb](09-machine-learning/09.01-supervisados/09.01.04-regresion-lineal.ipynb)** - Regresión Lineal desde Cero
+   - Ecuación de regresión lineal
+   - Método 1: Ecuación Normal (solución analítica)
+   - Método 2: Gradiente Descendente
+   - Regresión simple y múltiple
+   - Visualización de convergencia
+
+5. **[09.01.05-perceptron.ipynb](09-machine-learning/09.01-supervisados/09.01.05-perceptron.ipynb)** - Perceptrón
+   - Unidad básica de redes neuronales
+   - Implementación básica
+   - Algoritmo de aprendizaje
+   - Limitaciones (problema XOR)
+   - Base para redes neuronales multicapa
+
+#### 🔍 09.02 - No Supervisados (1 notebook)
+
+1. **[09.02.01-k-means.ipynb](09-machine-learning/09.02-no-supervisados/09.02.01-k-means.ipynb)** - K-Means desde Cero
+   - Algoritmo de clustering no supervisado
+   - Implementación básica
+   - Selección del número óptimo de clusters (Método del codo)
+   - Métrica Silhouette Score
+   - Convergencia del algoritmo
+
+#### 🎮 09.03 - Refuerzo (1 notebook)
+
+1. **[09.03.01-q-learning.ipynb](09-machine-learning/09.03-refuerzo/09.03.01-q-learning.ipynb)** - Q-Learning
+   - Fundamentos de Reinforcement Learning
+   - Ecuación de actualización Q-Learning
+   - Implementación de agente Q-Learning
+   - Ejemplo práctico: Laberinto
+   - Visualización de tabla Q y política aprendida
+   - Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
+   - Aplicaciones en juegos y robótica
+
+### 🤖 10 - IA Moderna (5 notebooks)
+
+1. **[10.01-redes-neuronales-basicas.ipynb](10-ia-moderna/10.01-redes-neuronales-basicas.ipynb)** - Redes Neuronales Básicas
    - Perceptrón Multicapa (MLP) desde cero
    - Forward propagation y backpropagation
    - Funciones de activación (sigmoid, ReLU, tanh, Leaky ReLU)
    - Ejemplo práctico: Clasificación binaria
    - Visualización de fronteras de decisión
 
-2. **[09.02-deep-learning-tensorflow.ipynb](09-ia-moderna/09.02-deep-learning-tensorflow.ipynb)** - Deep Learning con TensorFlow/Keras
+2. **[10.02-deep-learning-tensorflow.ipynb](10-ia-moderna/10.02-deep-learning-tensorflow.ipynb)** - Deep Learning con TensorFlow/Keras
    - Construcción de modelos con Keras
    - Capas densas, dropout, batch normalization
    - Optimizadores (Adam, SGD, RMSprop)
@@ -313,7 +313,7 @@ Los algoritmos están organizados por tipo de aprendizaje:
    - Guardar y cargar modelos
    - Transfer learning
 
-3. **[09.03-transformers-nlp.ipynb](09-ia-moderna/09.03-transformers-nlp.ipynb)** - Transformers y NLP Moderno
+3. **[10.03-transformers-nlp.ipynb](10-ia-moderna/10.03-transformers-nlp.ipynb)** - Transformers y NLP Moderno
    - Arquitectura Transformer
    - Attention mechanism y self-attention
    - Modelos pre-entrenados (BERT, GPT, etc.)
@@ -321,7 +321,7 @@ Los algoritmos están organizados por tipo de aprendizaje:
    - Hugging Face Transformers
    - Aplicaciones en NLP
 
-4. **[09.04-cnn-convolucional.ipynb](09-ia-moderna/09.04-cnn-convolucional.ipynb)** - Redes Neuronales Convolucionales (CNN)
+4. **[10.04-cnn-convolucional.ipynb](10-ia-moderna/10.04-cnn-convolucional.ipynb)** - Redes Neuronales Convolucionales (CNN)
    - Operación de convolución desde cero
    - Pooling (Max Pooling y Average Pooling)
    - Construcción de CNN con TensorFlow/Keras
@@ -329,7 +329,7 @@ Los algoritmos están organizados por tipo de aprendizaje:
    - Visualización de feature maps
    - Aplicaciones en visión por computadora
 
-5. **[09.05-rnn-lstm.ipynb](09-ia-moderna/09.05-rnn-lstm.ipynb)** - Redes Neuronales Recurrentes (RNN) y LSTM
+5. **[10.05-rnn-lstm.ipynb](10-ia-moderna/10.05-rnn-lstm.ipynb)** - Redes Neuronales Recurrentes (RNN) y LSTM
    - RNN básica desde cero
    - LSTM con TensorFlow/Keras
    - GRU (Gated Recurrent Unit)
@@ -421,25 +421,25 @@ cheat-sheets-ia/
 │   ├── 07.03-scikit-learn-supervised-learning.ipynb
 │   ├── 07.04-scikit-learn-unsupervised-learning.ipynb
 │   └── 07.05-scikit-learn-model-evaluation.ipynb
-├── 08-algoritmos-ml/                # Algoritmos Clásicos de ML
-│   ├── 08.01-supervisados/          # Aprendizaje Supervisado
-│   │   ├── 08.01.01-arboles-decision.ipynb
-│   │   ├── 08.01.02-k-nearest-neighbors.ipynb
-│   │   ├── 08.01.03-naive-bayes.ipynb
-│   │   ├── 08.01.04-regresion-lineal.ipynb
-│   │   └── 08.01.05-perceptron.ipynb
-│   ├── 08.02-no-supervisados/       # Aprendizaje No Supervisado
-│   │   └── 08.02.01-k-means.ipynb
-│   ├── 08.03-refuerzo/              # Aprendizaje por Refuerzo
-│   │   └── 08.03.01-q-learning.ipynb
-│   └── 08.04-ia-clasica/            # IA Clásica (Simbólica) - No es ML
-│       └── 08.04.01-minimax.ipynb
-├── 09-ia-moderna/                   # IA Moderna
-│   ├── 09.01-redes-neuronales-basicas.ipynb
-│   ├── 09.02-deep-learning-tensorflow.ipynb
-│   ├── 09.03-transformers-nlp.ipynb
-│   ├── 09.04-cnn-convolucional.ipynb
-│   └── 09.05-rnn-lstm.ipynb
+├── 08-ia-clasica/                   # IA Clásica (Simbólica) - No es ML
+│   └── 08.01-minimax.ipynb
+├── 09-machine-learning/             # Algoritmos Clásicos de ML
+│   ├── 09.01-supervisados/          # Aprendizaje Supervisado
+│   │   ├── 09.01.01-arboles-decision.ipynb
+│   │   ├── 09.01.02-k-nearest-neighbors.ipynb
+│   │   ├── 09.01.03-naive-bayes.ipynb
+│   │   ├── 09.01.04-regresion-lineal.ipynb
+│   │   └── 09.01.05-perceptron.ipynb
+│   ├── 09.02-no-supervisados/       # Aprendizaje No Supervisado
+│   │   └── 09.02.01-k-means.ipynb
+│   └── 09.03-refuerzo/              # Aprendizaje por Refuerzo
+│       └── 09.03.01-q-learning.ipynb
+├── 10-ia-moderna/                   # IA Moderna
+│   ├── 10.01-redes-neuronales-basicas.ipynb
+│   ├── 10.02-deep-learning-tensorflow.ipynb
+│   ├── 10.03-transformers-nlp.ipynb
+│   ├── 10.04-cnn-convolucional.ipynb
+│   └── 10.05-rnn-lstm.ipynb
 ├── .venv/                           # Entorno virtual
 ├── INDEX.md                         # Índice detallado
 ├── README.md                        # Este archivo
@@ -474,8 +474,9 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 5. Sigue con **05 - Matplotlib** (05.01-05.04) - Visualización de datos
 6. Continúa con **06 - Estadística** (06.01-06.02) - Fundamentos estadísticos (IMPORTANTE antes de ML)
 7. Sigue con **07 - Scikit-learn** (07.01-07.05) - Machine Learning
-8. Explora **08 - Algoritmos Clásicos de ML** - Algoritmos fundamentales implementados desde cero
-9. Avanza a **09 - IA Moderna** (09.01-09.05) - Deep Learning y arquitecturas modernas
+8. (Opcional) Explora **08 - IA Clásica (Simbólica)** (08.01) - Algoritmos de IA previos al ML (no aprenden de datos)
+9. Explora **09 - Machine Learning** (09.01-09.05) - Algoritmos fundamentales implementados desde cero
+10. Avanza a **10 - IA Moderna** (10.01-10.05) - Deep Learning y arquitecturas modernas
 
 ### Para Usuarios Avanzados
 - **08 - IA Moderna**: Transformers, CNN, RNN/LSTM, Deep Learning con TensorFlow

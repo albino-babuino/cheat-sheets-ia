@@ -234,91 +234,11 @@ Este repositorio contiene **42 cheat sheets** organizados por tecnología en for
 - Búsqueda de hiperparámetros (GridSearchCV, RandomizedSearchCV)
 - Curvas ROC y AUC
 
-## 🧠 08 - Algoritmos Clásicos de Machine Learning (8 notebooks)
+## 🧩 08 - IA Clásica (Simbólica) (1 notebook)
 
-**Nota**: Esta sección contiene principalmente algoritmos de **Machine Learning** (que aprenden de datos), organizados por tipo de aprendizaje. También incluye una subsección de **IA Clásica (Simbólica)** (08.04), que contiene algoritmos previos al ML donde las reglas están prefijadas y no hay aprendizaje.
+**Nota**: Esta sección contiene algoritmos de **IA clásica/simbólica**, que son **previos al Machine Learning**. Estos algoritmos no aprenden de datos; sus reglas están prefijadas. Son conceptualmente diferentes de los algoritmos de ML, que sí aprenden de datos.
 
-Los algoritmos están organizados por tipo de aprendizaje:
-
-### 📚 08.01 - Supervisados
-
-#### [08.01.01-arboles-decision.ipynb](08-algoritmos-ml/08.01-supervisados/08.01.01-arboles-decision.ipynb)
-- ¿Qué es un Árbol de Decisión?
-- Conceptos fundamentales (Entropía, Ganancia de Información, Índice Gini)
-- Árbol de Decisión para Clasificación
-- Árbol de Decisión para Regresión
-- Visualización de árboles
-- Importancia de características
-- Control de sobreajuste (Overfitting)
-- Parámetros importantes
-
-#### [08.01.02-k-nearest-neighbors.ipynb](08-algoritmos-ml/08.01-supervisados/08.01.02-k-nearest-neighbors.ipynb)
-- ¿Qué es KNN?
-- Conceptos fundamentales (K, Distancia, Votación, Promedio)
-- Implementación básica de KNN para clasificación y regresión
-- KNN para Clasificación
-- KNN para Regresión
-- Efecto del valor de K
-- Métricas de distancia (Euclidiana, Manhattan, Minkowski)
-- Ventajas, desventajas y aplicaciones
-
-#### [08.01.03-naive-bayes.ipynb](08-algoritmos-ml/08.01-supervisados/08.01.03-naive-bayes.ipynb)
-- ¿Qué es Naive Bayes?
-- Teorema de Bayes y supuesto de independencia
-- Implementación básica de Naive Bayes
-- Tipos de Naive Bayes (Gaussian, Multinomial, Bernoulli)
-- Ejemplo de clasificación de texto
-- Comparación de variantes
-- Ventajas, desventajas y aplicaciones
-
-#### [08.01.04-regresion-lineal.ipynb](08-algoritmos-ml/08.01-supervisados/08.01.04-regresion-lineal.ipynb)
-- ¿Qué es Regresión Lineal?
-- Ecuación de regresión lineal
-- Método 1: Ecuación Normal (solución analítica)
-- Método 2: Gradiente Descendente
-- Regresión Lineal Simple
-- Regresión Lineal Múltiple
-- Visualización de convergencia
-- Ventajas, desventajas y aplicaciones
-
-#### [08.01.05-perceptron.ipynb](08-algoritmos-ml/08.01-supervisados/08.01.05-perceptron.ipynb)
-- ¿Qué es el Perceptrón?
-- Conceptos fundamentales (Neurona artificial, Pesos, Bias, Función de activación)
-- Modelo del Perceptrón y algoritmo de aprendizaje
-- Implementación básica del Perceptrón
-- Ejemplo de clasificación binaria
-- Limitaciones (problema XOR)
-- Extensión a Perceptrón Multicapa (MLP)
-- Ventajas, desventajas y aplicaciones
-
-### 🔍 08.02 - No Supervisados
-
-#### [08.02.01-k-means.ipynb](08-algoritmos-ml/08.02-no-supervisados/08.02.01-k-means.ipynb)
-- ¿Qué es K-Means?
-- Conceptos fundamentales (K, Centroide, Inicialización, Asignación, Actualización)
-- Algoritmo K-Means y función de costo (Inercia)
-- Implementación básica de K-Means
-- Selección del número óptimo de clusters (Método del codo, Silhouette Score)
-- Convergencia del algoritmo
-- Ventajas, desventajas y aplicaciones
-
-### 🎮 08.03 - Refuerzo
-
-#### [08.03.01-q-learning.ipynb](08-algoritmos-ml/08.03-refuerzo/08.03.01-q-learning.ipynb)
-- ¿Qué es Q-Learning?
-- Conceptos fundamentales (Agente, Ambiente, Estado, Acción, Recompensa, Q-Value)
-- Ecuación de actualización Q-Learning
-- Implementación de agente Q-Learning
-- Ejemplo: Laberinto Simple
-- Visualización de la tabla Q
-- Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
-- Ventajas, desventajas y aplicaciones
-
-### 🧩 08.04 - IA Clásica (Simbólica)
-
-**Nota**: Esta sección contiene algoritmos de **IA clásica/simbólica**, que son **previos al Machine Learning**. Estos algoritmos no aprenden de datos; sus reglas están prefijadas. Se incluyen aquí para completitud, pero son conceptualmente diferentes de los algoritmos de ML.
-
-#### [08.04.01-minimax.ipynb](08-algoritmos-ml/08.04-ia-clasica/08.04.01-minimax.ipynb)
+### [08.01-minimax.ipynb](08-ia-clasica/08.01-minimax.ipynb)
 - ¿Qué es Minimax?
 - Conceptos fundamentales (Jugador MAX/MIN, árbol de juego, función de evaluación)
 - Implementación básica de Minimax
@@ -328,9 +248,89 @@ Los algoritmos están organizados por tipo de aprendizaje:
 - Aplicaciones y limitaciones
 - **Nota**: Este es un algoritmo de IA simbólica, no de Machine Learning
 
-## 🤖 09 - IA Moderna (5 notebooks)
+## 🧠 09 - Machine Learning (7 notebooks)
 
-### [09.01-redes-neuronales-basicas.ipynb](09-ia-moderna/09.01-redes-neuronales-basicas.ipynb)
+**Nota**: Esta sección contiene algoritmos de **Machine Learning** (que aprenden de datos), organizados por tipo de aprendizaje.
+
+Los algoritmos están organizados por tipo de aprendizaje:
+
+### 📚 09.01 - Supervisados
+
+#### [09.01.01-arboles-decision.ipynb](09-machine-learning/09.01-supervisados/09.01.01-arboles-decision.ipynb)
+- ¿Qué es un Árbol de Decisión?
+- Conceptos fundamentales (Entropía, Ganancia de Información, Índice Gini)
+- Árbol de Decisión para Clasificación
+- Árbol de Decisión para Regresión
+- Visualización de árboles
+- Importancia de características
+- Control de sobreajuste (Overfitting)
+- Parámetros importantes
+
+#### [09.01.02-k-nearest-neighbors.ipynb](09-machine-learning/09.01-supervisados/09.01.02-k-nearest-neighbors.ipynb)
+- ¿Qué es KNN?
+- Conceptos fundamentales (K, Distancia, Votación, Promedio)
+- Implementación básica de KNN para clasificación y regresión
+- KNN para Clasificación
+- KNN para Regresión
+- Efecto del valor de K
+- Métricas de distancia (Euclidiana, Manhattan, Minkowski)
+- Ventajas, desventajas y aplicaciones
+
+#### [09.01.03-naive-bayes.ipynb](09-machine-learning/09.01-supervisados/09.01.03-naive-bayes.ipynb)
+- ¿Qué es Naive Bayes?
+- Teorema de Bayes y supuesto de independencia
+- Implementación básica de Naive Bayes
+- Tipos de Naive Bayes (Gaussian, Multinomial, Bernoulli)
+- Ejemplo de clasificación de texto
+- Comparación de variantes
+- Ventajas, desventajas y aplicaciones
+
+#### [09.01.04-regresion-lineal.ipynb](09-machine-learning/09.01-supervisados/09.01.04-regresion-lineal.ipynb)
+- ¿Qué es Regresión Lineal?
+- Ecuación de regresión lineal
+- Método 1: Ecuación Normal (solución analítica)
+- Método 2: Gradiente Descendente
+- Regresión Lineal Simple
+- Regresión Lineal Múltiple
+- Visualización de convergencia
+- Ventajas, desventajas y aplicaciones
+
+#### [09.01.05-perceptron.ipynb](09-machine-learning/09.01-supervisados/09.01.05-perceptron.ipynb)
+- ¿Qué es el Perceptrón?
+- Conceptos fundamentales (Neurona artificial, Pesos, Bias, Función de activación)
+- Modelo del Perceptrón y algoritmo de aprendizaje
+- Implementación básica del Perceptrón
+- Ejemplo de clasificación binaria
+- Limitaciones (problema XOR)
+- Extensión a Perceptrón Multicapa (MLP)
+- Ventajas, desventajas y aplicaciones
+
+### 🔍 09.02 - No Supervisados
+
+#### [09.02.01-k-means.ipynb](09-machine-learning/09.02-no-supervisados/09.02.01-k-means.ipynb)
+- ¿Qué es K-Means?
+- Conceptos fundamentales (K, Centroide, Inicialización, Asignación, Actualización)
+- Algoritmo K-Means y función de costo (Inercia)
+- Implementación básica de K-Means
+- Selección del número óptimo de clusters (Método del codo, Silhouette Score)
+- Convergencia del algoritmo
+- Ventajas, desventajas y aplicaciones
+
+### 🎮 09.03 - Refuerzo
+
+#### [09.03.01-q-learning.ipynb](09-machine-learning/09.03-refuerzo/09.03.01-q-learning.ipynb)
+- ¿Qué es Q-Learning?
+- Conceptos fundamentales (Agente, Ambiente, Estado, Acción, Recompensa, Q-Value)
+- Ecuación de actualización Q-Learning
+- Implementación de agente Q-Learning
+- Ejemplo: Laberinto Simple
+- Visualización de la tabla Q
+- Parámetros importantes (Learning Rate, Discount Factor, Epsilon)
+- Ventajas, desventajas y aplicaciones
+
+## 🤖 10 - IA Moderna (5 notebooks)
+
+### [10.01-redes-neuronales-basicas.ipynb](10-ia-moderna/10.01-redes-neuronales-basicas.ipynb)
 - Perceptrón Multicapa (MLP) desde cero
 - Forward propagation y backpropagation
 - Funciones de activación (sigmoid, ReLU, tanh, Leaky ReLU)
@@ -338,7 +338,7 @@ Los algoritmos están organizados por tipo de aprendizaje:
 - Visualización de fronteras de decisión
 - Entrenamiento y optimización
 
-### [09.02-deep-learning-tensorflow.ipynb](09-ia-moderna/09.02-deep-learning-tensorflow.ipynb)
+### [10.02-deep-learning-tensorflow.ipynb](10-ia-moderna/10.02-deep-learning-tensorflow.ipynb)
 - Construcción de modelos con Keras
 - Capas densas, dropout, batch normalization
 - Optimizadores (Adam, SGD, RMSprop)
@@ -347,7 +347,7 @@ Los algoritmos están organizados por tipo de aprendizaje:
 - Transfer learning
 - Clasificación de imágenes (MNIST)
 
-### [09.03-transformers-nlp.ipynb](09-ia-moderna/09.03-transformers-nlp.ipynb)
+### [10.03-transformers-nlp.ipynb](10-ia-moderna/10.03-transformers-nlp.ipynb)
 - Arquitectura Transformer
 - Attention mechanism y self-attention
 - Modelos pre-entrenados (BERT, GPT, etc.)
@@ -357,7 +357,7 @@ Los algoritmos están organizados por tipo de aprendizaje:
 - Generación de texto
 - Traducción automática
 
-### [09.04-cnn-convolucional.ipynb](09-ia-moderna/09.04-cnn-convolucional.ipynb)
+### [10.04-cnn-convolucional.ipynb](10-ia-moderna/10.04-cnn-convolucional.ipynb)
 - Operación de convolución desde cero
 - Pooling (Max Pooling y Average Pooling)
 - Construcción de CNN con TensorFlow/Keras
@@ -366,7 +366,7 @@ Los algoritmos están organizados por tipo de aprendizaje:
 - Arquitecturas CNN típicas
 - Aplicaciones en visión por computadora
 
-### [09.05-rnn-lstm.ipynb](09-ia-moderna/09.05-rnn-lstm.ipynb)
+### [10.05-rnn-lstm.ipynb](10-ia-moderna/10.05-rnn-lstm.ipynb)
 - RNN básica desde cero
 - LSTM con TensorFlow/Keras
 - GRU (Gated Recurrent Unit)
@@ -385,8 +385,8 @@ Para usar estos notebooks, necesitas tener instalado:
 - Matplotlib
 - Scikit-learn
 - Seaborn (para algunas visualizaciones)
-- TensorFlow (opcional, para notebooks de IA moderna - 09.02, 09.04, 09.05)
-- Transformers y PyTorch (opcional, para notebooks de NLP - 09.03)
+- TensorFlow (opcional, para notebooks de IA moderna - 10.02, 10.04, 10.05)
+- Transformers y PyTorch (opcional, para notebooks de NLP - 10.03)
 
 ### Instalación rápida con uv
 
