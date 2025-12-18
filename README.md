@@ -83,6 +83,7 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Creación de arrays
    - Propiedades de arrays
    - Tipos de datos (dtype)
+   - I/O (Entrada/Salida): guardar y cargar arrays (np.save, np.load, np.savetxt, np.loadtxt)
 
 2. **[03.02-numpy-operations.ipynb](03-numpy/03.02-numpy-operations.ipynb)** - Operaciones
    - Operaciones aritméticas
@@ -93,8 +94,10 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
 3. **[03.03-numpy-indexing-slicing.ipynb](03-numpy/03.03-numpy-indexing-slicing.ipynb)** - Indexación y slicing
    - Indexación básica
    - Fancy indexing (indexación avanzada)
-   - Modificación de arrays
-   - Concatenación y división
+   - Comparaciones elemento a elemento
+   - Copia vs vista (views vs copies)
+   - Manipulación de arrays (transpose, reshape, append, insert, delete)
+   - Ordenamiento de arrays
 
 4. **[03.04-numpy-linear-algebra.ipynb](03-numpy/03.04-numpy-linear-algebra.ipynb)** - Álgebra lineal y estadísticas
    - Álgebra lineal (determinante, inversa, autovalores, SVD, QR)
@@ -114,10 +117,12 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Selección de filas y columnas (iloc, loc, at, iat)
 
 3. **[04.03-pandas-data-manipulation.ipynb](04-pandas/04.03-pandas-data-manipulation.ipynb)** - Manipulación de datos
-   - Agregar y eliminar columnas
+   - Agregar y eliminar columnas/filas
+   - Manipulación de índice (reindex, set_index, reset_index, sort_index)
+   - Ordenamiento de valores
    - Merge y Join
-   - GroupBy
-   - Pivot y Reshape
+   - GroupBy (agregación, transformación, filtrado)
+   - Pivot y Reshape (pivot_table, melt, stack, unstack)
 
 4. **[04.04-pandas-io-analysis.ipynb](04-pandas/04.04-pandas-io-analysis.ipynb)** - I/O y análisis
    - Lectura de archivos (CSV, Excel, JSON, Parquet, HTML)
