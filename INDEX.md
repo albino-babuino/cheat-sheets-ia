@@ -1,6 +1,6 @@
 # Índice de Cheat Sheets - Python, Data Science, Machine Learning e IA Moderna
 
-Este repositorio contiene **42 cheat sheets** organizados por tecnología en formato Jupyter Notebook (.ipynb), ordenados numéricamente para seguir un orden lógico de aprendizaje. Incluye Python, NumPy, Pandas, Matplotlib, Scikit-learn, Algoritmos Clásicos de ML, Estadística e IA Moderna (Deep Learning, Transformers, CNN, RNN/LSTM).
+Este repositorio contiene **43 cheat sheets** organizados por tecnología en formato Jupyter Notebook (.ipynb), ordenados numéricamente para seguir un orden lógico de aprendizaje. Incluye Python, NumPy, Pandas, Matplotlib, Scikit-learn, Algoritmos Clásicos de ML, Estadística e IA Moderna (Deep Learning, Transformers, CNN, RNN/LSTM).
 
 ## 🔧 01 - Básicos
 
@@ -144,6 +144,22 @@ Este repositorio contiene **42 cheat sheets** organizados por tecnología en for
 - Escritura de archivos
 - Análisis descriptivo
 - Manejo de valores faltantes
+
+### [04.05-pandas-visualization.ipynb](04-pandas/04.05-pandas-visualization.ipynb)
+- Gráficos de línea (line plot)
+- Gráficos de barras (bar, barh)
+- Histogramas (hist)
+- Gráficos de densidad (KDE)
+- Box plots
+- Scatter plots
+- Pie charts
+- Gráficos de área (area plot)
+- Hexbin plots
+- Personalización de gráficos (título, etiquetas, colores, tamaño, etc.)
+- Subplots (múltiples gráficos)
+- Selección de columnas para graficar
+- Guardar gráficos
+- Métodos de acceso directo (.plot.line(), .plot.bar(), etc.)
 
 ## 📊 05 - Matplotlib
 
