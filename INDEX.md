@@ -396,6 +396,16 @@ Los algoritmos están organizados por tipo de aprendizaje:
 - Aplicaciones en secuencias y NLP
 - Normalización de datos para series temporales
 
+## 🧠 11 - Deep Learning
+
+### [11.01-visualizando-primera-neurona.ipynb](11-deep-learning/11.01-visualizando-primera-neurona.ipynb)
+- Imagen de entrada 2x2 y normalización
+- Visualización de pesos (filtro/máscara)
+- Estructura de la red (4 entradas → 1 neurona)
+- Función de activación ReLU
+- Cálculo final: suma ponderada, sesgo y activación
+- Perceptrón funcional con visualización (átomo básico del Deep Learning)
+
 ## 🚀 Uso
 
 Para usar estos notebooks, necesitas tener instalado:

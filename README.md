@@ -351,6 +351,14 @@ Los algoritmos están organizados por tipo de aprendizaje:
    - Comparación RNN vs LSTM vs GRU
    - Aplicaciones en secuencias y NLP
 
+### 🧠 11 - Deep Learning
+
+1. **[11.01-visualizando-primera-neurona.ipynb](11-deep-learning/11.01-visualizando-primera-neurona.ipynb)** - Visualizando mi primera neurona
+   - Imagen de entrada y normalización
+   - Pesos como filtro (mapa de calor)
+   - Función ReLU y cálculo final
+   - Perceptrón funcional con gráficos (átomo básico del Deep Learning)
+
 ## 🚀 Inicio Rápido
 
 ### Requisitos Previos
@@ -455,6 +463,9 @@ cheat-sheets-ia/
 │   ├── 10.03-transformers-nlp.ipynb
 │   ├── 10.04-cnn-convolucional.ipynb
 │   └── 10.05-rnn-lstm.ipynb
+├── 11-deep-learning/               # Deep Learning
+│   ├── README.md
+│   └── 11.01-visualizando-primera-neurona.ipynb
 ├── .venv/                           # Entorno virtual
 ├── INDEX.md                         # Índice detallado
 ├── README.md                        # Este archivo
@@ -492,9 +503,10 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 8. (Opcional) Explora **08 - IA Clásica (Simbólica)** (08.01) - Algoritmos de IA previos al ML (no aprenden de datos)
 9. Explora **09 - Machine Learning** (09.01-09.05) - Algoritmos fundamentales implementados desde cero
 10. Avanza a **10 - IA Moderna** (10.01-10.05) - Deep Learning y arquitecturas modernas
+11. Profundiza en **11 - Deep Learning** - Cheat sheets específicos de redes profundas
 
 ### Para Usuarios Avanzados
-- **08 - IA Moderna**: Transformers, CNN, RNN/LSTM, Deep Learning con TensorFlow
+- **10 - IA Moderna** y **11 - Deep Learning**: Transformers, CNN, RNN/LSTM, TensorFlow/PyTorch
 
 ### Para Usuarios Intermedios
 - Puedes saltar directamente a la sección que necesites
