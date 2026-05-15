@@ -1,6 +1,6 @@
 # Índice de Cheat Sheets - Python, Data Science, Machine Learning e IA Moderna
 
-Este repositorio contiene **43 cheat sheets** organizados por tecnología en formato Jupyter Notebook (.ipynb), ordenados numéricamente para seguir un orden lógico de aprendizaje. Incluye Python, NumPy, Pandas, Matplotlib, Scikit-learn, Algoritmos Clásicos de ML, Estadística e IA Moderna (Deep Learning, Transformers, CNN, RNN/LSTM).
+Este repositorio contiene **46 cheat sheets** organizados por tecnología en formato Jupyter Notebook (.ipynb), ordenados numéricamente para seguir un orden lógico de aprendizaje. Incluye Python, NumPy, Pandas, Matplotlib, Scikit-learn, Algoritmos Clásicos de ML, Estadística e IA Moderna (Deep Learning, Transformers, CNN, RNN/LSTM).
 
 ## 🔧 01 - Básicos
 
@@ -405,6 +405,36 @@ Los algoritmos están organizados por tipo de aprendizaje:
 - Función de activación ReLU
 - Cálculo final: suma ponderada, sesgo y activación
 - Perceptrón funcional con visualización (átomo básico del Deep Learning)
+
+## 🐍 PyCharm — Redes neuronales y cheat sheet
+
+Cheat sheet del IDE PyCharm y notebooks de ejemplo con PyTorch (regresión y clasificación).
+
+### [00-pycharm-cheat-sheet.ipynb](pycharm/00-pycharm-cheat-sheet.ipynb)
+- Interfaz, ventanas, navegación y búsqueda
+- Edición, completado, refactorización
+- Ejecutar y depurar (Run/Debug, breakpoints)
+- Entornos virtuales e interpretador Python
+- Git integrado (commit, push, pull)
+- Jupyter Notebooks en PyCharm
+- Terminal, estructura de proyecto, troubleshooting
+- Atajos de teclado (Linux) y configuración recomendada
+
+### [04_training_dynamics.ipynb](pycharm/04_training_dynamics.ipynb)
+- Dinámica de entrenamiento: *loss*, optimizadores, regularización, overfitting y *learning rate scheduling*
+- Ejemplos ejecutables (dataset 2D) y checklist de buenas prácticas aplicable a 01/02/03
+
+### [01-regresion-lineal-red-neuronal.ipynb](pycharm/01-regresion-lineal-red-neuronal.ipynb)
+- Regresión lineal con red neuronal (MSE, salida continua)
+- Datos sintéticos y curva de aprendizaje
+
+### [02-clasificacion-binaria.ipynb](pycharm/02-clasificacion-binaria.ipynb)
+- Clasificación binaria (logits + `BCEWithLogitsLoss`, probabilidad con sigmoid en inferencia)
+- Frontera de decisión en 2D
+
+### [03-clasificacion-multiple.ipynb](pycharm/03-clasificacion-multiple.ipynb)
+- Clasificación en varias clases (logits + `CrossEntropyLoss`, softmax implícita en la pérdida)
+- Regiones de decisión para 3 clases
 
 ## 🚀 Uso
 
