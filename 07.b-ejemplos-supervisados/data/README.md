@@ -21,7 +21,8 @@ chmod +x download_datasets.sh
 | `03-clasificacion-multiple.ipynb` | *(tu CSV)* | *(3+ clases)* |
 | `03-clasificacion-multiple/03-clasificacion-multiple-iris.ipynb` | `iris.csv` | `species` |
 | `03-clasificacion-multiple/03-clasificacion-multiple-wine.ipynb` | `wine_multiclass.csv` | `target` (0/1/2) |
-| `03-clasificacion-multiple/03-clasificacion-multiple-thyroid.ipynb` | `thyroid.csv` | `class_label` (3 clases) |
+| `02-clasificacion-binaria/02-clasificacion-binaria-thyroid.ipynb` | `thyroid.csv` | `target` (0/1; agrupa ↑/↓ binding protein) |
+| `03-clasificacion-multiple/03-clasificacion-multiple-thyroid.ipynb` | `thyroid.csv` | `target` (0/1/2; 3 clases UCI) |
 
 Rutas en código: `data/...` en plantillas (raíz), `../data/...` en ejemplos (subcarpetas).
 

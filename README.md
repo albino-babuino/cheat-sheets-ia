@@ -237,7 +237,7 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Pipeline básico y ColumnTransformer
    - GridSearchCV con pipelines
 
-### 📊 07.b - Ejemplos supervisados — Scikit-learn (11 notebooks)
+### 📊 07.b - Ejemplos supervisados — Scikit-learn (12 notebooks)
 
 Ver [07.b-ejemplos-supervisados/README.md](07.b-ejemplos-supervisados/README.md). **3 plantillas** en la raíz + **8 ejemplos** en `01-regresion/`, `02-clasificacion-binaria/` y `03-clasificacion-multiple/`.
 

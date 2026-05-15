@@ -260,7 +260,7 @@ Este repositorio contiene **46 cheat sheets** organizados por tecnología en for
 - ColumnTransformer (columnas numéricas y categóricas)
 - Pipelines con GridSearchCV
 
-## 📊 07.b - Ejemplos supervisados — Scikit-learn (11 notebooks)
+## 📊 07.b - Ejemplos supervisados — Scikit-learn (12 notebooks)
 
 Plantillas en la raíz + ejemplos en `01-regresion/`, `02-clasificacion-binaria/`, `03-clasificacion-multiple/`. CSV local, train/val/test, XGBoost y CatBoost. [07.b-ejemplos-supervisados/](07.b-ejemplos-supervisados/).
 
@@ -287,6 +287,9 @@ Plantillas en la raíz + ejemplos en `01-regresion/`, `02-clasificacion-binaria/
 ### [02-clasificacion-binaria-bank-marketing.ipynb](07.b-ejemplos-supervisados/02-clasificacion-binaria/02-clasificacion-binaria-bank-marketing.ipynb)
 - Ejemplo: Bank Marketing (`y`, separador `;`)
 
+### [02-clasificacion-binaria-thyroid.ipynb](07.b-ejemplos-supervisados/02-clasificacion-binaria/02-clasificacion-binaria-thyroid.ipynb)
+- Ejemplo: Thyroid UCI (`target` 0/1; `increased_binding_protein` y `decreased_binding_protein` → positivo)
+
 ### [03-clasificacion-multiple.ipynb](07.b-ejemplos-supervisados/03-clasificacion-multiple.ipynb)
 - Plantilla agnóstica de clasificación multiclase
 
@@ -297,7 +300,7 @@ Plantillas en la raíz + ejemplos en `01-regresion/`, `02-clasificacion-binaria/
 - Ejemplo: Wine cultivar (`target`, 3 clases)
 
 ### [03-clasificacion-multiple-thyroid.ipynb](07.b-ejemplos-supervisados/03-clasificacion-multiple/03-clasificacion-multiple-thyroid.ipynb)
-- Ejemplo: Thyroid UCI (`class_label`, 3 clases; pruebas hormonales y clínicas)
+- Ejemplo: Thyroid UCI (`target` 0/1/2; 3 clases). Binario: ver `02-clasificacion-binaria-thyroid.ipynb`
 
 ## 🧩 08 - IA Clásica (Simbólica) (1 notebook)
 

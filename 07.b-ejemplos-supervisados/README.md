@@ -23,13 +23,13 @@ Los notebooks dentro de cada carpeta de ejemplos repiten el prefijo del tipo (`0
 ├── 02-clasificacion-binaria.ipynb
 ├── 03-clasificacion-multiple.ipynb
 ├── 01-regresion/                          # 3 ejemplos → ver README en la carpeta
-├── 02-clasificacion-binaria/              # 2 ejemplos
-├── 03-clasificacion-multiple/             # 3 ejemplos (iris, wine, thyroid)
+├── 02-clasificacion-binaria/              # 3 ejemplos (breast, bank, thyroid)
+├── 03-clasificacion-multiple/             # 3 ejemplos (iris, wine, thyroid 3 clases)
 ├── data/                                  # CSV (no versionados; ver download_datasets.sh)
 └── download_datasets.sh
 ```
 
-**11 notebooks** en total: 3 plantillas + 8 ejemplos.
+**12 notebooks** en total: 3 plantillas + 9 ejemplos.
 
 ## Inicio rápido
 
@@ -57,9 +57,10 @@ Para un CSV nuevo, copia la **plantilla** del tipo de problema y rellena explora
 | `diabetes.csv` | [01-regresion/01-regresion-lineal-diabetes.ipynb](01-regresion/01-regresion-lineal-diabetes.ipynb) |
 | `breast_cancer.csv` | [02-clasificacion-binaria/02-clasificacion-binaria-breast-cancer.ipynb](02-clasificacion-binaria/02-clasificacion-binaria-breast-cancer.ipynb) |
 | `bank_marketing.csv` | [02-clasificacion-binaria/02-clasificacion-binaria-bank-marketing.ipynb](02-clasificacion-binaria/02-clasificacion-binaria-bank-marketing.ipynb) |
+| `thyroid.csv` | [02-clasificacion-binaria/02-clasificacion-binaria-thyroid.ipynb](02-clasificacion-binaria/02-clasificacion-binaria-thyroid.ipynb) |
 | `iris.csv` | [03-clasificacion-multiple/03-clasificacion-multiple-iris.ipynb](03-clasificacion-multiple/03-clasificacion-multiple-iris.ipynb) |
 | `wine_multiclass.csv` | [03-clasificacion-multiple/03-clasificacion-multiple-wine.ipynb](03-clasificacion-multiple/03-clasificacion-multiple-wine.ipynb) |
-| `thyroid.csv` | [03-clasificacion-multiple/03-clasificacion-multiple-thyroid.ipynb](03-clasificacion-multiple/03-clasificacion-multiple-thyroid.ipynb) |
+| `thyroid.csv` (3 clases) | [03-clasificacion-multiple/03-clasificacion-multiple-thyroid.ipynb](03-clasificacion-multiple/03-clasificacion-multiple-thyroid.ipynb) |
 
 Detalle de URLs y alternativas: [data/README.md](data/README.md).
 
