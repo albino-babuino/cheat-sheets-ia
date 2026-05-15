@@ -87,6 +87,51 @@ df = pd.read_csv("data/bank_marketing.csv", sep=";")
 print(f"  bank_marketing.csv: {len(df)} filas, target=y ({df['y'].unique().tolist()})")
 PY
 
+echo "==> Thyroid Disease (UCI allbp → thyroid.csv)"
+curl -fsSL -o data/thyroid_raw.data \
+  "https://archive.ics.uci.edu/ml/machine-learning-databases/thyroid-disease/allbp.data"
+$PYTHON << 'PY'
+import re
+
+import pandas as pd
+
+COLS = [
+    "age", "sex", "on_thyroxine", "query_on_thyroxine", "on_antithyroid_medication",
+    "sick", "pregnant", "thyroid_surgery", "I131_treatment", "query_hypothyroid",
+    "query_hyperthyroid", "lithium", "goitre", "tumor", "hypopituitary", "psych",
+    "TSH_measured", "TSH", "T3_measured", "T3", "TT4_measured", "TT4",
+    "T4U_measured", "T4U", "FTI_measured", "FTI", "TBG_measured", "TBG",
+    "referral_source", "class_label",
+]
+NUMERIC = ["age", "TSH", "T3", "TT4", "T4U", "FTI", "TBG"]
+rows = []
+with open("data/thyroid_raw.data", encoding="utf-8") as f:
+    for line in f:
+        line = line.strip()
+        if not line:
+            continue
+        if "|" in line:
+            main, _ = line.rsplit("|", 1)
+        else:
+            main = line
+        parts = main.split(",")
+        if len(parts) != len(COLS):
+            raise ValueError(f"Fila con {len(parts)} columnas (esperadas {len(COLS)}): {line[:80]!r}")
+        rows.append(parts)
+
+df = pd.DataFrame(rows, columns=COLS)
+df = df.replace("?", pd.NA)
+for c in NUMERIC:
+    df[c] = pd.to_numeric(df[c], errors="coerce")
+df["class_label"] = df["class_label"].str.rstrip(".").str.replace(" ", "_")
+df.to_csv("data/thyroid.csv", index=False)
+print(
+    f"  thyroid.csv: {len(df)} filas, "
+    f"target=class_label ({df['class_label'].nunique()} clases: "
+    f"{df['class_label'].value_counts().to_dict()})"
+)
+PY
+
 echo "==> Wine multiclass (cultivar, vía sklearn)"
 $PYTHON << 'PY'
 import pandas as pd

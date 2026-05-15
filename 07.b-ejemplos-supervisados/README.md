@@ -1,192 +1,111 @@
 # Ejemplos supervisados (Scikit-learn)
 
-Notebooks **completos** que aplican los conceptos del directorio [07-scikit-learn](../07-scikit-learn/): carga de CSV local, EDA, preprocesado con `Pipeline` + `ColumnTransformer`, comparación de varios modelos (incl. XGBoost y CatBoost) y métricas.
+Notebooks **completos** que aplican los conceptos del directorio [07-scikit-learn](../07-scikit-learn/): carga de CSV local, EDA, preprocesado con `Pipeline` + `ColumnTransformer`, split **train / validación / test**, comparación de modelos (sklearn + XGBoost + CatBoost) y métricas.
 
-Todos comparten la **misma estructura de celdas**. El prefijo del nombre indica el tipo de problema:
+## Convención de nombres
 
-| Prefijo | Tipo |
-|---------|------|
-| `01-regresion-lineal.ipynb` | **Plantilla** regresión (agnóstica; copiar para tu CSV) |
-| `01-regresion-lineal-<dataset>.ipynb` | Ejemplos de regresión ya configurados |
+| Prefijo | Qué es |
+|---------|--------|
+| `01-regresion-lineal.ipynb` | **Plantilla** de regresión (raíz de esta carpeta) |
 | `02-clasificacion-binaria.ipynb` | **Plantilla** clasificación binaria |
-| `02-clasificacion-binaria-<dataset>.ipynb` | Ejemplos binarios ya configurados |
 | `03-clasificacion-multiple.ipynb` | **Plantilla** clasificación multiclase |
-| `03-clasificacion-multiple-<dataset>.ipynb` | Ejemplos multiclase ya configurados |
+| `01-regresion/` | Carpeta con **ejemplos** de regresión ya configurados |
+| `02-clasificacion-binaria/` | Ejemplos binarios |
+| `03-clasificacion-multiple/` | Ejemplos multiclase |
 
-Solo cambias el bloque **CONFIG** (y la exploración previa del CSV) si usas otro dataset.
+Los notebooks dentro de cada carpeta de ejemplos repiten el prefijo del tipo (`01-regresion-lineal-auto-mpg.ipynb`, etc.).
 
-## Requisitos
+## Estructura del directorio
+
+```
+07.b-ejemplos-supervisados/
+├── 01-regresion-lineal.ipynb              # plantilla
+├── 02-clasificacion-binaria.ipynb
+├── 03-clasificacion-multiple.ipynb
+├── 01-regresion/                          # 3 ejemplos → ver README en la carpeta
+├── 02-clasificacion-binaria/              # 2 ejemplos
+├── 03-clasificacion-multiple/             # 3 ejemplos (iris, wine, thyroid)
+├── data/                                  # CSV (no versionados; ver download_datasets.sh)
+└── download_datasets.sh
+```
+
+**11 notebooks** en total: 3 plantillas + 8 ejemplos.
+
+## Inicio rápido
 
 ```bash
 # Desde la raíz del repo
 uv pip install -r requirements.txt
-```
 
-Incluye `xgboost` y `catboost` para la comparación completa (mismos imports que sklearn en `build_models()`). Para el examen puedes comentar o borrar líneas en `build_models()`.
-
-Ejecuta Jupyter **desde esta carpeta** (`07.b-ejemplos-supervisados/`) para que las rutas `data/...` funcionen:
-
-```bash
 cd 07.b-ejemplos-supervisados
+chmod +x download_datasets.sh
+./download_datasets.sh
 jupyter lab
 ```
 
-## Preparación (una sola vez)
+- **Plantillas** (raíz): rutas `data/...`
+- **Ejemplos** (subcarpetas): rutas `../data/...`
 
-```bash
-chmod +x download_datasets.sh
-./download_datasets.sh
-```
+Para un CSV nuevo, copia la **plantilla** del tipo de problema y rellena exploración + CONFIG. Para ver un dataset resuelto, abre un notebook en la carpeta `01-regresion/`, `02-clasificacion-binaria/` o `03-clasificacion-multiple/`.
 
-Esto crea en `data/`:
+## Datasets tras `./download_datasets.sh`
 
-| Archivo | Usado por |
-|---------|-----------|
-| *(tu CSV en `data/`)* | **`01-regresion-lineal.ipynb`** (plantilla) |
-| `wine_quality_red.csv` | `01-regresion-lineal-wine-quality-red.ipynb` |
-| `auto_mpg.csv` | `01-regresion-lineal-auto-mpg.ipynb` |
-| `diabetes.csv` | `01-regresion-lineal-diabetes.ipynb` |
-| *(tu CSV)* | **`02-clasificacion-binaria.ipynb`** / **`03-clasificacion-multiple.ipynb`** |
-| `breast_cancer.csv` | `02-clasificacion-binaria-breast-cancer.ipynb` |
-| `bank_marketing.csv` | `02-clasificacion-binaria-bank-marketing.ipynb` |
-| `iris.csv` | `03-clasificacion-multiple-iris.ipynb` |
-| `wine_multiclass.csv` | `03-clasificacion-multiple-wine.ipynb` |
+| Archivo en `data/` | Notebook de ejemplo |
+|--------------------|------------------------|
+| `wine_quality_red.csv` | [01-regresion/01-regresion-lineal-wine-quality-red.ipynb](01-regresion/01-regresion-lineal-wine-quality-red.ipynb) |
+| `auto_mpg.csv` | [01-regresion/01-regresion-lineal-auto-mpg.ipynb](01-regresion/01-regresion-lineal-auto-mpg.ipynb) |
+| `diabetes.csv` | [01-regresion/01-regresion-lineal-diabetes.ipynb](01-regresion/01-regresion-lineal-diabetes.ipynb) |
+| `breast_cancer.csv` | [02-clasificacion-binaria/02-clasificacion-binaria-breast-cancer.ipynb](02-clasificacion-binaria/02-clasificacion-binaria-breast-cancer.ipynb) |
+| `bank_marketing.csv` | [02-clasificacion-binaria/02-clasificacion-binaria-bank-marketing.ipynb](02-clasificacion-binaria/02-clasificacion-binaria-bank-marketing.ipynb) |
+| `iris.csv` | [03-clasificacion-multiple/03-clasificacion-multiple-iris.ipynb](03-clasificacion-multiple/03-clasificacion-multiple-iris.ipynb) |
+| `wine_multiclass.csv` | [03-clasificacion-multiple/03-clasificacion-multiple-wine.ipynb](03-clasificacion-multiple/03-clasificacion-multiple-wine.ipynb) |
+| `thyroid.csv` | [03-clasificacion-multiple/03-clasificacion-multiple-thyroid.ipynb](03-clasificacion-multiple/03-clasificacion-multiple-thyroid.ipynb) |
 
-Más datasets alternativos y URLs en [data/README.md](data/README.md).
+Detalle de URLs y alternativas: [data/README.md](data/README.md).
 
----
-
-## Cómo se utiliza cada notebook
-
-### Flujo común
-
-Ejecuta las celdas **de arriba a abajo**. En plantillas y ejemplos recorres:
+## Flujo de cada notebook
 
 | Paso | Sección | Qué hace |
 |------|---------|----------|
-| 0 | **Helpers** | Funciones compartidas (imports, preprocesado, `build_models()` con sklearn + XGBoost + CatBoost). |
-| 1 | **Explorar CSV** | Ver columnas, tipos y clases **antes** de CONFIG (plantillas y ejemplos). |
-| 2 | **CONFIG** | Rutas, `TARGET_COL`, `DROP_COLS`, `build_models()`. |
-| 3–5 | **Carga y EDA** | Lectura, faltantes, gráficos del target. |
-| 6 | **Split** | Train / val / test con `split_train_val_test` (estratificado en clasificación). |
-| 7–8 | **Preprocesado y benchmark** | Mismo `ColumnTransformer`; el paso 8 evalúa en **validación**. |
-| 9 | **Mejor modelo** | Elige en val, reentrena con train+val, métricas finales en **test**. |
+| 0 | Helpers | Imports, preprocesado, `split_train_val_test`, `build_models()`. |
+| 1 | Explorar CSV | Columnas, tipos, faltantes (antes de CONFIG). |
+| 2 | CONFIG | `DATA_PATH`, `TARGET_COL`, `DROP_COLS`, modelos. |
+| 3–5 | Carga y EDA | Lectura, balance/faltantes, correlación y matriz target×feature. |
+| 6 | Split | Train / val / test (estratificado en clasificación). |
+| 7–8 | Preprocesado y benchmark | Entrena en train, compara en **val**. |
+| 9 | Mejor modelo | Reentrena train+val, evalúa en **test**. |
 
-La primera ejecución completa puede tardar **varios minutos** (~8–9 modelos por notebook).
+## Plantillas (empieza aquí)
 
-### Qué tocar para tu propio CSV
+| Notebook | Problema |
+|----------|----------|
+| [01-regresion-lineal.ipynb](01-regresion-lineal.ipynb) | Target numérico continuo |
+| [02-clasificacion-binaria.ipynb](02-clasificacion-binaria.ipynb) | Exactamente 2 clases |
+| [03-clasificacion-multiple.ipynb](03-clasificacion-multiple.ipynb) | 3 o más clases |
 
-En la celda **CONFIG**, cambia como mínimo:
+## Carpetas de ejemplos
 
-```python
-DATA_PATH = "data/mi_archivo.csv"
-CSV_SEP = ","              # ";" si el CSV usa punto y coma
-TARGET_COL = "nombre_columna_objetivo"
-DROP_COLS = ["id"]         # columnas que no deben entrar como features
-```
+| Carpeta | Contenido |
+|---------|-----------|
+| [01-regresion/](01-regresion/) | Wine quality, Auto MPG, Diabetes |
+| [02-clasificacion-binaria/](02-clasificacion-binaria/) | Breast cancer, Bank marketing |
+| [03-clasificacion-multiple/](03-clasificacion-multiple/) | Iris, Wine cultivar, Thyroid (UCI) |
 
-Opcional, si la detección automática falla:
-
-```python
-FEATURE_COLS = ["col_a", "col_b", ...]
-NUMERIC_COLS = [...]
-CATEGORICAL_COLS = [...]
-```
-
-Para **añadir o quitar modelos**, edita la función `build_models()` (comenta o descomenta líneas en el diccionario `models`).
-
----
-
-### [01-regresion-lineal.ipynb](01-regresion-lineal.ipynb) — plantilla base
-
-**Empieza aquí** si tienes un CSV nuevo. Explica el flujo, las funciones y deja `DATA_PATH` / `TARGET_COL` como placeholders (`data/mi_dataset.csv`).
-
-### [01-regresion-lineal-wine-quality-red.ipynb](01-regresion-lineal-wine-quality-red.ipynb) — ejemplo
-
-Wine Quality Red: target `quality`, separador `;`.
-
-### [01-regresion-lineal-auto-mpg.ipynb](01-regresion-lineal-auto-mpg.ipynb) — ejemplo
-
-Auto MPG (UCI): target `mpg`, separador `,`, excluye `car_name`. El imputer del pipeline gestiona faltantes en `horsepower`.
-
-### [01-regresion-lineal-diabetes.ipynb](01-regresion-lineal-diabetes.ipynb) — ejemplo
-
-Diabetes: target `disease_progression`, separador `,`. Variables clínicas (edad, IMC, colesterol…); incluye faltantes (p. ej. en `bmi`).
-
-**Métricas de la tabla:** MAE, RMSE y **R²** (se ordena por R², mayor es mejor).
-
-**Modelos comparados:** `LinearRegression`, `Ridge`, `Lasso`, `RandomForest`, `GradientBoosting`, `HistGradientBoosting`, `XGBoost`, `CatBoost`.
-
-**Resultado final:** gráfico *real vs predicho* del mejor modelo en el conjunto de test.
-
-**Ejemplo — cambiar a otro CSV de regresión:**
+## CONFIG mínimo (plantilla)
 
 ```python
-DATA_PATH = "data/mi_casas.csv"
+DATA_PATH = "data/mi_archivo.csv"   # en ejemplos: "../data/mi_archivo.csv"
 CSV_SEP = ","
-TARGET_COL = "precio"
-DROP_COLS = ["id_vivienda"]
+TARGET_COL = "nombre_columna_objetivo"
+DROP_COLS = ["id"]
+TEST_SIZE = 0.2
+VAL_SIZE = 0.25
 ```
-
----
-
-### [02-clasificacion-binaria.ipynb](02-clasificacion-binaria.ipynb) — plantilla base
-
-**Empieza aquí** para clasificación **binaria** (dos clases). Placeholders en `data/mi_dataset.csv`.
-
-### [02-clasificacion-binaria-breast-cancer.ipynb](02-clasificacion-binaria-breast-cancer.ipynb) — ejemplo
-
-Breast Cancer: target `target` (0/1), excluye `diagnosis`.
-
-### [02-clasificacion-binaria-bank-marketing.ipynb](02-clasificacion-binaria-bank-marketing.ipynb) — ejemplo
-
-Bank Marketing: target `y` (yes/no), separador `;`, excluye `duration` (leakage).
-
-**Métricas:** accuracy, precision, recall, **F1** (orden por F1). **Split** estratificado.
-
----
-
-### [03-clasificacion-multiple.ipynb](03-clasificacion-multiple.ipynb) — plantilla base
-
-**Empieza aquí** para **3+ clases**.
-
-### [03-clasificacion-multiple-iris.ipynb](03-clasificacion-multiple-iris.ipynb) — ejemplo
-
-Iris: target `species` (3 especies).
-
-### [03-clasificacion-multiple-wine.ipynb](03-clasificacion-multiple-wine.ipynb) — ejemplo
-
-Wine (sklearn): target `target` (3 cultivares), features numéricas.
-
-**Métricas:** orden por **accuracy** (también F1 weighted en tabla).
-
----
-
-## Resumen: ¿qué notebook abro?
-
-| Tu problema | Notebook | Target típico |
-|-------------|----------|----------------|
-| Predecir un número (nuevo CSV) | **`01-regresion-lineal.ipynb`** | Columna numérica continua |
-| Ver un ejemplo ya hecho | `01-regresion-lineal-wine-quality-red.ipynb`, `auto-mpg` o `diabetes` | — |
-| Predecir sí/no (nuevo CSV) | **`02-clasificacion-binaria.ipynb`** | 2 clases |
-| Ejemplo binario | `02-clasificacion-binaria-breast-cancer.ipynb` o `bank-marketing` | — |
-| Predecir varias categorías (nuevo CSV) | **`03-clasificacion-multiple.ipynb`** | 3+ clases |
-| Ejemplo multiclase | `03-clasificacion-multiple-iris.ipynb` o `wine` | — |
-
-No hace falta tocar los notebooks 07.x: estos ejemplos **los aplican** en un flujo listo para copiar y adaptar.
 
 ## Cheat sheets relacionados
 
 - [07.01 Fundamentos](../07-scikit-learn/07.01-scikit-learn-basics.ipynb)
 - [07.02 Preprocesamiento](../07-scikit-learn/07.02-scikit-learn-preprocessing.ipynb)
-- [07.03 Supervisado](../07-scikit-learn/07.03-scikit-learn-supervised-learning.ipynb)
+- [07.03 Supervisados](../07-scikit-learn/07.03-scikit-learn-supervised-learning.ipynb)
 - [07.05 Evaluación](../07-scikit-learn/07.05-scikit-learn-model-evaluation.ipynb)
 - [07.06 Pipelines](../07-scikit-learn/07.06-scikit-learn-pipelines.ipynb)
-
-## Carpeta `catboost_info/`
-
-CatBoost crea por defecto esa carpeta con logs de entrenamiento al hacer `fit`. **No hace falta** para el notebook: en `build_models()` usamos `allow_writing_files=False`. Si ya se generó, puedes borrarla; está en `.gitignore`.
-
-## Extensión opcional
-
-Puedes añadir **LightGBM** en `build_models()` con un import directo (`from lightgbm import LGBMRegressor` / `LGBMClassifier`) y una entrada más en el diccionario `models`.

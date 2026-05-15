@@ -260,41 +260,44 @@ Este repositorio contiene **46 cheat sheets** organizados por tecnología en for
 - ColumnTransformer (columnas numéricas y categóricas)
 - Pipelines con GridSearchCV
 
-## 📊 07.b - Ejemplos supervisados — Scikit-learn (10 notebooks)
+## 📊 07.b - Ejemplos supervisados — Scikit-learn (11 notebooks)
 
-Plantillas completas con CSV local, preprocesado, comparación de modelos (incl. XGBoost y CatBoost) y métricas. Directorio: [07.b-ejemplos-supervisados/](07.b-ejemplos-supervisados/).
+Plantillas en la raíz + ejemplos en `01-regresion/`, `02-clasificacion-binaria/`, `03-clasificacion-multiple/`. CSV local, train/val/test, XGBoost y CatBoost. [07.b-ejemplos-supervisados/](07.b-ejemplos-supervisados/).
 
 ### [01-regresion-lineal.ipynb](07.b-ejemplos-supervisados/01-regresion-lineal.ipynb)
 - Plantilla agnóstica de regresión lineal (copiar y adaptar CONFIG a cualquier CSV)
 
-### [01-regresion-lineal-wine-quality-red.ipynb](07.b-ejemplos-supervisados/01-regresion-lineal-wine-quality-red.ipynb)
+### [01-regresion-lineal-wine-quality-red.ipynb](07.b-ejemplos-supervisados/01-regresion/01-regresion-lineal-wine-quality-red.ipynb)
 - CONFIG reutilizable, EDA, Pipeline + ColumnTransformer
 - Comparación: regresión lineal, Ridge, Lasso, RF, boosting, XGBoost, CatBoost
 - Dataset: Wine Quality Red (`quality`)
 
-### [01-regresion-lineal-auto-mpg.ipynb](07.b-ejemplos-supervisados/01-regresion-lineal-auto-mpg.ipynb)
+### [01-regresion-lineal-auto-mpg.ipynb](07.b-ejemplos-supervisados/01-regresion/01-regresion-lineal-auto-mpg.ipynb)
 - Misma plantilla; dataset Auto MPG UCI (`mpg`)
 
-### [01-regresion-lineal-diabetes.ipynb](07.b-ejemplos-supervisados/01-regresion-lineal-diabetes.ipynb)
+### [01-regresion-lineal-diabetes.ipynb](07.b-ejemplos-supervisados/01-regresion/01-regresion-lineal-diabetes.ipynb)
 - Misma plantilla; diabetes (`disease_progression`)
 
 ### [02-clasificacion-binaria.ipynb](07.b-ejemplos-supervisados/02-clasificacion-binaria.ipynb)
 - Plantilla agnóstica de clasificación binaria
 
-### [02-clasificacion-binaria-breast-cancer.ipynb](07.b-ejemplos-supervisados/02-clasificacion-binaria-breast-cancer.ipynb)
+### [02-clasificacion-binaria-breast-cancer.ipynb](07.b-ejemplos-supervisados/02-clasificacion-binaria/02-clasificacion-binaria-breast-cancer.ipynb)
 - Ejemplo: Breast Cancer (`target`)
 
-### [02-clasificacion-binaria-bank-marketing.ipynb](07.b-ejemplos-supervisados/02-clasificacion-binaria-bank-marketing.ipynb)
+### [02-clasificacion-binaria-bank-marketing.ipynb](07.b-ejemplos-supervisados/02-clasificacion-binaria/02-clasificacion-binaria-bank-marketing.ipynb)
 - Ejemplo: Bank Marketing (`y`, separador `;`)
 
 ### [03-clasificacion-multiple.ipynb](07.b-ejemplos-supervisados/03-clasificacion-multiple.ipynb)
 - Plantilla agnóstica de clasificación multiclase
 
-### [03-clasificacion-multiple-iris.ipynb](07.b-ejemplos-supervisados/03-clasificacion-multiple-iris.ipynb)
+### [03-clasificacion-multiple-iris.ipynb](07.b-ejemplos-supervisados/03-clasificacion-multiple/03-clasificacion-multiple-iris.ipynb)
 - Ejemplo: Iris (`species`)
 
-### [03-clasificacion-multiple-wine.ipynb](07.b-ejemplos-supervisados/03-clasificacion-multiple-wine.ipynb)
+### [03-clasificacion-multiple-wine.ipynb](07.b-ejemplos-supervisados/03-clasificacion-multiple/03-clasificacion-multiple-wine.ipynb)
 - Ejemplo: Wine cultivar (`target`, 3 clases)
+
+### [03-clasificacion-multiple-thyroid.ipynb](07.b-ejemplos-supervisados/03-clasificacion-multiple/03-clasificacion-multiple-thyroid.ipynb)
+- Ejemplo: Thyroid UCI (`class_label`, 3 clases; pruebas hormonales y clínicas)
 
 ## 🧩 08 - IA Clásica (Simbólica) (1 notebook)
 

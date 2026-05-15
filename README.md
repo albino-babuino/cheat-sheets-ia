@@ -237,15 +237,15 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Pipeline básico y ColumnTransformer
    - GridSearchCV con pipelines
 
-### 📊 07.b - Ejemplos supervisados — Scikit-learn (10 notebooks)
+### 📊 07.b - Ejemplos supervisados — Scikit-learn (11 notebooks)
 
-Ver [07.b-ejemplos-supervisados/README.md](07.b-ejemplos-supervisados/README.md). Plantillas agnósticas + ejemplos con datasets reales.
+Ver [07.b-ejemplos-supervisados/README.md](07.b-ejemplos-supervisados/README.md). **3 plantillas** en la raíz + **8 ejemplos** en `01-regresion/`, `02-clasificacion-binaria/` y `03-clasificacion-multiple/`.
 
-**Regresión:** [01 plantilla](07.b-ejemplos-supervisados/01-regresion-lineal.ipynb) · [wine](07.b-ejemplos-supervisados/01-regresion-lineal-wine-quality-red.ipynb) · [auto mpg](07.b-ejemplos-supervisados/01-regresion-lineal-auto-mpg.ipynb) · [diabetes](07.b-ejemplos-supervisados/01-regresion-lineal-diabetes.ipynb)
+**Regresión:** [01 plantilla](07.b-ejemplos-supervisados/01-regresion-lineal.ipynb) · [ejemplos](07.b-ejemplos-supervisados/01-regresion/)
 
-**Binaria:** [02 plantilla](07.b-ejemplos-supervisados/02-clasificacion-binaria.ipynb) · [breast cancer](07.b-ejemplos-supervisados/02-clasificacion-binaria-breast-cancer.ipynb) · [bank marketing](07.b-ejemplos-supervisados/02-clasificacion-binaria-bank-marketing.ipynb)
+**Binaria:** [02 plantilla](07.b-ejemplos-supervisados/02-clasificacion-binaria.ipynb) · [ejemplos](07.b-ejemplos-supervisados/02-clasificacion-binaria/)
 
-**Multiclase:** [03 plantilla](07.b-ejemplos-supervisados/03-clasificacion-multiple.ipynb) · [iris](07.b-ejemplos-supervisados/03-clasificacion-multiple-iris.ipynb) · [wine](07.b-ejemplos-supervisados/03-clasificacion-multiple-wine.ipynb)
+**Multiclase:** [03 plantilla](07.b-ejemplos-supervisados/03-clasificacion-multiple.ipynb) · [ejemplos](07.b-ejemplos-supervisados/03-clasificacion-multiple/)
 
 ### 🧩 08 - IA Clásica (Simbólica) (1 notebook)
 
@@ -460,17 +460,14 @@ cheat-sheets-ia/
 │   ├── 07.05-scikit-learn-model-evaluation.ipynb
 │   ├── 07.06-scikit-learn-pipelines.ipynb
 │   └── (ver carpeta 07.b-ejemplos-supervisados/)
-├── 07.b-ejemplos-supervisados/        # Ejemplos ML supervisado (CSV + pipelines)
-│   ├── 01-regresion-lineal.ipynb
-│   ├── 01-regresion-lineal-wine-quality-red.ipynb
-│   ├── 01-regresion-lineal-auto-mpg.ipynb
-│   ├── 01-regresion-lineal-diabetes.ipynb
+├── 07.b-ejemplos-supervisados/        # Plantillas + ejemplos ML supervisado
+│   ├── 01-regresion-lineal.ipynb      # plantillas (raíz)
 │   ├── 02-clasificacion-binaria.ipynb
-│   ├── 02-clasificacion-binaria-breast-cancer.ipynb
-│   ├── 02-clasificacion-binaria-bank-marketing.ipynb
 │   ├── 03-clasificacion-multiple.ipynb
-│   ├── 03-clasificacion-multiple-iris.ipynb
-│   └── 03-clasificacion-multiple-wine.ipynb
+│   ├── 01-regresion/                 # ejemplos regresión
+│   ├── 02-clasificacion-binaria/
+│   ├── 03-clasificacion-multiple/
+│   └── data/
 ├── 08-ia-clasica/                   # IA Clásica (Simbólica) - No es ML
 │   └── 08.01-minimax.ipynb
 ├── 09-machine-learning/             # Algoritmos Clásicos de ML
