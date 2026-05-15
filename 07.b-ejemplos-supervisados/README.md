@@ -68,9 +68,9 @@ Ejecuta las celdas **de arriba a abajo**. En plantillas y ejemplos recorres:
 | 1 | **Explorar CSV** | Ver columnas, tipos y clases **antes** de CONFIG (plantillas y ejemplos). |
 | 2 | **CONFIG** | Rutas, `TARGET_COL`, `DROP_COLS`, `build_models()`. |
 | 3–5 | **Carga y EDA** | Lectura, faltantes, gráficos del target. |
-| 6 | **Split** | `train_test_split` (estratificado en clasificación). |
-| 7–8 | **Preprocesado y benchmark** | Mismo `ColumnTransformer` para todos los modelos. |
-| 9 | **Mejor modelo** | Scatter (regresión) o matriz de confusión (clasificación). |
+| 6 | **Split** | Train / val / test con `split_train_val_test` (estratificado en clasificación). |
+| 7–8 | **Preprocesado y benchmark** | Mismo `ColumnTransformer`; el paso 8 evalúa en **validación**. |
+| 9 | **Mejor modelo** | Elige en val, reentrena con train+val, métricas finales en **test**. |
 
 La primera ejecución completa puede tardar **varios minutos** (~8–9 modelos por notebook).
 
