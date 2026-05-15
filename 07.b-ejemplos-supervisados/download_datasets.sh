@@ -78,11 +78,31 @@ df.to_csv("data/breast_cancer.csv", index=False)
 print(f"  breast_cancer.csv: {len(df)} filas")
 PY
 
-echo "==> Bank Marketing (UCI)"
-curl -fsSL -o data/bank_marketing.csv \
-  "https://archive.ics.uci.edu/ml/machine-learning-databases/00222/bank-additional-full.csv"
+echo "==> Bank Marketing (UCI, zip actualizado)"
+curl -fsSL -o data/bank_marketing.zip \
+  "https://archive.ics.uci.edu/static/public/222/bank+marketing.zip"
 $PYTHON << 'PY'
+import zipfile
+from pathlib import Path
+
 import pandas as pd
+
+zip_path = Path("data/bank_marketing.zip")
+with zipfile.ZipFile(zip_path) as outer:
+    inner_name = next(n for n in outer.namelist() if n.endswith("bank-additional.zip"))
+    inner_bytes = outer.read(inner_name)
+inner_path = Path("data/bank-additional.zip")
+inner_path.write_bytes(inner_bytes)
+with zipfile.ZipFile(inner_path) as inner:
+    csv_name = next(
+        n for n in inner.namelist() if n.endswith("bank-additional-full.csv")
+    )
+    inner.extract(csv_name, "data")
+src = Path("data") / csv_name
+src.rename("data/bank_marketing.csv")
+inner_path.unlink(missing_ok=True)
+zip_path.unlink(missing_ok=True)
+
 df = pd.read_csv("data/bank_marketing.csv", sep=";")
 print(f"  bank_marketing.csv: {len(df)} filas, target=y ({df['y'].unique().tolist()})")
 PY

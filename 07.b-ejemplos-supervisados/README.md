@@ -68,10 +68,10 @@ Detalle de URLs y alternativas: [data/README.md](data/README.md).
 
 | Paso | Sección | Qué hace |
 |------|---------|----------|
-| 0 | Helpers | Imports, preprocesado, `split_train_val_test`, `build_models()`. |
+| 0 | Helpers | Imports, preprocesado, `split_train_val_test`; multiclase: `prepare_multiclass_target`. |
 | 1 | Explorar CSV | Columnas, tipos, faltantes (antes de CONFIG). |
-| 2 | CONFIG | `DATA_PATH`, `TARGET_COL`, `DROP_COLS`, modelos. |
-| 3–5 | Carga y EDA | Lectura, balance/faltantes, correlación y matriz target×feature. |
+| 2 | CONFIG | Rutas, `RAW_LABEL_COL`, `CLASS_NAMES`, `DROP_COLS`; `build_models` (binario) o `build_models(n_classes)` (multiclase). |
+| 3–5 | Carga y EDA | Codificar target 0/1 o 0..K-1; **multiclase:** `MODELS = build_models(N_CLASSES)` aquí. |
 | 6 | Split | Train / val / test (estratificado en clasificación). |
 | 7–8 | Preprocesado y benchmark | Entrena en train, compara en **val**. |
 | 9 | Mejor modelo | Reentrena train+val, evalúa en **test**. |
@@ -82,7 +82,7 @@ Detalle de URLs y alternativas: [data/README.md](data/README.md).
 |----------|----------|
 | [01-regresion-lineal.ipynb](01-regresion-lineal.ipynb) | Target numérico continuo |
 | [02-clasificacion-binaria.ipynb](02-clasificacion-binaria.ipynb) | Exactamente 2 clases |
-| [03-clasificacion-multiple.ipynb](03-clasificacion-multiple.ipynb) | 3 o más clases |
+| [03-clasificacion-multiple.ipynb](03-clasificacion-multiple.ipynb) | K clases (K ≥ 3; variable por dataset) |
 
 ## Carpetas de ejemplos
 
@@ -97,8 +97,10 @@ Detalle de URLs y alternativas: [data/README.md](data/README.md).
 ```python
 DATA_PATH = "data/mi_archivo.csv"   # en ejemplos: "../data/mi_archivo.csv"
 CSV_SEP = ","
-TARGET_COL = "nombre_columna_objetivo"
-DROP_COLS = ["id"]
+RAW_LABEL_COL = "columna_texto"     # None si el target ya es numérico
+TARGET_COL = "target"               # 0/1 (binario) o 0..K-1 (multiclase)
+CLASS_NAMES = None                  # None = inferir; o lista ordenada de K nombres
+DROP_COLS = ["columna_texto", "id"]
 TEST_SIZE = 0.2
 VAL_SIZE = 0.25
 ```
