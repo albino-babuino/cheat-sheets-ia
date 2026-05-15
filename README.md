@@ -237,11 +237,11 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Pipeline básico y ColumnTransformer
    - GridSearchCV con pipelines
 
-### 📊 07.b - Ejemplos supervisados — Scikit-learn (9 notebooks)
+### 📊 07.b - Ejemplos supervisados — Scikit-learn (10 notebooks)
 
 Ver [07.b-ejemplos-supervisados/README.md](07.b-ejemplos-supervisados/README.md). Plantillas agnósticas + ejemplos con datasets reales.
 
-**Regresión:** [01 plantilla](07.b-ejemplos-supervisados/01-regresion-lineal.ipynb) · [wine](07.b-ejemplos-supervisados/01-regresion-lineal-wine-quality-red.ipynb) · [auto mpg](07.b-ejemplos-supervisados/01-regresion-lineal-auto-mpg.ipynb)
+**Regresión:** [01 plantilla](07.b-ejemplos-supervisados/01-regresion-lineal.ipynb) · [wine](07.b-ejemplos-supervisados/01-regresion-lineal-wine-quality-red.ipynb) · [auto mpg](07.b-ejemplos-supervisados/01-regresion-lineal-auto-mpg.ipynb) · [diabetes](07.b-ejemplos-supervisados/01-regresion-lineal-diabetes.ipynb)
 
 **Binaria:** [02 plantilla](07.b-ejemplos-supervisados/02-clasificacion-binaria.ipynb) · [breast cancer](07.b-ejemplos-supervisados/02-clasificacion-binaria-breast-cancer.ipynb) · [bank marketing](07.b-ejemplos-supervisados/02-clasificacion-binaria-bank-marketing.ipynb)
 
@@ -464,6 +464,7 @@ cheat-sheets-ia/
 │   ├── 01-regresion-lineal.ipynb
 │   ├── 01-regresion-lineal-wine-quality-red.ipynb
 │   ├── 01-regresion-lineal-auto-mpg.ipynb
+│   ├── 01-regresion-lineal-diabetes.ipynb
 │   ├── 02-clasificacion-binaria.ipynb
 │   ├── 02-clasificacion-binaria-breast-cancer.ipynb
 │   ├── 02-clasificacion-binaria-bank-marketing.ipynb

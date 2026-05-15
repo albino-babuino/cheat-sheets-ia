@@ -26,6 +26,13 @@ df.to_csv("data/iris.csv", index=False)
 print(f"  iris.csv: {len(df)} filas")
 PY
 
+echo "==> Diabetes (diabetes.csv)"
+if [ -f data/diabetes.csv ]; then
+  $PYTHON -c "import pandas as pd; df=pd.read_csv('data/diabetes.csv'); print(f'  diabetes.csv: {len(df)} filas (ya presente), target=disease_progression')"
+else
+  echo "  [aviso] Coloca diabetes.csv en data/ (ver 01-regresion-lineal-diabetes.ipynb)"
+fi
+
 echo "==> Auto MPG (UCI)"
 curl -fsSL -o data/auto_mpg_raw.data \
   "https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data"

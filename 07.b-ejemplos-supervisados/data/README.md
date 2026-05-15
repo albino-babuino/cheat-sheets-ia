@@ -14,6 +14,7 @@ chmod +x download_datasets.sh
 | `01-regresion-lineal.ipynb` | *(el que pongas en `data/`)* | *(tu columna)* | — |
 | `01-regresion-lineal-wine-quality-red.ipynb` | `wine_quality_red.csv` | `quality` | Auto MPG (`mpg`) |
 | `01-regresion-lineal-auto-mpg.ipynb` | `auto_mpg.csv` | `mpg` | Wine Quality (`quality`) |
+| `01-regresion-lineal-diabetes.ipynb` | `diabetes.csv` | `disease_progression` | — |
 | `02-clasificacion-binaria.ipynb` | *(tu CSV)* | *(2 clases)* | — |
 | `02-clasificacion-binaria-breast-cancer.ipynb` | `breast_cancer.csv` | `target` (0/1) | — |
 | `02-clasificacion-binaria-bank-marketing.ipynb` | `bank_marketing.csv` | `y` (yes/no) | Titanic (`Survived`) |
@@ -28,5 +29,6 @@ chmod +x download_datasets.sh
 - **Breast Cancer WDBC:** generado con `sklearn.datasets.load_breast_cancer` en el script de descarga
 - **Bank Marketing:** https://archive.ics.uci.edu/ml/machine-learning-databases/00222/bank-additional-full.csv
 - **Auto MPG:** https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data
+- **Diabetes:** archivo local `diabetes.csv` (target `disease_progression`; columnas clínicas con posibles faltantes)
 
 Tras descargar un CSV nuevo, cambia solo el bloque **CONFIG** del notebook correspondiente.

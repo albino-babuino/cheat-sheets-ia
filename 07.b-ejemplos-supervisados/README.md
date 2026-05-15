@@ -22,7 +22,7 @@ Solo cambias el bloque **CONFIG** (y la exploración previa del CSV) si usas otr
 uv pip install -r requirements.txt
 ```
 
-Incluye `xgboost` y `catboost` para la comparación completa. Si falta alguno, el notebook avisa y entrena el resto de modelos.
+Incluye `xgboost` y `catboost` para la comparación completa (mismos imports que sklearn en `build_models()`). Para el examen puedes comentar o borrar líneas en `build_models()`.
 
 Ejecuta Jupyter **desde esta carpeta** (`07.b-ejemplos-supervisados/`) para que las rutas `data/...` funcionen:
 
@@ -45,6 +45,7 @@ Esto crea en `data/`:
 | *(tu CSV en `data/`)* | **`01-regresion-lineal.ipynb`** (plantilla) |
 | `wine_quality_red.csv` | `01-regresion-lineal-wine-quality-red.ipynb` |
 | `auto_mpg.csv` | `01-regresion-lineal-auto-mpg.ipynb` |
+| `diabetes.csv` | `01-regresion-lineal-diabetes.ipynb` |
 | *(tu CSV)* | **`02-clasificacion-binaria.ipynb`** / **`03-clasificacion-multiple.ipynb`** |
 | `breast_cancer.csv` | `02-clasificacion-binaria-breast-cancer.ipynb` |
 | `bank_marketing.csv` | `02-clasificacion-binaria-bank-marketing.ipynb` |
@@ -63,7 +64,7 @@ Ejecuta las celdas **de arriba a abajo**. En plantillas y ejemplos recorres:
 
 | Paso | Sección | Qué hace |
 |------|---------|----------|
-| 0 | **Helpers** | Funciones compartidas (imports, preprocesado, modelos opcionales). |
+| 0 | **Helpers** | Funciones compartidas (imports, preprocesado, `build_models()` con sklearn + XGBoost + CatBoost). |
 | 1 | **Explorar CSV** | Ver columnas, tipos y clases **antes** de CONFIG (plantillas y ejemplos). |
 | 2 | **CONFIG** | Rutas, `TARGET_COL`, `DROP_COLS`, `build_models()`. |
 | 3–5 | **Carga y EDA** | Lectura, faltantes, gráficos del target. |
@@ -107,6 +108,10 @@ Wine Quality Red: target `quality`, separador `;`.
 ### [01-regresion-lineal-auto-mpg.ipynb](01-regresion-lineal-auto-mpg.ipynb) — ejemplo
 
 Auto MPG (UCI): target `mpg`, separador `,`, excluye `car_name`. El imputer del pipeline gestiona faltantes en `horsepower`.
+
+### [01-regresion-lineal-diabetes.ipynb](01-regresion-lineal-diabetes.ipynb) — ejemplo
+
+Diabetes: target `disease_progression`, separador `,`. Variables clínicas (edad, IMC, colesterol…); incluye faltantes (p. ej. en `bmi`).
 
 **Métricas de la tabla:** MAE, RMSE y **R²** (se ordena por R², mayor es mejor).
 
@@ -162,7 +167,7 @@ Wine (sklearn): target `target` (3 cultivares), features numéricas.
 | Tu problema | Notebook | Target típico |
 |-------------|----------|----------------|
 | Predecir un número (nuevo CSV) | **`01-regresion-lineal.ipynb`** | Columna numérica continua |
-| Ver un ejemplo ya hecho | `01-regresion-lineal-wine-quality-red.ipynb` o `01-regresion-lineal-auto-mpg.ipynb` | — |
+| Ver un ejemplo ya hecho | `01-regresion-lineal-wine-quality-red.ipynb`, `auto-mpg` o `diabetes` | — |
 | Predecir sí/no (nuevo CSV) | **`02-clasificacion-binaria.ipynb`** | 2 clases |
 | Ejemplo binario | `02-clasificacion-binaria-breast-cancer.ipynb` o `bank-marketing` | — |
 | Predecir varias categorías (nuevo CSV) | **`03-clasificacion-multiple.ipynb`** | 3+ clases |
@@ -184,4 +189,4 @@ CatBoost crea por defecto esa carpeta con logs de entrenamiento al hacer `fit`. 
 
 ## Extensión opcional
 
-Puedes añadir **LightGBM** en `build_models()` con el mismo patrón `_optional_estimator` que XGBoost y CatBoost (ver celda de helpers al inicio de cada notebook).
+Puedes añadir **LightGBM** en `build_models()` con un import directo (`from lightgbm import LGBMRegressor` / `LGBMClassifier`) y una entrada más en el diccionario `models`.

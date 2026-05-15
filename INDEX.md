@@ -260,7 +260,7 @@ Este repositorio contiene **46 cheat sheets** organizados por tecnología en for
 - ColumnTransformer (columnas numéricas y categóricas)
 - Pipelines con GridSearchCV
 
-## 📊 07.b - Ejemplos supervisados — Scikit-learn (9 notebooks)
+## 📊 07.b - Ejemplos supervisados — Scikit-learn (10 notebooks)
 
 Plantillas completas con CSV local, preprocesado, comparación de modelos (incl. XGBoost y CatBoost) y métricas. Directorio: [07.b-ejemplos-supervisados/](07.b-ejemplos-supervisados/).
 
@@ -274,6 +274,9 @@ Plantillas completas con CSV local, preprocesado, comparación de modelos (incl.
 
 ### [01-regresion-lineal-auto-mpg.ipynb](07.b-ejemplos-supervisados/01-regresion-lineal-auto-mpg.ipynb)
 - Misma plantilla; dataset Auto MPG UCI (`mpg`)
+
+### [01-regresion-lineal-diabetes.ipynb](07.b-ejemplos-supervisados/01-regresion-lineal-diabetes.ipynb)
+- Misma plantilla; diabetes (`disease_progression`)
 
 ### [02-clasificacion-binaria.ipynb](07.b-ejemplos-supervisados/02-clasificacion-binaria.ipynb)
 - Plantilla agnóstica de clasificación binaria
