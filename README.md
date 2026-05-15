@@ -233,6 +233,20 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Búsqueda de hiperparámetros (GridSearchCV, RandomizedSearchCV)
    - Curvas ROC y AUC
 
+6. **[07.06-scikit-learn-pipelines.ipynb](07-scikit-learn/07.06-scikit-learn-pipelines.ipynb)** - Pipelines
+   - Pipeline básico y ColumnTransformer
+   - GridSearchCV con pipelines
+
+### 📊 07.b - Ejemplos supervisados — Scikit-learn (9 notebooks)
+
+Ver [07.b-ejemplos-supervisados/README.md](07.b-ejemplos-supervisados/README.md). Plantillas agnósticas + ejemplos con datasets reales.
+
+**Regresión:** [01 plantilla](07.b-ejemplos-supervisados/01-regresion-lineal.ipynb) · [wine](07.b-ejemplos-supervisados/01-regresion-lineal-wine-quality-red.ipynb) · [california](07.b-ejemplos-supervisados/01-regresion-lineal-california-housing.ipynb)
+
+**Binaria:** [02 plantilla](07.b-ejemplos-supervisados/02-clasificacion-binaria.ipynb) · [breast cancer](07.b-ejemplos-supervisados/02-clasificacion-binaria-breast-cancer.ipynb) · [bank marketing](07.b-ejemplos-supervisados/02-clasificacion-binaria-bank-marketing.ipynb)
+
+**Multiclase:** [03 plantilla](07.b-ejemplos-supervisados/03-clasificacion-multiple.ipynb) · [iris](07.b-ejemplos-supervisados/03-clasificacion-multiple-iris.ipynb) · [wine](07.b-ejemplos-supervisados/03-clasificacion-multiple-wine.ipynb)
+
 ### 🧩 08 - IA Clásica (Simbólica) (1 notebook)
 
 **Nota**: Esta sección contiene algoritmos de **IA clásica/simbólica**, que son **previos al Machine Learning**. Estos algoritmos no aprenden de datos; sus reglas están prefijadas. Son conceptualmente diferentes de los algoritmos de ML, que sí aprenden de datos.
@@ -443,7 +457,19 @@ cheat-sheets-ia/
 │   ├── 07.02-scikit-learn-preprocessing.ipynb
 │   ├── 07.03-scikit-learn-supervised-learning.ipynb
 │   ├── 07.04-scikit-learn-unsupervised-learning.ipynb
-│   └── 07.05-scikit-learn-model-evaluation.ipynb
+│   ├── 07.05-scikit-learn-model-evaluation.ipynb
+│   ├── 07.06-scikit-learn-pipelines.ipynb
+│   └── (ver carpeta 07.b-ejemplos-supervisados/)
+├── 07.b-ejemplos-supervisados/        # Ejemplos ML supervisado (CSV + pipelines)
+│   ├── 01-regresion-lineal.ipynb
+│   ├── 01-regresion-lineal-wine-quality-red.ipynb
+│   ├── 01-regresion-lineal-california-housing.ipynb
+│   ├── 02-clasificacion-binaria.ipynb
+│   ├── 02-clasificacion-binaria-breast-cancer.ipynb
+│   ├── 02-clasificacion-binaria-bank-marketing.ipynb
+│   ├── 03-clasificacion-multiple.ipynb
+│   ├── 03-clasificacion-multiple-iris.ipynb
+│   └── 03-clasificacion-multiple-wine.ipynb
 ├── 08-ia-clasica/                   # IA Clásica (Simbólica) - No es ML
 │   └── 08.01-minimax.ipynb
 ├── 09-machine-learning/             # Algoritmos Clásicos de ML

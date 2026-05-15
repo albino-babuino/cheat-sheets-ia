@@ -1,1 +1,12 @@
-*.png\n*.jpg\n*.jpeg\n*.pdf\n*.svg\n*.gif\n# Archivos generados por notebooks\n**/grafico.*
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.svg
+*.gif
+# Archivos generados por notebooks
+**/grafico.*
+# Datasets locales (descargar con 07.b-ejemplos-supervisados/download_datasets.sh)
+07.b-ejemplos-supervisados/data/*.csv
+07.b-ejemplos-supervisados/data/*.data
+07.b-ejemplos-supervisados/catboost_info/

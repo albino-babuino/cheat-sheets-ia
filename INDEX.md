@@ -255,6 +255,44 @@ Este repositorio contiene **46 cheat sheets** organizados por tecnología en for
 - Búsqueda de hiperparámetros (GridSearchCV, RandomizedSearchCV)
 - Curvas ROC y AUC
 
+### [07.06-scikit-learn-pipelines.ipynb](07-scikit-learn/07.06-scikit-learn-pipelines.ipynb)
+- Pipeline básico (imputer → scaler → modelo)
+- ColumnTransformer (columnas numéricas y categóricas)
+- Pipelines con GridSearchCV
+
+## 📊 07.b - Ejemplos supervisados — Scikit-learn (9 notebooks)
+
+Plantillas completas con CSV local, preprocesado, comparación de modelos (incl. XGBoost y CatBoost) y métricas. Directorio: [07.b-ejemplos-supervisados/](07.b-ejemplos-supervisados/).
+
+### [01-regresion-lineal.ipynb](07.b-ejemplos-supervisados/01-regresion-lineal.ipynb)
+- Plantilla agnóstica de regresión lineal (copiar y adaptar CONFIG a cualquier CSV)
+
+### [01-regresion-lineal-wine-quality-red.ipynb](07.b-ejemplos-supervisados/01-regresion-lineal-wine-quality-red.ipynb)
+- CONFIG reutilizable, EDA, Pipeline + ColumnTransformer
+- Comparación: regresión lineal, Ridge, Lasso, RF, boosting, XGBoost, CatBoost
+- Dataset: Wine Quality Red (`quality`)
+
+### [01-regresion-lineal-california-housing.ipynb](07.b-ejemplos-supervisados/01-regresion-lineal-california-housing.ipynb)
+- Misma plantilla; dataset California Housing (`MedHouseVal`)
+
+### [02-clasificacion-binaria.ipynb](07.b-ejemplos-supervisados/02-clasificacion-binaria.ipynb)
+- Plantilla agnóstica de clasificación binaria
+
+### [02-clasificacion-binaria-breast-cancer.ipynb](07.b-ejemplos-supervisados/02-clasificacion-binaria-breast-cancer.ipynb)
+- Ejemplo: Breast Cancer (`target`)
+
+### [02-clasificacion-binaria-bank-marketing.ipynb](07.b-ejemplos-supervisados/02-clasificacion-binaria-bank-marketing.ipynb)
+- Ejemplo: Bank Marketing (`y`, separador `;`)
+
+### [03-clasificacion-multiple.ipynb](07.b-ejemplos-supervisados/03-clasificacion-multiple.ipynb)
+- Plantilla agnóstica de clasificación multiclase
+
+### [03-clasificacion-multiple-iris.ipynb](07.b-ejemplos-supervisados/03-clasificacion-multiple-iris.ipynb)
+- Ejemplo: Iris (`species`)
+
+### [03-clasificacion-multiple-wine.ipynb](07.b-ejemplos-supervisados/03-clasificacion-multiple-wine.ipynb)
+- Ejemplo: Wine cultivar (`target`, 3 clases)
+
 ## 🧩 08 - IA Clásica (Simbólica) (1 notebook)
 
 **Nota**: Esta sección contiene algoritmos de **IA clásica/simbólica**, que son **previos al Machine Learning**. Estos algoritmos no aprenden de datos; sus reglas están prefijadas. Son conceptualmente diferentes de los algoritmos de ML, que sí aprenden de datos.
