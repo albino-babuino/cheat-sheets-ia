@@ -13,7 +13,7 @@ chmod +x download_datasets.sh
 |----------|---------------------|--------|--------------|
 | `01-regresion-lineal.ipynb` | *(el que pongas en `data/`)* | *(tu columna)* | — |
 | `01-regresion-lineal-wine-quality-red.ipynb` | `wine_quality_red.csv` | `quality` | Auto MPG (`mpg`) |
-| `01-regresion-lineal-california-housing.ipynb` | `california_housing.csv` | `MedHouseVal` | Wine Quality (`quality`) |
+| `01-regresion-lineal-auto-mpg.ipynb` | `auto_mpg.csv` | `mpg` | Wine Quality (`quality`) |
 | `02-clasificacion-binaria.ipynb` | *(tu CSV)* | *(2 clases)* | — |
 | `02-clasificacion-binaria-breast-cancer.ipynb` | `breast_cancer.csv` | `target` (0/1) | — |
 | `02-clasificacion-binaria-bank-marketing.ipynb` | `bank_marketing.csv` | `y` (yes/no) | Titanic (`Survived`) |

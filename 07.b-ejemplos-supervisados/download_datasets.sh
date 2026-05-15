@@ -26,15 +26,36 @@ df.to_csv("data/iris.csv", index=False)
 print(f"  iris.csv: {len(df)} filas")
 PY
 
-echo "==> California Housing (vía sklearn)"
+echo "==> Auto MPG (UCI)"
+curl -fsSL -o data/auto_mpg_raw.data \
+  "https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data"
 $PYTHON << 'PY'
 import pandas as pd
-from sklearn.datasets import fetch_california_housing
 
-data = fetch_california_housing(as_frame=True)
-df = data.frame
-df.to_csv("data/california_housing.csv", index=False)
-print(f"  california_housing.csv: {len(df)} filas, target=MedHouseVal")
+cols = [
+    "mpg", "cylinders", "displacement", "horsepower", "weight",
+    "acceleration", "model_year", "origin", "car_name",
+]
+rows = []
+with open("data/auto_mpg_raw.data", encoding="utf-8") as f:
+    for line in f:
+        line = line.strip()
+        if not line:
+            continue
+        if '"' in line:
+            i, j = line.index('"'), line.rindex('"')
+            head = line[:i].split()
+            car = line[i + 1 : j]
+            rows.append(head + [car])
+        else:
+            parts = line.split()
+            rows.append(parts[:8] + [" ".join(parts[8:])])
+
+df = pd.DataFrame(rows, columns=cols)
+for c in cols[:-1]:
+    df[c] = pd.to_numeric(df[c].replace("?", pd.NA), errors="coerce")
+df.to_csv("data/auto_mpg.csv", index=False)
+print(f"  auto_mpg.csv: {len(df)} filas, target=mpg, nulos={int(df.isna().sum().sum())}")
 PY
 
 echo "==> Breast Cancer (Wisconsin, vía sklearn)"

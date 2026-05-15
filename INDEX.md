@@ -272,8 +272,8 @@ Plantillas completas con CSV local, preprocesado, comparación de modelos (incl.
 - Comparación: regresión lineal, Ridge, Lasso, RF, boosting, XGBoost, CatBoost
 - Dataset: Wine Quality Red (`quality`)
 
-### [01-regresion-lineal-california-housing.ipynb](07.b-ejemplos-supervisados/01-regresion-lineal-california-housing.ipynb)
-- Misma plantilla; dataset California Housing (`MedHouseVal`)
+### [01-regresion-lineal-auto-mpg.ipynb](07.b-ejemplos-supervisados/01-regresion-lineal-auto-mpg.ipynb)
+- Misma plantilla; dataset Auto MPG UCI (`mpg`)
 
 ### [02-clasificacion-binaria.ipynb](07.b-ejemplos-supervisados/02-clasificacion-binaria.ipynb)
 - Plantilla agnóstica de clasificación binaria

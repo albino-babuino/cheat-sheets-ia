@@ -44,7 +44,7 @@ Esto crea en `data/`:
 |---------|-----------|
 | *(tu CSV en `data/`)* | **`01-regresion-lineal.ipynb`** (plantilla) |
 | `wine_quality_red.csv` | `01-regresion-lineal-wine-quality-red.ipynb` |
-| `california_housing.csv` | `01-regresion-lineal-california-housing.ipynb` |
+| `auto_mpg.csv` | `01-regresion-lineal-auto-mpg.ipynb` |
 | *(tu CSV)* | **`02-clasificacion-binaria.ipynb`** / **`03-clasificacion-multiple.ipynb`** |
 | `breast_cancer.csv` | `02-clasificacion-binaria-breast-cancer.ipynb` |
 | `bank_marketing.csv` | `02-clasificacion-binaria-bank-marketing.ipynb` |
@@ -104,9 +104,9 @@ Para **añadir o quitar modelos**, edita la función `build_models()` (comenta o
 
 Wine Quality Red: target `quality`, separador `;`.
 
-### [01-regresion-lineal-california-housing.ipynb](01-regresion-lineal-california-housing.ipynb) — ejemplo
+### [01-regresion-lineal-auto-mpg.ipynb](01-regresion-lineal-auto-mpg.ipynb) — ejemplo
 
-California Housing: target `MedHouseVal`, separador `,`.
+Auto MPG (UCI): target `mpg`, separador `,`, excluye `car_name`. El imputer del pipeline gestiona faltantes en `horsepower`.
 
 **Métricas de la tabla:** MAE, RMSE y **R²** (se ordena por R², mayor es mejor).
 
@@ -162,7 +162,7 @@ Wine (sklearn): target `target` (3 cultivares), features numéricas.
 | Tu problema | Notebook | Target típico |
 |-------------|----------|----------------|
 | Predecir un número (nuevo CSV) | **`01-regresion-lineal.ipynb`** | Columna numérica continua |
-| Ver un ejemplo ya hecho | `01-regresion-lineal-wine-quality-red.ipynb` o `01-regresion-lineal-california-housing.ipynb` | — |
+| Ver un ejemplo ya hecho | `01-regresion-lineal-wine-quality-red.ipynb` o `01-regresion-lineal-auto-mpg.ipynb` | — |
 | Predecir sí/no (nuevo CSV) | **`02-clasificacion-binaria.ipynb`** | 2 clases |
 | Ejemplo binario | `02-clasificacion-binaria-breast-cancer.ipynb` o `bank-marketing` | — |
 | Predecir varias categorías (nuevo CSV) | **`03-clasificacion-multiple.ipynb`** | 3+ clases |

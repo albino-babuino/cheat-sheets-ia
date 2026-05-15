@@ -241,7 +241,7 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
 
 Ver [07.b-ejemplos-supervisados/README.md](07.b-ejemplos-supervisados/README.md). Plantillas agnósticas + ejemplos con datasets reales.
 
-**Regresión:** [01 plantilla](07.b-ejemplos-supervisados/01-regresion-lineal.ipynb) · [wine](07.b-ejemplos-supervisados/01-regresion-lineal-wine-quality-red.ipynb) · [california](07.b-ejemplos-supervisados/01-regresion-lineal-california-housing.ipynb)
+**Regresión:** [01 plantilla](07.b-ejemplos-supervisados/01-regresion-lineal.ipynb) · [wine](07.b-ejemplos-supervisados/01-regresion-lineal-wine-quality-red.ipynb) · [auto mpg](07.b-ejemplos-supervisados/01-regresion-lineal-auto-mpg.ipynb)
 
 **Binaria:** [02 plantilla](07.b-ejemplos-supervisados/02-clasificacion-binaria.ipynb) · [breast cancer](07.b-ejemplos-supervisados/02-clasificacion-binaria-breast-cancer.ipynb) · [bank marketing](07.b-ejemplos-supervisados/02-clasificacion-binaria-bank-marketing.ipynb)
 
@@ -463,7 +463,7 @@ cheat-sheets-ia/
 ├── 07.b-ejemplos-supervisados/        # Ejemplos ML supervisado (CSV + pipelines)
 │   ├── 01-regresion-lineal.ipynb
 │   ├── 01-regresion-lineal-wine-quality-red.ipynb
-│   ├── 01-regresion-lineal-california-housing.ipynb
+│   ├── 01-regresion-lineal-auto-mpg.ipynb
 │   ├── 02-clasificacion-binaria.ipynb
 │   ├── 02-clasificacion-binaria-breast-cancer.ipynb
 │   ├── 02-clasificacion-binaria-bank-marketing.ipynb
