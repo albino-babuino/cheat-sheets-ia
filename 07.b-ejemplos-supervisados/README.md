@@ -73,8 +73,24 @@ Detalle de URLs y alternativas: [data/README.md](data/README.md).
 | 2 | CONFIG | Rutas, `RAW_LABEL_COL`, `CLASS_NAMES`, `DROP_COLS`; `build_models` (binario) o `build_models(n_classes)` (multiclase). |
 | 3–5 | Carga y EDA | Codificar target 0/1 o 0..K-1; **multiclase:** `MODELS = build_models(N_CLASSES)` aquí. |
 | 6 | Split | Train / val / test (estratificado en clasificación). |
-| 7–8 | Preprocesado y benchmark | Entrena en train, compara en **val**. |
-| 9 | Mejor modelo | Reentrena train+val, evalúa en **test**. |
+| 7 | Preprocesado | `ColumnTransformer` (imputer + escalar / one-hot). |
+| 8 | Benchmark | Entrena en **train**; métricas en train y **val**; brecha train−val para detectar **overfitting** (`OVERFIT_GAP_WARN`). |
+| 9 | Mejor modelo | Elige en val; reentrena train+val; evalúa en **test** (matriz de confusión en clasificación; scatter + correlación en regresión). |
+
+## Modelos del benchmark (`build_models`)
+
+Misma lista en plantillas y ejemplos (comenta líneas en CONFIG para excluir alguno):
+
+| Modelo | Regresión | Clasificación |
+|--------|-----------|---------------|
+| Lineal / logística | LinearRegression, Ridge, Lasso | LogisticRegression |
+| KNN | `KNeighborsRegressor` (k=5) | `KNeighborsClassifier` (k=5) |
+| Árboles / ensembles | RandomForest, GradientBoosting, HistGradientBoosting | Igual |
+| Boosting externo | XGBoost, CatBoost | XGBoost, CatBoost |
+
+**Random Forest:** en CONFIG los hiperparámetros están escritos explícitamente con los **defaults de scikit-learn** (`max_depth=None`, `min_samples_leaf=1`, `max_features="sqrt"` en clasificación, etc.) para poder ajustarlos (p. ej. `max_depth=10`) sin buscar la documentación.
+
+**Target numérico:** en clasificación el CSV puede traer texto (`yes`/`no`, nombres de clase); se codifica a 0/1 o 0..K-1 con `RAW_LABEL_COL` + `LABEL_TO_ID` antes de XGBoost/CatBoost.
 
 ## Plantillas (empieza aquí)
 

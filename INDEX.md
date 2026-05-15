@@ -262,7 +262,7 @@ Este repositorio contiene **46 cheat sheets** organizados por tecnología en for
 
 ## 📊 07.b - Ejemplos supervisados — Scikit-learn (12 notebooks)
 
-Plantillas en la raíz + ejemplos en `01-regresion/`, `02-clasificacion-binaria/`, `03-clasificacion-multiple/`. CSV local, train/val/test, XGBoost y CatBoost. [07.b-ejemplos-supervisados/](07.b-ejemplos-supervisados/).
+Plantillas en la raíz + ejemplos en `01-regresion/`, `02-clasificacion-binaria/`, `03-clasificacion-multiple/`. CSV local, train/val/test, benchmark (lineales, KNN, RF con hiperparámetros explícitos, boosting, XGBoost, CatBoost), detección de overfitting train/val. [07.b-ejemplos-supervisados/](07.b-ejemplos-supervisados/).
 
 ### [01-regresion-lineal.ipynb](07.b-ejemplos-supervisados/01-regresion-lineal.ipynb)
 - Plantilla agnóstica de regresión lineal (copiar y adaptar CONFIG a cualquier CSV)
