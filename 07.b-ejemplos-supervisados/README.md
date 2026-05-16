@@ -85,10 +85,11 @@ Misma lista en plantillas y ejemplos (comenta líneas en CONFIG para excluir alg
 |--------|-----------|---------------|
 | Lineal / logística | LinearRegression, Ridge, Lasso | LogisticRegression |
 | KNN | `KNeighborsRegressor` (k=5) | `KNeighborsClassifier` (k=5) |
+| Árbol simple | `DecisionTreeRegressor` | `DecisionTreeClassifier` |
 | Árboles / ensembles | RandomForest, GradientBoosting, HistGradientBoosting | Igual |
 | Boosting externo | XGBoost, CatBoost | XGBoost, CatBoost |
 
-**Random Forest:** en CONFIG los hiperparámetros están escritos explícitamente con los **defaults de scikit-learn** (`max_depth=None`, `min_samples_leaf=1`, `max_features="sqrt"` en clasificación, etc.) para poder ajustarlos (p. ej. `max_depth=10`) sin buscar la documentación.
+**Decision Tree y Random Forest:** en CONFIG los hiperparámetros están escritos explícitamente con los **defaults de scikit-learn** (`max_depth=None`, `min_samples_leaf=1`, etc.) para poder ajustarlos (p. ej. `max_depth=10`) sin buscar la documentación. El árbol simple usa `max_features=None`; Random Forest usa `"sqrt"` en clasificación y `1.0` en regresión.
 
 **Target numérico:** en clasificación el CSV puede traer texto (`yes`/`no`, nombres de clase); se codifica a 0/1 o 0..K-1 con `RAW_LABEL_COL` + `LABEL_TO_ID` antes de XGBoost/CatBoost.
 
