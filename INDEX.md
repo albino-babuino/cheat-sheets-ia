@@ -161,6 +161,12 @@ Este repositorio contiene **46 cheat sheets** organizados por tecnología en for
 - Guardar gráficos
 - Métodos de acceso directo (.plot.line(), .plot.bar(), etc.)
 
+### [04.06-numpy-pandas-pytorch-interop.ipynb](04-pandas/04.06-numpy-pandas-pytorch-interop.ipynb)
+- Conversiones NumPy ↔ Pandas ↔ PyTorch
+- `to_numpy`, `from_numpy`, `torch.tensor`, memoria compartida vs copia
+- Pipeline típico CSV → tensor → resultados en DataFrame
+- Trampas: GPU, `requires_grad`, dtypes y columnas no numéricas
+
 ## 📊 05 - Matplotlib
 
 ### [05.01-matplotlib-basics.ipynb](05-matplotlib/05.01-matplotlib-basics.ipynb)
