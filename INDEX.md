@@ -133,6 +133,7 @@ Este repositorio contiene **46 cheat sheets** organizados por tecnología en for
 
 ### [04.03-pandas-data-manipulation.ipynb](04-pandas/04.03-pandas-data-manipulation.ipynb)
 - Sustituir valores de una columna (`replace`, `map`; ej. `"nada"` → 0, `"todo"` → 1)
+- Detectar ceros y tratarlos como faltantes (`replace(0, np.nan)`, `mask`, `eq`)
 - Agregar y eliminar columnas/filas
 - Manipulación de índice (reindex, set_index, reset_index, sort_index)
 - Ordenamiento de valores
