@@ -132,6 +132,7 @@ Este repositorio contiene **46 cheat sheets** organizados por tecnología en for
 - Selección de filas y columnas (iloc, loc, at, iat)
 
 ### [04.03-pandas-data-manipulation.ipynb](04-pandas/04.03-pandas-data-manipulation.ipynb)
+- Sustituir valores de una columna (`replace`, `map`; ej. `"nada"` → 0, `"todo"` → 1)
 - Agregar y eliminar columnas/filas
 - Manipulación de índice (reindex, set_index, reset_index, sort_index)
 - Ordenamiento de valores
@@ -459,35 +460,27 @@ Los algoritmos están organizados por tipo de aprendizaje:
 - Cálculo final: suma ponderada, sesgo y activación
 - Perceptrón funcional con visualización (átomo básico del Deep Learning)
 
-## 🐍 PyCharm — Redes neuronales y cheat sheet
+## 🔥 12 - PyTorch
 
-Cheat sheet del IDE PyCharm y notebooks de ejemplo con PyTorch (regresión y clasificación).
+Cheat sheet de PyTorch y notebooks de ejemplo (regresión y clasificación).
 
-### [00-pycharm-cheat-sheet.ipynb](pycharm/00-pycharm-cheat-sheet.ipynb)
-- Interfaz, ventanas, navegación y búsqueda
-- Edición, completado, refactorización
-- Ejecutar y depurar (Run/Debug, breakpoints)
-- Entornos virtuales e interpretador Python
-- Git integrado (commit, push, pull)
-- Jupyter Notebooks en PyCharm
-- Terminal, estructura de proyecto, troubleshooting
-- Atajos de teclado (Linux) y configuración recomendada
+### [00-pytorch-cheat-sheet.ipynb](12-pytorch/00-pytorch-cheat-sheet.ipynb)
+- Tensores, dispositivo (CPU/GPU), `autograd`
+- `nn.Module`, capas, pérdidas (`MSELoss`, `BCEWithLogitsLoss`, `CrossEntropyLoss`)
+- Optimizadores y bucle de entrenamiento
+- Inferencia, `no_grad`, guardar/cargar pesos
 
-### [04_training_dynamics.ipynb](pycharm/04_training_dynamics.ipynb)
-- Dinámica de entrenamiento: *loss*, optimizadores, regularización, overfitting y *learning rate scheduling*
-- Ejemplos ejecutables (dataset 2D) y checklist de buenas prácticas aplicable a 01/02/03
-
-### [01-regresion-lineal-red-neuronal.ipynb](pycharm/01-regresion-lineal-red-neuronal.ipynb)
+### [01-regresion-lineal-red-neuronal.ipynb](12-pytorch/01-regresion-lineal-red-neuronal.ipynb)
 - Regresión lineal con red neuronal (MSE, salida continua)
-- Datos sintéticos y curva de aprendizaje
+- Dataset Salary y curva de aprendizaje
 
-### [02-clasificacion-binaria.ipynb](pycharm/02-clasificacion-binaria.ipynb)
-- Clasificación binaria (logits + `BCEWithLogitsLoss`, probabilidad con sigmoid en inferencia)
-- Frontera de decisión en 2D
+### [02-clasificacion-binaria.ipynb](12-pytorch/02-clasificacion-binaria.ipynb)
+- Clasificación binaria (logits + `BCEWithLogitsLoss`, sigmoid en inferencia)
+- Dataset Pima Indians Diabetes; frontera de decisión en 2D
 
-### [03-clasificacion-multiple.ipynb](pycharm/03-clasificacion-multiple.ipynb)
-- Clasificación en varias clases (logits + `CrossEntropyLoss`, softmax implícita en la pérdida)
-- Regiones de decisión para 3 clases
+### [03-clasificacion-multiple.ipynb](12-pytorch/03-clasificacion-multiple.ipynb)
+- Clasificación en varias clases (logits + `CrossEntropyLoss`)
+- Dataset Wine UCI; regiones de decisión para 3 clases
 
 ## 🚀 Uso
 
