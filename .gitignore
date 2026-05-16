@@ -10,3 +10,6 @@
 07.b-ejemplos-supervisados/data/*.csv
 07.b-ejemplos-supervisados/data/*.data
 07.b-ejemplos-supervisados/catboost_info/
+# Datasets locales (descargar con 07.c-ejemplos-no-supervisados/download_datasets.sh)
+07.c-ejemplos-no-supervisados/data/*.csv
+07.c-ejemplos-no-supervisados/data/*.data

@@ -74,8 +74,8 @@ Detalle de URLs y alternativas: [data/README.md](data/README.md).
 | 3–5 | Carga y EDA | Codificar target 0/1 o 0..K-1; **multiclase:** `MODELS = build_models(N_CLASSES)` aquí. |
 | 6 | Split | Train / val / test (estratificado en clasificación). |
 | 7 | Preprocesado | `ColumnTransformer` (imputer + escalar / one-hot). |
-| 8 | Benchmark | Entrena en **train**; métricas en train y **val**; brecha train−val para detectar **overfitting** (`OVERFIT_GAP_WARN`). |
-| 9 | Mejor modelo | Elige en val; reentrena train+val; evalúa en **test** (matriz de confusión en clasificación; scatter + correlación en regresión). |
+| 8 | Benchmark | Entrena en **train**; métricas en train y **val**; brecha train−val (`OVERFIT_GAP_WARN`). Luego **validación cruzada** en `X_train` (`CV_FOLDS`, `KFold` / `StratifiedKFold`): el `Pipeline` se ajusta en cada fold; val y test no participan. |
+| 9 | Mejor modelo | Elige en val (benchmark train/val); reentrena train+val; evalúa en **test** (matriz de confusión en clasificación; scatter + correlación en regresión). |
 
 ## Modelos del benchmark (`build_models`)
 
@@ -83,7 +83,8 @@ Misma lista en plantillas y ejemplos (comenta líneas en CONFIG para excluir alg
 
 | Modelo | Regresión | Clasificación |
 |--------|-----------|---------------|
-| Lineal / logística | LinearRegression, Ridge, Lasso | LogisticRegression |
+| Lineal / logística | LinearRegression, Ridge, Lasso | LogisticRegression, SGDClassifier |
+| SVM / multiclase (OvO, OvR) | — | SVC, OneVsOneClassifier(SVC), OneVsRestClassifier(SVC) |
 | KNN | `KNeighborsRegressor` (k=5) | `KNeighborsClassifier` (k=5) |
 | Árbol simple | `DecisionTreeRegressor` | `DecisionTreeClassifier` |
 | Árboles / ensembles | RandomForest, GradientBoosting, HistGradientBoosting | Igual |

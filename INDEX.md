@@ -311,6 +311,19 @@ Plantillas en la raíz + ejemplos en `01-regresion/`, `02-clasificacion-binaria/
 ### [03-clasificacion-multiple-thyroid.ipynb](07.b-ejemplos-supervisados/03-clasificacion-multiple/03-clasificacion-multiple-thyroid.ipynb)
 - Ejemplo: Thyroid UCI (`target` 0/1/2; 3 clases). Binario: ver `02-clasificacion-binaria-thyroid.ipynb`
 
+## 🔮 07.c - Ejemplos no supervisados — Scikit-learn (3 notebooks)
+
+Clustering con **K-Means**, reducción con **PCA** y **`Pipeline` + `ColumnTransformer`** (mismo patrón anti-leakage que 07.b). [07.c-ejemplos-no-supervisados/](07.c-ejemplos-no-supervisados/).
+
+### [01-clustering-kmeans-pca.ipynb](07.c-ejemplos-no-supervisados/01-clustering-kmeans-pca.ipynb)
+- Plantilla agnóstica: PCA, método del codo, silhouette, K-Means en Pipeline
+
+### [01-kmeans-pca-iris.ipynb](07.c-ejemplos-no-supervisados/01-clustering/01-kmeans-pca-iris.ipynb)
+- Iris: K=3; validación externa con `species` (ARI)
+
+### [01-kmeans-pca-wine-quality.ipynb](07.c-ejemplos-no-supervisados/01-clustering/01-kmeans-pca-wine-quality.ipynb)
+- Wine Quality red: K automático; `quality` como referencia
+
 ## 🧩 08 - IA Clásica (Simbólica) (1 notebook)
 
 **Nota**: Esta sección contiene algoritmos de **IA clásica/simbólica**, que son **previos al Machine Learning**. Estos algoritmos no aprenden de datos; sus reglas están prefijadas. Son conceptualmente diferentes de los algoritmos de ML, que sí aprenden de datos.
