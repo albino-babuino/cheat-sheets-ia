@@ -269,6 +269,19 @@ Este repositorio contiene **46 cheat sheets** organizados por tecnología en for
 - ColumnTransformer (columnas numéricas y categóricas)
 - Pipelines con GridSearchCV
 
+## 📐 07.a - Esquemas supervisados — Scikit-learn (3 notebooks)
+
+MVP: **CSV → pandas → tratamiento manual** (target numérico/categórico, `fillna`, `get_dummies`) → split → `make_pipeline`. [07.a-esquemas-supervisados/](07.a-esquemas-supervisados/).
+
+### [01-regresion-lineal.ipynb](07.a-esquemas-supervisados/01-regresion-lineal.ipynb)
+- Tratamiento manual; comparación de 6 regresores en pipeline (R², MSE)
+
+### [02-clasificacion-binaria.ipynb](07.a-esquemas-supervisados/02-clasificacion-binaria.ipynb)
+- Target texto → 0/1; 5 clasificadores en pipeline (accuracy)
+
+### [03-clasificacion-multiclase.ipynb](07.a-esquemas-supervisados/03-clasificacion-multiclase.ipynb)
+- Target → 0..K-1; mismos tipos de modelo; `classification_report` del mejor
+
 ## 📊 07.b - Ejemplos supervisados — Scikit-learn (12 notebooks)
 
 Plantillas en la raíz + ejemplos en `01-regresion/`, `02-clasificacion-binaria/`, `03-clasificacion-multiple/`. CSV local, train/val/test, benchmark (lineales, KNN, RF con hiperparámetros explícitos, boosting, XGBoost, CatBoost), detección de overfitting train/val. [07.b-ejemplos-supervisados/](07.b-ejemplos-supervisados/).
@@ -496,6 +509,19 @@ Cheat sheet de PyTorch y notebooks de ejemplo (regresión y clasificación).
 ### [03-clasificacion-multiple.ipynb](12-pytorch/03-clasificacion-multiple.ipynb)
 - Clasificación en varias clases (logits + `CrossEntropyLoss`)
 - Dataset Wine UCI; regiones de decisión para 3 clases
+
+## ⚡ 13 - Esquemas sklearn + PyTorch (3 notebooks)
+
+CSV → tratamiento manual → varios pipelines **sklearn** + **MLP PyTorch** y comparación en test. Datos en `data/`. [13-esquemas-sklearn-pytorch/](13-esquemas-sklearn-pytorch/).
+
+### [01-regresion-lineal.ipynb](13-esquemas-sklearn-pytorch/01-regresion-lineal.ipynb)
+- Regresores sklearn + MLP (`MSELoss`, R²/MSE en test)
+
+### [02-clasificacion-binaria.ipynb](13-esquemas-sklearn-pytorch/02-clasificacion-binaria.ipynb)
+- Clasificadores sklearn + MLP binario (`BCEWithLogitsLoss`)
+
+### [03-clasificacion-multiclase.ipynb](13-esquemas-sklearn-pytorch/03-clasificacion-multiclase.ipynb)
+- Clasificadores sklearn + MLP multiclase (`CrossEntropyLoss`)
 
 ## 🚀 Uso
 
