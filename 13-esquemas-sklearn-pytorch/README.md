@@ -3,9 +3,10 @@
 Notebooks **MVP** de aprendizaje supervisado con datos tabulares en CSV:
 
 1. CSV → pandas → **tratamiento manual** (tipos, faltantes, codificación del target).
-2. Varios modelos **sklearn** en `make_pipeline(StandardScaler, …)` (`build_models()`).
-3. **Red neuronal mínima** en PyTorch (MLP + Adam + bucle de entrenamiento).
-4. **Comparación global** en test: sklearn + `PyTorch_MLP`.
+2. Split **train / val / test** (`split_train_val_test`, ~60 % / 20 % / 20 %).
+3. Varios modelos **sklearn** en `make_pipeline(StandardScaler, …)` (`build_models()`).
+4. **Red neuronal mínima** en PyTorch (MLP + Adam; entrena solo en train).
+5. **Análisis comparativo** (paso final aparte): `predict` en val/test, métricas, tabla sklearn + PyTorch; elige el mejor en **val** y reporta en **test**.
 
 Los CSV de práctica están en [`data/`](data/) (incluyen faltantes a propósito).
 

@@ -1,6 +1,6 @@
 # Esquemas supervisados (07.a)
 
-Notebooks **MVP (mínima viable)**: CSV → pandas → **tratamiento manual** de tipos y faltantes → split → `Pipeline` (solo escalado + modelo).
+Notebooks **MVP (mínima viable)**: CSV → pandas → **tratamiento manual** de tipos y faltantes → split **train / val / test** → `Pipeline` (solo escalado + modelo).
 
 ## Qué cubre el tratamiento manual
 
@@ -18,7 +18,7 @@ Los CSV en [`data/`](data/) incluyen **valores faltantes a propósito** para pra
 
 ## Notebooks
 
-Cada uno termina con un **bucle** sobre `MODELS`: mismo `make_pipeline(StandardScaler(), modelo)`, tabla comparativa en test.
+Cada uno tiene dos pasos finales separados: **entrenar** (`fit` en train → dict `pipelines`) y **análisis comparativo** (`predict` en val/test, métricas, tabla y ganador por val).
 
 | Archivo | Target | Modelos (`build_models`, igual que [07.b](../07.b-ejemplos-supervisados/)) |
 |---------|--------|---------------------|
