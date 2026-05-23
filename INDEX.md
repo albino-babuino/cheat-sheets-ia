@@ -1,6 +1,6 @@
 # Índice de Cheat Sheets - Python, Data Science, Machine Learning e IA Moderna
 
-Este repositorio contiene **46 cheat sheets** organizados por tecnología en formato Jupyter Notebook (.ipynb), ordenados numéricamente para seguir un orden lógico de aprendizaje. Incluye Python, NumPy, Pandas, Matplotlib, Scikit-learn, Algoritmos Clásicos de ML, Estadística e IA Moderna (Deep Learning, Transformers, CNN, RNN/LSTM).
+Este repositorio contiene **47 cheat sheets** organizados por tecnología en formato Jupyter Notebook (.ipynb), ordenados numéricamente para seguir un orden lógico de aprendizaje. Incluye Python, NumPy, Pandas, Matplotlib, Scikit-learn, Algoritmos Clásicos de ML, Estadística e IA Moderna (Deep Learning, Transformers, CNN, RNN/LSTM).
 
 ## 🔧 01 - Básicos
 
@@ -523,6 +523,13 @@ Train/val/test → entrenar **sklearn** y **MLP** por separado → **análisis c
 ### [03-clasificacion-multiclase.ipynb](13-esquemas-sklearn-pytorch/03-clasificacion-multiclase.ipynb)
 - Multiclase sklearn + `TabularMultiNet`; `CrossEntropyLoss` y comparación global
 
+## 🖼️ 14 - Computer Vision — CNN (1 notebook)
+
+CNN mínima en **CIFAR-10** (32×32, 10 clases): transforms, train/val/test, `DataLoader`, entrenamiento y análisis separados. [14-computer-vision-cnn/](14-computer-vision-cnn/).
+
+### [01-cifar10-cnn-mvp.ipynb](14-computer-vision-cnn/01-cifar10-cnn-mvp.ipynb)
+- `CifarCNN` (Conv+Pool×3 + FC); `CrossEntropyLoss`; accuracy val/test y `classification_report`
+
 ## 🚀 Uso
 
 Para usar estos notebooks, necesitas tener instalado:
@@ -535,6 +542,7 @@ Para usar estos notebooks, necesitas tener instalado:
 - Seaborn (para algunas visualizaciones)
 - TensorFlow (opcional, para notebooks de IA moderna - 10.02, 10.04, 10.05)
 - Transformers y PyTorch (opcional, para notebooks de NLP - 10.03)
+- PyTorch y torchvision (opcional, para 12, 13 y 14 — `pip install torch torchvision`)
 
 ### Instalación rápida con uv
 

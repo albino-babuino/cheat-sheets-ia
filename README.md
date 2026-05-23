@@ -1,13 +1,12 @@
 # 📚 Cheat Sheets - Python, Data Science, Machine Learning e IA Moderna
 
-Repositorio completo de **cheat sheets** (hojas de referencia rápida) en formato Jupyter Notebook para **Python**, **NumPy**, **Pandas**, **Matplotlib**, **Scikit-learn**, **Algoritmos Clásicos de ML**, **Estadística** e **IA Moderna** (Deep Learning, Transformers, CNN, RNN/LSTM). Todos los notebooks están en español y organizados numéricamente para facilitar el aprendizaje progresivo.
+Repositorio completo de **cheat sheets** (hojas de referencia rápida) en formato Jupyter Notebook para **Python**, **NumPy**, **Pandas**, **Matplotlib**, **Scikit-learn**, **PyTorch**, **Algoritmos Clásicos de ML**, **Estadística** e **IA Moderna** (Deep Learning, Transformers, CNN, RNN/LSTM). Incluye esquemas MVP supervisados (07.a, 13), ejemplos completos (07.b, 07.c) y visión por computador (14). Todos los notebooks están en español y organizados numéricamente.
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![NumPy](https://img.shields.io/badge/NumPy-1.24+-green.svg)
-![Pandas](https://img.shields.io/badge/Pandas-2.0+-orange.svg)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-3.7+-blue.svg)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.3+-orange.svg)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0+-orange.svg)
+![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)
+![NumPy](https://img.shields.io/badge/NumPy-2.3+-green.svg)
+![Pandas](https://img.shields.io/badge/Pandas-2.3+-orange.svg)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.7+-orange.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.12+-red.svg)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)
 
 ## 📖 Contenido
@@ -104,7 +103,7 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Estadísticas avanzadas
    - Generación de números aleatorios
 
-### 🐼 04 - Pandas (5 notebooks)
+### 🐼 04 - Pandas (6 notebooks)
 
 1. **[04.01-pandas-dataframes-series.ipynb](04-pandas/04.01-pandas-dataframes-series.ipynb)** - Series y DataFrames
    - Crear Series
@@ -138,6 +137,10 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Personalización de gráficos
    - Subplots y guardado de gráficos
    - Métodos de acceso directo (.plot.line(), .plot.bar(), etc.)
+
+6. **[04.06-numpy-pandas-pytorch-interop.ipynb](04-pandas/04.06-numpy-pandas-pytorch-interop.ipynb)** - Interoperabilidad Pandas ↔ PyTorch
+   - `.values`, tensores y `DataLoader`
+   - Puente entre datos tabulares y redes neuronales
 
 ### 📊 05 - Matplotlib (4 notebooks)
 
@@ -237,6 +240,16 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Pipeline básico y ColumnTransformer
    - GridSearchCV con pipelines
 
+### 📐 07.a - Esquemas supervisados MVP (3 notebooks)
+
+Ver [07.a-esquemas-supervisados/README.md](07.a-esquemas-supervisados/README.md). CSV → tratamiento manual → split **train/val/test** → entrenar (`pipelines`) → **análisis comparativo** (métricas en val, ganador, test).
+
+| Notebook | Tarea |
+|----------|--------|
+| [01-regresion-lineal.ipynb](07.a-esquemas-supervisados/01-regresion-lineal.ipynb) | Regresión |
+| [02-clasificacion-binaria.ipynb](07.a-esquemas-supervisados/02-clasificacion-binaria.ipynb) | Binaria |
+| [03-clasificacion-multiclase.ipynb](07.a-esquemas-supervisados/03-clasificacion-multiclase.ipynb) | Multiclase |
+
 ### 📊 07.b - Ejemplos supervisados — Scikit-learn (12 notebooks)
 
 Ver [07.b-ejemplos-supervisados/README.md](07.b-ejemplos-supervisados/README.md). **3 plantillas** en la raíz + **8 ejemplos** en `01-regresion/`, `02-clasificacion-binaria/` y `03-clasificacion-multiple/`.
@@ -246,6 +259,10 @@ Ver [07.b-ejemplos-supervisados/README.md](07.b-ejemplos-supervisados/README.md)
 **Binaria:** [02 plantilla](07.b-ejemplos-supervisados/02-clasificacion-binaria.ipynb) · [ejemplos](07.b-ejemplos-supervisados/02-clasificacion-binaria/)
 
 **Multiclase:** [03 plantilla](07.b-ejemplos-supervisados/03-clasificacion-multiple.ipynb) · [ejemplos](07.b-ejemplos-supervisados/03-clasificacion-multiple/)
+
+### 🔮 07.c - Ejemplos no supervisados (3 notebooks)
+
+Ver [07.c-ejemplos-no-supervisados/](07.c-ejemplos-no-supervisados/). KMeans + PCA con `Pipeline`, datasets Iris y Wine.
 
 ### 🧩 08 - IA Clásica (Simbólica) (1 notebook)
 
@@ -373,12 +390,32 @@ Los algoritmos están organizados por tipo de aprendizaje:
    - Función ReLU y cálculo final
    - Perceptrón funcional con gráficos (átomo básico del Deep Learning)
 
+### 🔥 12 - PyTorch (4 notebooks)
+
+Cheat sheet y ejemplos con **PyTorch** (datasets URL, MLP tabular).
+
+| Notebook | Contenido |
+|----------|-----------|
+| [00-pytorch-cheat-sheet.ipynb](12-pytorch/00-pytorch-cheat-sheet.ipynb) | Referencia rápida |
+| [01-regresion-lineal-red-neuronal.ipynb](12-pytorch/01-regresion-lineal-red-neuronal.ipynb) | Regresión |
+| [02-clasificacion-binaria.ipynb](12-pytorch/02-clasificacion-binaria.ipynb) | Binaria |
+| [03-clasificacion-multiple.ipynb](12-pytorch/03-clasificacion-multiple.ipynb) | Multiclase |
+
+### ⚡ 13 - Esquemas sklearn + PyTorch (3 notebooks)
+
+Ver [13-esquemas-sklearn-pytorch/README.md](13-esquemas-sklearn-pytorch/README.md). Mismo flujo que 07.a + **MLP PyTorch**; análisis comparativo en paso final.
+
+### 🖼️ 14 - Computer Vision — CNN (1 notebook)
+
+Ver [14-computer-vision-cnn/README.md](14-computer-vision-cnn/README.md). **CIFAR-10** con CNN mínima en PyTorch (train/val/test, entrenamiento y análisis separados).
+
 ## 🚀 Inicio Rápido
 
 ### Requisitos Previos
 
-- Python 3.8 o superior
-- `uv` (gestor de paquetes rápido) o `pip` tradicional
+- Python 3.12+ recomendado (el `.venv` actual usa 3.14 con `uv`)
+- `uv` (recomendado) o `pip`
+- Para notebooks 12, 13 y 14: **PyTorch** y **torchvision** (incluidos en `requirements.txt`)
 
 ### Instalación
 
@@ -452,14 +489,8 @@ cheat-sheets-ia/
 ├── 06-estadistica/                  # Estadística
 │   ├── 06.01-estadistica-basica.ipynb
 │   └── 06.02-estadistica-aplicada-ia.ipynb
-├── 07-scikit-learn/                 # Notebooks de Scikit-learn
-│   ├── 07.01-scikit-learn-basics.ipynb
-│   ├── 07.02-scikit-learn-preprocessing.ipynb
-│   ├── 07.03-scikit-learn-supervised-learning.ipynb
-│   ├── 07.04-scikit-learn-unsupervised-learning.ipynb
-│   ├── 07.05-scikit-learn-model-evaluation.ipynb
-│   ├── 07.06-scikit-learn-pipelines.ipynb
-│   └── (ver carpeta 07.b-ejemplos-supervisados/)
+├── 07-scikit-learn/                 # Teoría Scikit-learn (6 notebooks)
+├── 07.a-esquemas-supervisados/      # Esquemas MVP sklearn (manual + pipeline)
 ├── 07.b-ejemplos-supervisados/        # Plantillas + ejemplos ML supervisado
 │   ├── 01-regresion-lineal.ipynb      # plantillas (raíz)
 │   ├── 02-clasificacion-binaria.ipynb
@@ -468,6 +499,7 @@ cheat-sheets-ia/
 │   ├── 02-clasificacion-binaria/
 │   ├── 03-clasificacion-multiple/
 │   └── data/
+├── 07.c-ejemplos-no-supervisados/   # KMeans + PCA (no supervisado)
 ├── 08-ia-clasica/                   # IA Clásica (Simbólica) - No es ML
 │   └── 08.01-minimax.ipynb
 ├── 09-machine-learning/             # Algoritmos Clásicos de ML
@@ -487,9 +519,10 @@ cheat-sheets-ia/
 │   ├── 10.03-transformers-nlp.ipynb
 │   ├── 10.04-cnn-convolucional.ipynb
 │   └── 10.05-rnn-lstm.ipynb
-├── 11-deep-learning/               # Deep Learning
-│   ├── README.md
-│   └── 11.01-visualizando-primera-neurona.ipynb
+├── 11-deep-learning/               # Visualización primera neurona
+├── 12-pytorch/                      # PyTorch (cheat sheet + MLP)
+├── 13-esquemas-sklearn-pytorch/     # Esquemas tabular sklearn + PyTorch
+├── 14-computer-vision-cnn/          # CNN CIFAR-10 MVP
 ├── .venv/                           # Entorno virtual
 ├── INDEX.md                         # Índice detallado
 ├── README.md                        # Este archivo
@@ -506,12 +539,13 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 
 ## 📝 Características
 
-- ✅ **43 notebooks completos** con ejemplos prácticos
+- ✅ **~70 notebooks** con ejemplos prácticos y esquemas MVP
 - ✅ **Todos los notebooks probados** y funcionando correctamente
 - ✅ **Orden lógico de aprendizaje** con numeración
 - ✅ **Documentación en español**
 - ✅ **Ejemplos ejecutables** sin errores
 - ✅ **Kernel configurado automáticamente**
+- ✅ **Ruta sklearn → PyTorch → CNN**: 07.a, 13, 14 y ejemplos completos 07.b/07.c
 - ✅ **Contenido de IA moderna**: Transformers, CNN, RNN/LSTM, Deep Learning
 
 ## 🎯 Orden Recomendado de Aprendizaje
@@ -523,14 +557,18 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 4. Continúa con **04 - Pandas** (04.01-04.05)
 5. Sigue con **05 - Matplotlib** (05.01-05.04) - Visualización de datos
 6. Continúa con **06 - Estadística** (06.01-06.02) - Fundamentos estadísticos (IMPORTANTE antes de ML)
-7. Sigue con **07 - Scikit-learn** (07.01-07.05) - Machine Learning
-8. (Opcional) Explora **08 - IA Clásica (Simbólica)** (08.01) - Algoritmos de IA previos al ML (no aprenden de datos)
-9. Explora **09 - Machine Learning** (09.01-09.05) - Algoritmos fundamentales implementados desde cero
-10. Avanza a **10 - IA Moderna** (10.01-10.05) - Deep Learning y arquitecturas modernas
-11. Profundiza en **11 - Deep Learning** - Cheat sheets específicos de redes profundas
+7. Sigue con **07 - Scikit-learn** (07.01-07.06) - teoría y pipelines
+8. **07.a** → esquemas MVP (manual + varios modelos)
+9. **13** → mismos esquemas + MLP PyTorch
+10. **07.b** → proyectos supervisados completos (ColumnTransformer, CV)
+11. **07.c** → clustering y PCA
+12. **12 - PyTorch** → fundamentos y MLP con datasets URL
+13. **14** → CNN con CIFAR-10
+14. (Opcional) **08 - IA Clásica** (08.01), **09 - ML desde cero**, **10 - IA Moderna** (TensorFlow/Transformers)
 
 ### Para Usuarios Avanzados
-- **10 - IA Moderna** y **11 - Deep Learning**: Transformers, CNN, RNN/LSTM, TensorFlow/PyTorch
+- **10 - IA Moderna**: TensorFlow, Transformers, CNN/RNN teóricas
+- **07.b**: benchmarks con XGBoost, CatBoost y validación cruzada
 
 ### Para Usuarios Intermedios
 - Puedes saltar directamente a la sección que necesites

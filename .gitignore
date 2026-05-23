@@ -13,3 +13,5 @@
 # Datasets locales (descargar con 07.c-ejemplos-no-supervisados/download_datasets.sh)
 07.c-ejemplos-no-supervisados/data/*.csv
 07.c-ejemplos-no-supervisados/data/*.data
+# CIFAR-10 descargado por torchvision (14)
+14-computer-vision-cnn/data/
