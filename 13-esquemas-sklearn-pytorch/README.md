@@ -8,13 +8,13 @@ Notebooks **MVP** con datos tabulares en CSV: mismo esquema manual que un proyec
 |------|-----------|
 | 1–4 | CSV en [`data/`](data/), target, features, tratamiento manual |
 | 5 | Split **train / val / test** (`split_train_val_test`, ~60 % / 20 % / 20 %) |
-| 6 | **Entrenar sklearn**: `build_models()` → `fit` en train → `pipelines` |
-| 7 | **Entrenar PyTorch**: MLP + Adam (solo train; escalado aprendido en train) |
+| 6 | **Entrenar sklearn**: `build_sklearn_pipeline()` → `transformacion` + `estandarizado` + `modelo` |
+| 7 | **Entrenar PyTorch**: MLP + Adam (imputación y escalado separados, solo stats de train) |
 | 8 | **Análisis comparativo**: métricas en val/test, tabla única, ganador por **val**, reporte en **test** |
 
 Los pasos **6–7** solo entrenan. Las predicciones y la tabla comparativa están **solo en el paso 8**.
 
-> **Limitación didáctica:** imputación y dummies sobre todo el `df` antes del split. En [07.b](../07.b-ejemplos-supervisados/) el preprocesado va dentro del `Pipeline` ajustado solo en train.
+> **Limitación didáctica:** imputación y dummies en pandas (pasos 3–4) antes del split; en el `Pipeline` sklearn van **por separado** `transformacion` (`SimpleImputer`) y `estandarizado` (`StandardScaler`). En [07.b](../07.b-ejemplos-supervisados/) también el one-hot va dentro del `Pipeline` ajustado solo en train.
 
 ## Notebooks
 
