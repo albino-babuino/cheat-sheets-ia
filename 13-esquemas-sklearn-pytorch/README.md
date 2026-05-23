@@ -24,11 +24,31 @@ Los pasos **6–7** solo entrenan. Las predicciones y la tabla comparativa está
 | [02-clasificacion-binaria.ipynb](02-clasificacion-binaria.ipynb) | 0/1 | 12 clasificadores | `TabularBinaryNet` + `BCEWithLogitsLoss` |
 | [03-clasificacion-multiclase.ipynb](03-clasificacion-multiclase.ipynb) | 0..K-1 | `build_models(N_CLASSES)` | `TabularMultiNet` + `CrossEntropyLoss` |
 
-## Requisitos
+## Requisitos y kernel de Jupyter
+
+Desde la **raíz del repo** (no uses el Python del sistema: ahí no está `scikit-learn`).
 
 ```bash
-pip install numpy pandas scikit-learn torch xgboost catboost
+cd cheat-sheets-ia
+uv venv
+uv pip install -r requirements.txt
+uv run python -m ipykernel install --user --name cheat-sheets-ia --display-name "cheat-sheets-ia (.venv)"
 ```
+
+En Cursor/VS Code: **Select Kernel** → `cheat-sheets-ia (.venv)` (o el intérprete `.venv/bin/python`).
+
+Comprueba en una celda:
+
+```python
+import sys
+from sklearn.impute import SimpleImputer
+print(sys.executable)  # debe terminar en .../cheat-sheets-ia/.venv/bin/python
+```
+
+| Error | Causa habitual |
+|-------|----------------|
+| `No module named 'sklearn'` | Kernel = Python del sistema |
+| `No module named 'sklearn.impute'` | Paquete `sklearn` de PyPI en vez de `scikit-learn`, o sklearn muy viejo |
 
 Comenta entradas en `build_models()` si quieres acortar la ejecución (p. ej. SVC u OvO/OvR).
 
