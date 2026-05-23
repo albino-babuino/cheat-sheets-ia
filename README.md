@@ -203,7 +203,7 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Normalización y estandarización para ML
    - Teorema del Límite Central aplicado
 
-### 🤖 07 - Scikit-learn (5 notebooks)
+### 🤖 07 - Scikit-learn (7 notebooks)
 
 1. **[07.01-scikit-learn-basics.ipynb](07-scikit-learn/07.01-scikit-learn-basics.ipynb)** - Fundamentos básicos
    - Importar Scikit-learn
@@ -239,6 +239,11 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
 6. **[07.06-scikit-learn-pipelines.ipynb](07-scikit-learn/07.06-scikit-learn-pipelines.ipynb)** - Pipelines
    - Pipeline básico y ColumnTransformer
    - GridSearchCV con pipelines
+
+7. **[07.07-transformacion-datos-por-tipo.ipynb](07-scikit-learn/07.07-transformacion-datos-por-tipo.ipynb)** - Transformación por tipo de dato
+   - Guía de decisión: numérico, categórico, ordinal, bool, fecha, target
+   - Equivalencias pandas ↔ sklearn; checklist antes de entrenar
+   - Enlace a 07.a (manual) y 07.06 (pipelines)
 
 ### 📐 07.a - Esquemas supervisados MVP (3 notebooks)
 
@@ -489,7 +494,7 @@ cheat-sheets-ia/
 ├── 06-estadistica/                  # Estadística
 │   ├── 06.01-estadistica-basica.ipynb
 │   └── 06.02-estadistica-aplicada-ia.ipynb
-├── 07-scikit-learn/                 # Teoría Scikit-learn (6 notebooks)
+├── 07-scikit-learn/                 # Teoría Scikit-learn (7 notebooks)
 ├── 07.a-esquemas-supervisados/      # Esquemas MVP sklearn (manual + pipeline)
 ├── 07.b-ejemplos-supervisados/        # Plantillas + ejemplos ML supervisado
 │   ├── 01-regresion-lineal.ipynb      # plantillas (raíz)
@@ -557,7 +562,7 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 4. Continúa con **04 - Pandas** (04.01-04.05)
 5. Sigue con **05 - Matplotlib** (05.01-05.04) - Visualización de datos
 6. Continúa con **06 - Estadística** (06.01-06.02) - Fundamentos estadísticos (IMPORTANTE antes de ML)
-7. Sigue con **07 - Scikit-learn** (07.01-07.06) - teoría y pipelines
+7. Sigue con **07 - Scikit-learn** (07.01-07.07) — preprocesado, pipelines y guía por tipo de dato
 8. **07.a** → esquemas MVP (manual + varios modelos)
 9. **13** → mismos esquemas + MLP PyTorch
 10. **07.b** → proyectos supervisados completos (ColumnTransformer, CV)

@@ -1,6 +1,6 @@
 # Índice de Cheat Sheets - Python, Data Science, Machine Learning e IA Moderna
 
-Este repositorio contiene **47 cheat sheets** organizados por tecnología en formato Jupyter Notebook (.ipynb), ordenados numéricamente para seguir un orden lógico de aprendizaje. Incluye Python, NumPy, Pandas, Matplotlib, Scikit-learn, Algoritmos Clásicos de ML, Estadística e IA Moderna (Deep Learning, Transformers, CNN, RNN/LSTM).
+Este repositorio contiene **48 cheat sheets** organizados por tecnología en formato Jupyter Notebook (.ipynb), ordenados numéricamente para seguir un orden lógico de aprendizaje. Incluye Python, NumPy, Pandas, Matplotlib, Scikit-learn, Algoritmos Clásicos de ML, Estadística e IA Moderna (Deep Learning, Transformers, CNN, RNN/LSTM).
 
 ## 🔧 01 - Básicos
 
@@ -268,6 +268,12 @@ Este repositorio contiene **47 cheat sheets** organizados por tecnología en for
 - Pipeline básico (imputer → scaler → modelo)
 - ColumnTransformer (columnas numéricas y categóricas)
 - Pipelines con GridSearchCV
+
+### [07.07-transformacion-datos-por-tipo.ipynb](07-scikit-learn/07.07-transformacion-datos-por-tipo.ipynb)
+- Tabla resumen: tipo de dato → transformación → transformador sklearn
+- Inspección con pandas (`dtypes`, `select_dtypes`, faltantes)
+- Numéricas, categóricas nominales/ordinales, booleanos, fechas, target `y`
+- Pandas manual vs `ColumnTransformer`; checklist antes de `fit`
 
 ## 📐 07.a - Esquemas supervisados — Scikit-learn (3 notebooks)
 
