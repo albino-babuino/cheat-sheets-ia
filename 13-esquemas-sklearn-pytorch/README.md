@@ -1,26 +1,28 @@
 # Esquemas sklearn + PyTorch (13)
 
-Notebooks **MVP** de aprendizaje supervisado con datos tabulares en CSV:
+Notebooks **MVP** con datos tabulares en CSV: mismo esquema manual que un proyecto supervisado completo, añadiendo un **MLP en PyTorch** y una **comparación final** sklearn + red.
 
-1. CSV → pandas → **tratamiento manual** (tipos, faltantes, codificación del target).
-2. Split **train / val / test** (`split_train_val_test`, ~60 % / 20 % / 20 %).
-3. Varios modelos **sklearn** en `make_pipeline(StandardScaler, …)` (`build_models()`).
-4. **Red neuronal mínima** en PyTorch (MLP + Adam; entrena solo en train).
-5. **Análisis comparativo** (paso final aparte): `predict` en val/test, métricas, tabla sklearn + PyTorch; elige el mejor en **val** y reporta en **test**.
+## Flujo común (todos los notebooks)
 
-Los CSV de práctica están en [`data/`](data/) (incluyen faltantes a propósito).
+| Paso | Contenido |
+|------|-----------|
+| 1–4 | CSV en [`data/`](data/), target, features, tratamiento manual |
+| 5 | Split **train / val / test** (`split_train_val_test`, ~60 % / 20 % / 20 %) |
+| 6 | **Entrenar sklearn**: `build_models()` → `fit` en train → `pipelines` |
+| 7 | **Entrenar PyTorch**: MLP + Adam (solo train; escalado aprendido en train) |
+| 8 | **Análisis comparativo**: métricas en val/test, tabla única, ganador por **val**, reporte en **test** |
+
+Los pasos **6–7** solo entrenan. Las predicciones y la tabla comparativa están **solo en el paso 8**.
+
+> **Limitación didáctica:** imputación y dummies sobre todo el `df` antes del split. En [07.b](../07.b-ejemplos-supervisados/) el preprocesado va dentro del `Pipeline` ajustado solo en train.
 
 ## Notebooks
 
 | Archivo | Target | sklearn (paso 6) | PyTorch (paso 7) |
 |---------|--------|------------------|------------------|
-| [01-regresion-lineal.ipynb](01-regresion-lineal.ipynb) | `Precio` | 10 regresores (linear, boosting, XGBoost, CatBoost, …) | `HousePriceNet` |
+| [01-regresion-lineal.ipynb](01-regresion-lineal.ipynb) | `Precio` | 10 regresores | `HousePriceNet` + `MSELoss` |
 | [02-clasificacion-binaria.ipynb](02-clasificacion-binaria.ipynb) | 0/1 | 12 clasificadores | `TabularBinaryNet` + `BCEWithLogitsLoss` |
-| [03-clasificacion-multiclase.ipynb](03-clasificacion-multiclase.ipynb) | 0..K-1 | Igual con `build_models(N_CLASSES)` | `TabularMultiNet` + `CrossEntropyLoss` |
-
-El **paso 8** muestra una única tabla con todos los modelos y elige el mejor en test.
-
-> **Limitación didáctica:** imputación y dummies se calculan sobre todo el `df` antes del split. En proyectos reales conviene encapsularlo en un `Pipeline` ajustado solo en train.
+| [03-clasificacion-multiclase.ipynb](03-clasificacion-multiclase.ipynb) | 0..K-1 | `build_models(N_CLASSES)` | `TabularMultiNet` + `CrossEntropyLoss` |
 
 ## Requisitos
 
@@ -34,7 +36,8 @@ Comenta entradas en `build_models()` si quieres acortar la ejecución (p. ej. SV
 
 | Tema | Carpeta |
 |------|---------|
+| Esquema manual solo sklearn | [07.a](../07.a-esquemas-supervisados/) |
+| Pipelines completos, CV, ColumnTransformer | [07.b](../07.b-ejemplos-supervisados/) |
 | PyTorch (datasets URL, más teoría) | [12-pytorch](../12-pytorch/) |
-| Pipelines completos, CV, ColumnTransformer | [07.b-ejemplos-supervisados](../07.b-ejemplos-supervisados/) |
 | Cheat sheet PyTorch | [12.00](../12-pytorch/00-pytorch-cheat-sheet.ipynb) |
 | Pandas ↔ PyTorch | [04.06](../04-pandas/04.06-numpy-pandas-pytorch-interop.ipynb) |

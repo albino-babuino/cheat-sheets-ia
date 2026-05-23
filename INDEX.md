@@ -271,16 +271,16 @@ Este repositorio contiene **46 cheat sheets** organizados por tecnología en for
 
 ## 📐 07.a - Esquemas supervisados — Scikit-learn (3 notebooks)
 
-MVP: **CSV → pandas → tratamiento manual** (target numérico/categórico, `fillna`, `get_dummies`) → split → `make_pipeline`. [07.a-esquemas-supervisados/](07.a-esquemas-supervisados/).
+MVP: tratamiento manual → split **train/val/test** → **entrenar** (`pipelines`) → **análisis** (métricas val/test, ganador por val). [07.a-esquemas-supervisados/](07.a-esquemas-supervisados/).
 
 ### [01-regresion-lineal.ipynb](07.a-esquemas-supervisados/01-regresion-lineal.ipynb)
-- Tratamiento manual; comparación de 6 regresores en pipeline (R², MSE)
+- 10 regresores; tabla R²/MSE en val y test
 
 ### [02-clasificacion-binaria.ipynb](07.a-esquemas-supervisados/02-clasificacion-binaria.ipynb)
-- Target texto → 0/1; 5 clasificadores en pipeline (accuracy)
+- Target → 0/1; 12 clasificadores; `classification_report` del ganador en test
 
 ### [03-clasificacion-multiclase.ipynb](07.a-esquemas-supervisados/03-clasificacion-multiclase.ipynb)
-- Target → 0..K-1; mismos tipos de modelo; `classification_report` del mejor
+- Target → 0..K-1; `build_models(N_CLASSES)`; reporte multiclase del mejor en val
 
 ## 📊 07.b - Ejemplos supervisados — Scikit-learn (12 notebooks)
 
@@ -512,16 +512,16 @@ Cheat sheet de PyTorch y notebooks de ejemplo (regresión y clasificación).
 
 ## ⚡ 13 - Esquemas sklearn + PyTorch (3 notebooks)
 
-CSV → tratamiento manual → varios pipelines **sklearn** + **MLP PyTorch** y comparación en test. Datos en `data/`. [13-esquemas-sklearn-pytorch/](13-esquemas-sklearn-pytorch/).
+Train/val/test → entrenar **sklearn** y **MLP** por separado → **análisis comparativo** (paso 8) con ganador por val. Datos en `data/`. [13-esquemas-sklearn-pytorch/](13-esquemas-sklearn-pytorch/).
 
 ### [01-regresion-lineal.ipynb](13-esquemas-sklearn-pytorch/01-regresion-lineal.ipynb)
-- Regresores sklearn + MLP (`MSELoss`, R²/MSE en test)
+- 10 regresores + `HousePriceNet`; tabla R²/MSE sklearn + PyTorch
 
 ### [02-clasificacion-binaria.ipynb](13-esquemas-sklearn-pytorch/02-clasificacion-binaria.ipynb)
-- Clasificadores sklearn + MLP binario (`BCEWithLogitsLoss`)
+- 12 clasificadores + MLP binario; accuracy val/test y reporte del ganador
 
 ### [03-clasificacion-multiclase.ipynb](13-esquemas-sklearn-pytorch/03-clasificacion-multiclase.ipynb)
-- Clasificadores sklearn + MLP multiclase (`CrossEntropyLoss`)
+- Multiclase sklearn + `TabularMultiNet`; `CrossEntropyLoss` y comparación global
 
 ## 🚀 Uso
 
