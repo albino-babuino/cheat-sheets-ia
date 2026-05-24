@@ -1,6 +1,6 @@
 # Índice de Cheat Sheets - Python, Data Science, Machine Learning e IA Moderna
 
-Este repositorio contiene **48 cheat sheets** organizados por tecnología en formato Jupyter Notebook (.ipynb), ordenados numéricamente para seguir un orden lógico de aprendizaje. Incluye Python, NumPy, Pandas, Matplotlib, Scikit-learn, Algoritmos Clásicos de ML, Estadística e IA Moderna (Deep Learning, Transformers, CNN, RNN/LSTM).
+Este repositorio contiene **49 cheat sheets** organizados por tecnología en formato Jupyter Notebook (.ipynb), ordenados numéricamente para seguir un orden lógico de aprendizaje. Incluye Python, NumPy, Pandas, Matplotlib, Scikit-learn, Algoritmos Clásicos de ML, Estadística e IA Moderna (Deep Learning, Transformers, CNN, RNN/LSTM).
 
 ## 🔧 01 - Básicos
 
@@ -141,6 +141,13 @@ Este repositorio contiene **48 cheat sheets** organizados por tecnología en for
 - Merge y Join
 - GroupBy (agregación, transformación, filtrado)
 - Pivot y Reshape (pivot_table, melt, stack, unstack)
+
+### [04.07-pandas-tipos-y-conversion.ipynb](04-pandas/04.07-pandas-tipos-y-conversion.ipynb)
+- Inspección: `dtypes`, `info()`, `select_dtypes`, `pd.api.types`
+- Valores nulos por tipo: `None`, `NaN`, `pd.NA`, `NaT`; qué detecta `isna()`
+- Tabla resumen: origen → objetivo → método (`astype`, `to_numeric`, `to_datetime`…)
+- `astype`, tipos nullable (`Int64`, `string`), `category` / ordinales
+- `convert_dtypes()`; errores frecuentes y checklist
 
 ### [04.04-pandas-io-analysis.ipynb](04-pandas/04.04-pandas-io-analysis.ipynb)
 - Lectura de archivos (CSV, Excel, JSON, Parquet, HTML)

@@ -103,7 +103,7 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Estadísticas avanzadas
    - Generación de números aleatorios
 
-### 🐼 04 - Pandas (6 notebooks)
+### 🐼 04 - Pandas (7 notebooks)
 
 1. **[04.01-pandas-dataframes-series.ipynb](04-pandas/04.01-pandas-dataframes-series.ipynb)** - Series y DataFrames
    - Crear Series
@@ -123,13 +123,16 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - GroupBy (agregación, transformación, filtrado)
    - Pivot y Reshape (pivot_table, melt, stack, unstack)
 
-4. **[04.04-pandas-io-analysis.ipynb](04-pandas/04.04-pandas-io-analysis.ipynb)** - I/O y análisis
+4. **[04.07-pandas-tipos-y-conversion.ipynb](04-pandas/04.07-pandas-tipos-y-conversion.ipynb)** - Tipos y conversión
+   - `dtypes`, nulos (`None`, `NaN`, `pd.NA`, `NaT`), `astype`, `to_numeric` / `to_datetime`, `category`, nullable
+
+5. **[04.04-pandas-io-analysis.ipynb](04-pandas/04.04-pandas-io-analysis.ipynb)** - I/O y análisis
    - Lectura de archivos (CSV, Excel, JSON, Parquet, HTML)
    - Escritura de archivos
    - Análisis descriptivo
    - Manejo de valores faltantes
 
-5. **[04.05-pandas-visualization.ipynb](04-pandas/04.05-pandas-visualization.ipynb)** - Visualización de datos
+6. **[04.05-pandas-visualization.ipynb](04-pandas/04.05-pandas-visualization.ipynb)** - Visualización de datos
    - Gráficos de línea, barras, histogramas
    - Box plots, scatter plots, pie charts
    - Gráficos de área y hexbin
@@ -138,7 +141,7 @@ Repositorio completo de **cheat sheets** (hojas de referencia rápida) en format
    - Subplots y guardado de gráficos
    - Métodos de acceso directo (.plot.line(), .plot.bar(), etc.)
 
-6. **[04.06-numpy-pandas-pytorch-interop.ipynb](04-pandas/04.06-numpy-pandas-pytorch-interop.ipynb)** - Interoperabilidad Pandas ↔ PyTorch
+7. **[04.06-numpy-pandas-pytorch-interop.ipynb](04-pandas/04.06-numpy-pandas-pytorch-interop.ipynb)** - Interoperabilidad Pandas ↔ PyTorch
    - `.values`, tensores y `DataLoader`
    - Puente entre datos tabulares y redes neuronales
 
@@ -484,8 +487,10 @@ cheat-sheets-ia/
 │   ├── 04.01-pandas-dataframes-series.ipynb
 │   ├── 04.02-pandas-indexing-selection.ipynb
 │   ├── 04.03-pandas-data-manipulation.ipynb
+│   ├── 04.07-pandas-tipos-y-conversion.ipynb
 │   ├── 04.04-pandas-io-analysis.ipynb
-│   └── 04.05-pandas-visualization.ipynb
+│   ├── 04.05-pandas-visualization.ipynb
+│   └── 04.06-numpy-pandas-pytorch-interop.ipynb
 ├── 05-matplotlib/                   # Notebooks de Matplotlib
 │   ├── 05.01-matplotlib-basics.ipynb
 │   ├── 05.02-matplotlib-customization.ipynb
@@ -559,7 +564,7 @@ No necesitas configurar nada manualmente. Al abrir cualquier notebook, se usará
 1. Empieza con **01 - Básicos** (01.01-01.05) - Configuración y herramientas esenciales
 2. Continúa con **02 - Python** (02.01-02.05)
 3. Sigue con **03 - NumPy** (03.01-03.04)
-4. Continúa con **04 - Pandas** (04.01-04.05)
+4. Continúa con **04 - Pandas** (04.01-04.07)
 5. Sigue con **05 - Matplotlib** (05.01-05.04) - Visualización de datos
 6. Continúa con **06 - Estadística** (06.01-06.02) - Fundamentos estadísticos (IMPORTANTE antes de ML)
 7. Sigue con **07 - Scikit-learn** (07.01-07.07) — preprocesado, pipelines y guía por tipo de dato
